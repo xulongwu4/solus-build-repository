@@ -1,970 +1,0 @@
-make build
-make[1]: Entering directory '/home/oulongwu/repository/jbig2dec'
-sudo solbuild build package.yml -p unstable-x86_64; 
-Updating repositories
-[32mUpdating repository: Solus
-[0meopkg-index.xml.xz.sha1sum     (40.0  B)100%    470.80 KB/s [00:00:00] [complete]
-eopkg-index.xml.xz             (1.8 MB)  0%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  0%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  0%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  0%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  0%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  0%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  0%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  1%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  1%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  1%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  1%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  1%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  1%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  1%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  1%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  2%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  2%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  2%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  2%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  2%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  2%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  2%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  3%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  3%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  3%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  3%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  3%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  3%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  3%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  3%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  4%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  4%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  4%     29.27 MB/s [00:00:00]eopkg-index.xml.xz             (1.8 MB)  4%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  4%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  4%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  4%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  4%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  5%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  5%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  5%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  5%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  5%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  5%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  5%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  5%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  6%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  6%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  6%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  6%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  6%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  6%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  6%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  6%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  7%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  7%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  7%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  7%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  7%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  7%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  7%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  8%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  8%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  8%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  8%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)  9%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 10%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 10%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 11%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 11%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 12%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 12%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 13%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 13%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 14%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 14%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 15%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 15%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 15%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 16%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 16%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 17%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 17%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 18%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 19%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 20%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 21%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 22%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 22%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 23%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 23%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 23%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 24%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 24%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 25%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 25%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 26%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 26%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 26%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 27%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 27%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 28%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 28%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 29%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 29%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 29%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 30%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 30%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 31%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 32%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 33%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 34%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 34%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 35%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 35%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 35%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 36%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 36%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 37%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 37%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 38%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 38%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 39%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 40%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 41%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 41%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 42%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 43%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 44%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 44%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 45%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 46%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 47%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 47%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 47%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 48%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 48%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 49%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 50%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 50%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 51%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 52%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 52%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 53%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 53%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 53%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 54%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 54%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 55%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 55%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 56%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 56%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 56%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 57%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 58%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 58%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 59%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 59%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 59%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 60%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 60%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 61%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 61%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 62%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 62%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 62%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 63%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 63%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 64%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 64%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 64%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 65%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 65%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 66%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 66%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 67%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 68%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 68%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 68%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 69%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 69%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 70%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 70%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 71%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 72%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 73%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 74%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 75%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 76%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 76%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 77%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 78%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 79%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 80%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 81%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 82%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 82%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 83%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 84%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 85%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 86%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 87%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 88%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 88%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 89%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 90%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 90%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 91%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 92%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 93%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 94%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 94%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 95%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 96%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 97%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 98%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 98%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB) 99%    498.44 KB/s [00:00:03]eopkg-index.xml.xz             (1.8 MB)100%    498.44 KB/s [00:00:03] [complete]
-Package database updated.
-baselayout  bash    coreutils  curl       file          findutils  gawk   
-gettext     glib2   glibc      grep       inetutils     iso-codes  libelf 
-libffi      libgcc  libgcrypt  libgomp    libgpg-error  libstdc++  libxslt
-lz4         pisi    sed        sharutils  sqlite3       tar        time   
-tzdata      unzip 
-[01;32mThe following packages will be upgraded:
-[0mbaselayout    bash                binutils         binutils-libs  bison        
-bison-devel   ccache              coreutils        curl           diffutils    
-file          file-devel          findutils        g++            gawk         
-gcc           gettext             gettext-devel    gfortran       glib2        
-glib2-devel   glibc               glibc-devel      grep           inetutils    
-iptables      iso-codes           libelf           libffi         libffi-devel 
-libgcc        libgcrypt           libgcrypt-devel  libgfortran    libgomp      
-libgpg-error  libgpg-error-devel  libstdc++        libxslt        linux-headers
-lz4           m4                  meson            nano           nasm         
-patch         perl                pisi             pkg-config     python3      
-sed           sharutils           sqlite3          tar            texinfo      
-time          tzdata              unzip            ypkg         
-[33mTotal size of package(s): 73.07 MB[0m
-[33mDownloading 1 / 59[0m
-Package glibc found in repository Solus
-glibc-48-49-1-x86_64.delta.eopkg [cached]
-[33mDownloading 2 / 59[0m
-Package tar found in repository Solus
-tar-6-7-1-x86_64.delta.eopkg [cached]
-[33mDownloading 3 / 59[0m
-Package libgpg-error found in repository Solus
-libgpg-error-8-9-1-x86_64.delta.eopkg [cached]
-[33mDownloading 4 / 59[0m
-Package lz4 found in repository Solus
-lz4-9-10-1-x86_64.delta.eopkg [cached]
-[33mDownloading 5 / 59[0m
-Package libstdc++ found in repository Solus
-libstdc++-38-39-1-x86_64.delta.eopkg [cached]
-[33mDownloading 6 / 59[0m
-Package sed found in repository Solus
-sed-5-6-1-x86_64.delta.eopkg [cached]
-[33mDownloading 7 / 59[0m
-Package libgcc found in repository Solus
-libgcc-38-39-1-x86_64.delta.eopkg [cached]
-[33mDownloading 8 / 59[0m
-Package gettext found in repository Solus
-gettext-8-9-1-x86_64.delta.eopkg [cached]
-[33mDownloading 9 / 59[0m
-Package file found in repository Solus
-file-12-13-1-x86_64.delta.eopkg [cached]
-[33mDownloading 10 / 59[0m
-Package libxslt found in repository Solus
-libxslt-8-9-1-x86_64.delta.eopkg [cached]
-[33mDownloading 11 / 59[0m
-Package curl found in repository Solus
-curl-37-38-1-x86_64.delta.eopkg [cached]
-[33mDownloading 12 / 59[0m
-Package libffi found in repository Solus
-libffi-9-10-1-x86_64.delta.eopkg [cached]
-[33mDownloading 13 / 59[0m
-Package tzdata found in repository Solus
-tzdata-3-5-1-x86_64.delta.eopkg [cached]
-[33mDownloading 14 / 59[0m
-Package coreutils found in repository Solus
-coreutils-20-21-1-x86_64.delta.eopkg [cached]
-[33mDownloading 15 / 59[0m
-Package findutils found in repository Solus
-findutils-11-12-1-x86_64.delta.eopkg [cached]
-[33mDownloading 16 / 59[0m
-Package sqlite3 found in repository Solus
-sqlite3-20-22-1-x86_64.delta.eopkg [cached]
-[33mDownloading 17 / 59[0m
-Package glib2 found in repository Solus
-glib2-42-43-1-x86_64.delta.eopkg [cached]
-[33mDownloading 18 / 59[0m
-Package baselayout found in repository Solus
-baselayout-48-50-1-x86_64.delta.eopkg [cached]
-[33mDownloading 19 / 59[0m
-Package inetutils found in repository Solus
-inetutils-4-5-1-x86_64.delta.eopkg [cached]
-[33mDownloading 20 / 59[0m
-Package unzip found in repository Solus
-unzip-5-6-1-x86_64.delta.eopkg [cached]
-[33mDownloading 21 / 59[0m
-Package sharutils found in repository Solus
-sharutils-4-6-1-x86_64.delta.eopkg [cached]
-[33mDownloading 22 / 59[0m
-Package time found in repository Solus
-time-1.9-4-1-x86_64.eopkg [cached]
-[33mDownloading 23 / 59[0m
-Package gawk found in repository Solus
-gawk-9-10-1-x86_64.delta.eopkg [cached]
-[33mDownloading 24 / 59[0m
-Package libgcrypt found in repository Solus
-libgcrypt-1.8.2-17-1-x86_64.eopkg [cached]
-[33mDownloading 25 / 59[0m
-Package bash found in repository Solus
-bash-48-49-1-x86_64.delta.eopkg [cached]
-[33mDownloading 26 / 59[0m
-Package pisi found in repository Solus
-pisi-84-85-1-x86_64.delta.eopkg [cached]
-[33mDownloading 27 / 59[0m
-Package grep found in repository Solus
-grep-8-9-1-x86_64.delta.eopkg [cached]
-[33mDownloading 28 / 59[0m
-Package iso-codes found in repository Solus
-iso-codes-5-6-1-x86_64.delta.eopkg [cached]
-[33mDownloading 29 / 59[0m
-Package libgomp found in repository Solus
-libgomp-38-39-1-x86_64.delta.eopkg [cached]
-[33mDownloading 30 / 59[0m
-Package libelf found in repository Solus
-libelf-11-12-1-x86_64.delta.eopkg [cached]
-[33mDownloading 31 / 59[0m
-Package iptables found in repository Solus
-iptables-6-7-1-x86_64.delta.eopkg [cached]
-[33mDownloading 32 / 59[0m
-Package libgpg-error-devel found in repository Solus
-libgpg-error-devel-8-9-1-x86_64.delta.eopkg [cached]
-[33mDownloading 33 / 59[0m
-Package gettext-devel found in repository Solus
-gettext-devel-8-9-1-x86_64.delta.eopkg [cached]
-[33mDownloading 34 / 59[0m
-Package libffi-devel found in repository Solus
-libffi-devel-9-10-1-x86_64.delta.eopkg [cached]
-[33mDownloading 35 / 59[0m
-Package perl found in repository Solus
-perl-10-11-1-x86_64.delta.eopkg [cached]
-[33mDownloading 36 / 59[0m
-Package texinfo found in repository Solus
-texinfo-5-6-1-x86_64.delta.eopkg [cached]
-[33mDownloading 37 / 59[0m
-Package glibc-devel found in repository Solus
-glibc-devel-48-49-1-x86_64.delta.eopkg [cached]
-[33mDownloading 38 / 59[0m
-Package gcc found in repository Solus
-gcc-38-39-1-x86_64.delta.eopkg [cached]
-[33mDownloading 39 / 59[0m
-Package meson found in repository Solus
-meson-14-15-1-x86_64.delta.eopkg [cached]
-[33mDownloading 40 / 59[0m
-Package libgfortran found in repository Solus
-libgfortran-38-39-1-x86_64.delta.eopkg [cached]
-[33mDownloading 41 / 59[0m
-Package nano found in repository Solus
-nano-92-95-1-x86_64.delta.eopkg [cached]
-[33mDownloading 42 / 59[0m
-Package m4 found in repository Solus
-m4-5-6-1-x86_64.delta.eopkg [cached]
-[33mDownloading 43 / 59[0m
-Package bison found in repository Solus
-bison-5-6-1-x86_64.delta.eopkg [cached]
-[33mDownloading 44 / 59[0m
-Package bison-devel found in repository Solus
-bison-devel-5-6-1-x86_64.delta.eopkg [cached]
-[33mDownloading 45 / 59[0m
-Package g++ found in repository Solus
-g++-38-39-1-x86_64.delta.eopkg [cached]
-[33mDownloading 46 / 59[0m
-Package ccache found in repository Solus
-ccache-12-13-1-x86_64.delta.eopkg [cached]
-[33mDownloading 47 / 59[0m
-Package glib2-devel found in repository Solus
-glib2-devel-42-43-1-x86_64.delta.eopkg [cached]
-[33mDownloading 48 / 59[0m
-Package file-devel found in repository Solus
-file-devel-12-13-1-x86_64.delta.eopkg [cached]
-[33mDownloading 49 / 59[0m
-Package ypkg found in repository Solus
-ypkg-111-112-1-x86_64.delta.eopkg [cached]
-[33mDownloading 50 / 59[0m
-Package libgcrypt-devel found in repository Solus
-libgcrypt-devel-16-17-1-x86_64.delta.eopkg [cached]
-[33mDownloading 51 / 59[0m
-Package gfortran found in repository Solus
-gfortran-38-39-1-x86_64.delta.eopkg [cached]
-[33mDownloading 52 / 59[0m
-Package patch found in repository Solus
-patch-4-5-1-x86_64.delta.eopkg [cached]
-[33mDownloading 53 / 59[0m
-Package linux-headers found in repository Solus
-linux-headers-47-48-1-x86_64.delta.eopkg [cached]
-[33mDownloading 54 / 59[0m
-Package pkg-config found in repository Solus
-pkg-config-6-7-1-x86_64.delta.eopkg [cached]
-[33mDownloading 55 / 59[0m
-Package binutils-libs found in repository Solus
-binutils-libs-30-31-1-x86_64.delta.eopkg [cached]
-[33mDownloading 56 / 59[0m
-Package diffutils found in repository Solus
-diffutils-7-8-1-x86_64.delta.eopkg [cached]
-[33mDownloading 57 / 59[0m
-Package python3 found in repository Solus
-python3-16-17-1-x86_64.delta.eopkg [cached]
-[33mDownloading 58 / 59[0m
-Package binutils found in repository Solus
-binutils-30-31-1-x86_64.delta.eopkg [cached]
-[33mDownloading 59 / 59[0m
-Package nasm found in repository Solus
-nasm-2.13.03-8-1-x86_64.eopkg [cached]
-[33mInstalling 1 / 59[0m
-glibc-48-49-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling glibc, version 2.26, release 49
-[0mUpgrading to new upstream version
-[36mExtracting the files of glibc
-[0m[36mUpgraded glibc
-[0m[33mInstalling 2 / 59[0m
-tar-6-7-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling tar, version 1.30, release 7
-[0mUpgrading to new distribution release
-[36mExtracting the files of tar
-[0m[36mUpgraded tar
-[0m[33mInstalling 3 / 59[0m
-libgpg-error-8-9-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling libgpg-error, version 1.28, release 9
-[0mUpgrading to new upstream version
-[36mExtracting the files of libgpg-error
-[0m[36mUpgraded libgpg-error
-[0m[33mInstalling 4 / 59[0m
-lz4-9-10-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling lz4, version 1.8.1.2, release 10
-[0mUpgrading to new upstream version
-[36mExtracting the files of lz4
-[0m[36mUpgraded lz4
-[0m[33mInstalling 5 / 59[0m
-libstdc++-38-39-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling libstdc++, version 7.3.0, release 39
-[0mUpgrading to new distribution release
-[36mExtracting the files of libstdc++
-[0m[36mUpgraded libstdc++
-[0m[33mInstalling 6 / 59[0m
-sed-5-6-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling sed, version 4.4, release 6
-[0mUpgrading to new distribution release
-[36mExtracting the files of sed
-[0m[36mUpgraded sed
-[0m[33mInstalling 7 / 59[0m
-libgcc-38-39-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling libgcc, version 7.3.0, release 39
-[0mUpgrading to new distribution release
-[36mExtracting the files of libgcc
-[0m[36mUpgraded libgcc
-[0m[33mInstalling 8 / 59[0m
-gettext-8-9-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling gettext, version 0.19.8.1, release 9
-[0mUpgrading to new distribution release
-[36mExtracting the files of gettext
-[0m[36mUpgraded gettext
-[0m[33mInstalling 9 / 59[0m
-file-12-13-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling file, version 5.32, release 13
-[0mUpgrading to new distribution release
-[36mExtracting the files of file
-[0m[36mUpgraded file
-[0m[33mInstalling 10 / 59[0m
-libxslt-8-9-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling libxslt, version 1.1.29, release 9
-[0mUpgrading to new distribution release
-[36mExtracting the files of libxslt
-[0m[36mUpgraded libxslt
-[0m[33mInstalling 11 / 59[0m
-curl-37-38-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling curl, version 7.59.0, release 38
-[0mUpgrading to new upstream version
-[36mExtracting the files of curl
-[0m[36mUpgraded curl
-[0m[33mInstalling 12 / 59[0m
-libffi-9-10-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling libffi, version 3.2.1, release 10
-[0mUpgrading to new distribution release
-[36mExtracting the files of libffi
-[0m[36mUpgraded libffi
-[0m[33mInstalling 13 / 59[0m
-tzdata-3-5-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling tzdata, version 2018d, release 5
-[0mUpgrading to new upstream version
-[36mExtracting the files of tzdata
-[0m[36mUpgraded tzdata
-[0m[33mInstalling 14 / 59[0m
-coreutils-20-21-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling coreutils, version 8.29, release 21
-[0mUpgrading to new distribution release
-[36mExtracting the files of coreutils
-[0m[36mUpgraded coreutils
-[0m[33mInstalling 15 / 59[0m
-findutils-11-12-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling findutils, version 4.6.0, release 12
-[0mUpgrading to new distribution release
-[36mExtracting the files of findutils
-[0m[36mUpgraded findutils
-[0m[33mInstalling 16 / 59[0m
-sqlite3-20-22-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling sqlite3, version 3.22.0, release 22
-[0mUpgrading to new distribution release
-[36mExtracting the files of sqlite3
-[0m[36mUpgraded sqlite3
-[0m[33mInstalling 17 / 59[0m
-glib2-42-43-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling glib2, version 2.54.3, release 43
-[0mUpgrading to new distribution release
-[36mExtracting the files of glib2
-[0m[36mUpgraded glib2
-[0m[33mInstalling 18 / 59[0m
-baselayout-48-50-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling baselayout, version 1.8.0, release 50
-[0mUpgrading to new distribution release
-[36mExtracting the files of baselayout
-[0m[36mUpgraded baselayout
-[0m[33mInstalling 19 / 59[0m
-inetutils-4-5-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling inetutils, version 1.9.4, release 5
-[0mUpgrading to new distribution release
-[36mExtracting the files of inetutils
-[0m[36mUpgraded inetutils
-[0m[33mInstalling 20 / 59[0m
-unzip-5-6-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling unzip, version 6.0, release 6
-[0mUpgrading to new distribution release
-[36mExtracting the files of unzip
-[0m[36mUpgraded unzip
-[0m[33mInstalling 21 / 59[0m
-sharutils-4-6-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling sharutils, version 4.15.2, release 6
-[0mUpgrading to new distribution release
-[36mExtracting the files of sharutils
-[0m[36mUpgraded sharutils
-[0m[33mInstalling 22 / 59[0m
-time-1.9-4-1-x86_64.eopkg [cached]
-[01;32mInstalling time, version 1.9, release 4
-[0mUpgrading to new upstream version
-[36mExtracting the files of time
-[0m[36mUpgraded time
-[0m[33mInstalling 23 / 59[0m
-gawk-9-10-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling gawk, version 4.2.1, release 10
-[0mUpgrading to new upstream version
-[36mExtracting the files of gawk
-[0m[36mUpgraded gawk
-[0m[33mInstalling 24 / 59[0m
-libgcrypt-1.8.2-17-1-x86_64.eopkg [cached]
-[01;32mInstalling libgcrypt, version 1.8.2, release 17
-[0mUpgrading to new upstream version
-[36mExtracting the files of libgcrypt
-[0m[36mUpgraded libgcrypt
-[0m[33mInstalling 25 / 59[0m
-bash-48-49-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling bash, version 4.4.019, release 49
-[0mUpgrading to new upstream version
-[36mExtracting the files of bash
-[0m[36mUpgraded bash
-[0m[33mInstalling 26 / 59[0m
-pisi-84-85-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling pisi, version 3.6, release 85
-[0mUpgrading to new distribution release
-[36mExtracting the files of pisi
-[0m[36mUpgraded pisi
-[0m[33mInstalling 27 / 59[0m
-grep-8-9-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling grep, version 3.1, release 9
-[0mUpgrading to new distribution release
-[36mExtracting the files of grep
-[0m[36mUpgraded grep
-[0m[33mInstalling 28 / 59[0m
-iso-codes-5-6-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling iso-codes, version 3.78, release 6
-[0mUpgrading to new upstream version
-[36mExtracting the files of iso-codes
-[0m[36mUpgraded iso-codes
-[0m[33mInstalling 29 / 59[0m
-libgomp-38-39-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling libgomp, version 7.3.0, release 39
-[0mUpgrading to new distribution release
-[36mExtracting the files of libgomp
-[0m[36mUpgraded libgomp
-[0m[33mInstalling 30 / 59[0m
-libelf-11-12-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling libelf, version 0.168, release 12
-[0mUpgrading to new distribution release
-[36mExtracting the files of libelf
-[0m[36mUpgraded libelf
-[0m[33mInstalling 31 / 59[0m
-iptables-6-7-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling iptables, version 1.6.2, release 7
-[0mUpgrading to new upstream version
-[36mExtracting the files of iptables
-[0m[36mUpgraded iptables
-[0m[33mInstalling 32 / 59[0m
-libgpg-error-devel-8-9-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling libgpg-error-devel, version 1.28, release 9
-[0mUpgrading to new upstream version
-[36mExtracting the files of libgpg-error-devel
-[0m[36mUpgraded libgpg-error-devel
-[0m[33mInstalling 33 / 59[0m
-gettext-devel-8-9-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling gettext-devel, version 0.19.8.1, release 9
-[0mUpgrading to new distribution release
-[36mExtracting the files of gettext-devel
-[0m[36mUpgraded gettext-devel
-[0m[33mInstalling 34 / 59[0m
-libffi-devel-9-10-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling libffi-devel, version 3.2.1, release 10
-[0mUpgrading to new distribution release
-[36mExtracting the files of libffi-devel
-[0m[36mUpgraded libffi-devel
-[0m[33mInstalling 35 / 59[0m
-perl-10-11-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling perl, version 5.26.1, release 11
-[0mUpgrading to new distribution release
-[36mExtracting the files of perl
-[0m[36mUpgraded perl
-[0m[33mInstalling 36 / 59[0m
-texinfo-5-6-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling texinfo, version 6.3, release 6
-[0mUpgrading to new distribution release
-[36mExtracting the files of texinfo
-[0m[36mUpgraded texinfo
-[0m[33mInstalling 37 / 59[0m
-glibc-devel-48-49-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling glibc-devel, version 2.26, release 49
-[0mUpgrading to new upstream version
-[36mExtracting the files of glibc-devel
-[0m[36mUpgraded glibc-devel
-[0m[33mInstalling 38 / 59[0m
-gcc-38-39-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling gcc, version 7.3.0, release 39
-[0mUpgrading to new distribution release
-[36mExtracting the files of gcc
-[0m[36mUpgraded gcc
-[0m[33mInstalling 39 / 59[0m
-meson-14-15-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling meson, version 0.45.0, release 15
-[0mUpgrading to new upstream version
-[36mExtracting the files of meson
-[0m[36mUpgraded meson
-[0m[33mInstalling 40 / 59[0m
-libgfortran-38-39-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling libgfortran, version 7.3.0, release 39
-[0mUpgrading to new distribution release
-[36mExtracting the files of libgfortran
-[0m[36mUpgraded libgfortran
-[0m[33mInstalling 41 / 59[0m
-nano-92-95-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling nano, version 2.9.4, release 95
-[0mUpgrading to new upstream version
-[36mExtracting the files of nano
-[0m[36mUpgraded nano
-[0m[33mInstalling 42 / 59[0m
-m4-5-6-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling m4, version 1.4.18, release 6
-[0mUpgrading to new distribution release
-[36mExtracting the files of m4
-[0m[36mUpgraded m4
-[0m[33mInstalling 43 / 59[0m
-bison-5-6-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling bison, version 3.0.4, release 6
-[0mUpgrading to new distribution release
-[36mExtracting the files of bison
-[0m[36mUpgraded bison
-[0m[33mInstalling 44 / 59[0m
-bison-devel-5-6-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling bison-devel, version 3.0.4, release 6
-[0mUpgrading to new distribution release
-[36mExtracting the files of bison-devel
-[0m[36mUpgraded bison-devel
-[0m[33mInstalling 45 / 59[0m
-g++-38-39-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling g++, version 7.3.0, release 39
-[0mUpgrading to new distribution release
-[36mExtracting the files of g++
-[0m[36mUpgraded g++
-[0m[33mInstalling 46 / 59[0m
-ccache-12-13-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling ccache, version 3.4.1, release 13
-[0mUpgrading to new upstream version
-[36mExtracting the files of ccache
-[0m[36mUpgraded ccache
-[0m[33mInstalling 47 / 59[0m
-glib2-devel-42-43-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling glib2-devel, version 2.54.3, release 43
-[0mUpgrading to new distribution release
-[36mExtracting the files of glib2-devel
-[0m[36mUpgraded glib2-devel
-[0m[33mInstalling 48 / 59[0m
-file-devel-12-13-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling file-devel, version 5.32, release 13
-[0mUpgrading to new distribution release
-[36mExtracting the files of file-devel
-[0m[36mUpgraded file-devel
-[0m[33mInstalling 49 / 59[0m
-ypkg-111-112-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling ypkg, version 26, release 112
-[0mUpgrading to new distribution release
-[36mExtracting the files of ypkg
-[0m[36mUpgraded ypkg
-[0m[33mInstalling 50 / 59[0m
-libgcrypt-devel-16-17-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling libgcrypt-devel, version 1.8.2, release 17
-[0mUpgrading to new upstream version
-[36mExtracting the files of libgcrypt-devel
-[0m[36mUpgraded libgcrypt-devel
-[0m[33mInstalling 51 / 59[0m
-gfortran-38-39-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling gfortran, version 7.3.0, release 39
-[0mUpgrading to new distribution release
-[36mExtracting the files of gfortran
-[0m[36mUpgraded gfortran
-[0m[33mInstalling 52 / 59[0m
-patch-4-5-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling patch, version 2.7.6, release 5
-[0mUpgrading to new distribution release
-[36mExtracting the files of patch
-[0m[36mUpgraded patch
-[0m[33mInstalling 53 / 59[0m
-linux-headers-47-48-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling linux-headers, version 4.9.88, release 48
-[0mUpgrading to new upstream version
-[36mExtracting the files of linux-headers
-[0m[36mUpgraded linux-headers
-[0m[33mInstalling 54 / 59[0m
-pkg-config-6-7-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling pkg-config, version 0.29.2, release 7
-[0mUpgrading to new distribution release
-[36mExtracting the files of pkg-config
-[0m[36mUpgraded pkg-config
-[0m[33mInstalling 55 / 59[0m
-binutils-libs-30-31-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling binutils-libs, version 2.29.1, release 31
-[0mUpgrading to new distribution release
-[36mExtracting the files of binutils-libs
-[0m[36mUpgraded binutils-libs
-[0m[33mInstalling 56 / 59[0m
-diffutils-7-8-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling diffutils, version 3.6, release 8
-[0mUpgrading to new distribution release
-[36mExtracting the files of diffutils
-[0m[36mUpgraded diffutils
-[0m[33mInstalling 57 / 59[0m
-python3-16-17-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling python3, version 3.6.4, release 17
-[0mUpgrading to new distribution release
-[36mExtracting the files of python3
-[0m[36mUpgraded python3
-[0m[33mInstalling 58 / 59[0m
-binutils-30-31-1-x86_64.delta.eopkg [cached]
-[01;32mInstalling binutils, version 2.29.1, release 31
-[0mUpgrading to new distribution release
-[36mExtracting the files of binutils
-[0m[36mUpgraded binutils
-[0m[33mInstalling 59 / 59[0m
-nasm-2.13.03-8-1-x86_64.eopkg [cached]
-[01;32mInstalling nasm, version 2.13.03, release 8
-[0mUpgrading to new upstream version
-[36mExtracting the files of nasm
-[0m[36mUpgraded nasm
-[0miproute2
-No packages to install.
-abireport                    autoconf        automake          binutils     
-bison                        bison-devel     catbox            cmake        
-diffstat                     diffutils       fakeroot          file-devel   
-flex                         flex-devel      g++               gcc          
-gettext-devel                gfortran        glibc-devel       gmp-devel    
-gobject-introspection-devel  intltool        libarchive-bin    libffi-devel 
-libgpg-error-devel           libgudev-devel  libtool-devel     libxml2-devel
-linux-headers                m4              make              meson        
-mpc-devel                    mpfr-devel      nano              nasm         
-ncurses-devel                openssl-devel   pam-devel         patch        
-perl-xmlparser               pkg-config      python-devel      quilt        
-readline-devel               texinfo         util-linux-devel  xz-devel     
-ypkg                         zlib-devel    
-No packages to install.
-[01;34mFollowing packages will be installed:[0m
-libpng  libpng-devel
-[33mTotal size of package(s): 179.00 KB[0m
-[33mDownloading 1 / 2[0m
-Package libpng found in repository Solus
-libpng-1.5.28-12-1-x86_64.eopkg [cached]
-[33mDownloading 2 / 2[0m
-Package libpng-devel found in repository Solus
-libpng-devel-1.5.28-12-1-x86_64.eopkg [cached]
-[33mInstalling 1 / 2[0m
-libpng-1.5.28-12-1-x86_64.eopkg [cached]
-[01;32mInstalling libpng, version 1.5.28, release 12
-[0m[36mExtracting the files of libpng
-[0m[36mInstalled libpng
-[0m[33mInstalling 2 / 2[0m
-libpng-devel-1.5.28-12-1-x86_64.eopkg [cached]
-[01;32mInstalling libpng-devel, version 1.5.28, release 12
-[0m[36mExtracting the files of libpng-devel
-[0m[36mInstalled libpng-devel
-[0m[34m[BuildDep][0m Checking build-deps for jbig2dec-0.14-1
-[34m[BuildDep][0m Requesting installation of: libpng-devel
-checking for autoconf... 
-checking for automake 1.7 or later...
-Checking for libtoolize... libtoolize
-Generating configuration files for jbig2dec, please wait....
-  aclocal 
-  libtoolize
-libtoolize: putting auxiliary files in '.'.
-libtoolize: copying file './ltmain.sh'
-libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
-libtoolize: and rerunning libtoolize and aclocal.
-libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
-  autoheader
-  creating config_types.h.in
-  automake --add-missing 
-  autoconf
-running ./configure --prefix=/usr --build=x86_64-solus-linux --libdir=/usr/lib64 --mandir=/usr/share/man --infodir=/usr/share/info --datadir=/usr/share --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/lib64/jbig2dec
-checking for a BSD-compatible install... /usr/bin/install -c
-checking whether build environment is sane... yes
-checking for a thread-safe mkdir -p... /bin/mkdir -p
-checking for gawk... gawk
-checking whether make sets $(MAKE)... yes
-checking whether make supports nested variables... yes
-checking for gcc... x86_64-solus-linux-gcc
-checking whether the C compiler works... yes
-checking for C compiler default output file name... a.out
-checking for suffix of executables... 
-checking whether we are cross compiling... no
-checking for suffix of object files... o
-checking whether we are using the GNU C compiler... yes
-checking whether x86_64-solus-linux-gcc accepts -g... yes
-checking for x86_64-solus-linux-gcc option to accept ISO C89... none needed
-checking whether x86_64-solus-linux-gcc understands -c and -o together... yes
-checking for style of include used by make... GNU
-checking dependency style of x86_64-solus-linux-gcc... gcc3
-checking build system type... x86_64-solus-linux-gnu
-checking host system type... x86_64-solus-linux-gnu
-checking how to print strings... printf
-checking for a sed that does not truncate output... /usr/bin/sed
-checking for grep that handles long lines and -e... /usr/bin/grep
-checking for egrep... /usr/bin/grep -E
-checking for fgrep... /usr/bin/grep -F
-checking for ld used by x86_64-solus-linux-gcc... /usr/bin/ld
-checking if the linker (/usr/bin/ld) is GNU ld... yes
-checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
-checking the name lister (/usr/bin/nm -B) interface... BSD nm
-checking whether ln -s works... yes
-checking the maximum length of command line arguments... 1572864
-checking how to convert x86_64-solus-linux-gnu file names to x86_64-solus-linux-gnu format... func_convert_file_noop
-checking how to convert x86_64-solus-linux-gnu file names to toolchain format... func_convert_file_noop
-checking for /usr/bin/ld option to reload object files... -r
-checking for objdump... objdump
-checking how to recognize dependent libraries... pass_all
-checking for dlltool... dlltool
-checking how to associate runtime and link libraries... printf %s\n
-checking for ar... ar
-checking for archiver @FILE support... @
-checking for strip... strip
-checking for ranlib... ranlib
-checking command to parse /usr/bin/nm -B output from x86_64-solus-linux-gcc object... ok
-checking for sysroot... no
-checking for a working dd... /bin/dd
-checking how to truncate binary pipes... /bin/dd bs=4096 count=1
-checking for mt... mt
-checking if mt is a manifest tool... no
-checking how to run the C preprocessor... x86_64-solus-linux-gcc -E
-checking for ANSI C header files... yes
-checking for sys/types.h... yes
-checking for sys/stat.h... yes
-checking for stdlib.h... yes
-checking for string.h... yes
-checking for memory.h... yes
-checking for strings.h... yes
-checking for inttypes.h... yes
-checking for stdint.h... yes
-checking for unistd.h... yes
-checking for dlfcn.h... yes
-checking for objdir... .libs
-checking if x86_64-solus-linux-gcc supports -fno-rtti -fno-exceptions... no
-checking for x86_64-solus-linux-gcc option to produce PIC... -fPIC -DPIC
-checking if x86_64-solus-linux-gcc PIC flag -fPIC -DPIC works... yes
-checking if x86_64-solus-linux-gcc static flag -static works... yes
-checking if x86_64-solus-linux-gcc supports -c -o file.o... yes
-checking if x86_64-solus-linux-gcc supports -c -o file.o... (cached) yes
-checking whether the x86_64-solus-linux-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
-checking whether -lc should be explicitly linked in... no
-checking dynamic linker characteristics... GNU/Linux ld.so
-checking how to hardcode library paths into programs... immediate
-checking whether stripping libraries is possible... yes
-checking if libtool supports shared libraries... yes
-checking whether to build shared libraries... yes
-checking whether to build static libraries... yes
-checking for library containing pow... -lm
-checking for png_create_write_struct in -lpng... yes
-checking for deflate in -lz... yes
-checking for ANSI C header files... (cached) yes
-checking libintl.h usability... yes
-checking libintl.h presence... yes
-checking for libintl.h... yes
-checking stddef.h usability... yes
-checking stddef.h presence... yes
-checking for stddef.h... yes
-checking for unistd.h... (cached) yes
-checking for strings.h... (cached) yes
-checking size of char... 1
-checking size of short... 2
-checking size of int... 4
-checking size of long... 8
-checking for stdint.h... (cached) yes
-checking for an ANSI C-conforming const... yes
-checking for size_t... yes
-checking whether byte ordering is bigendian... no
-checking for working memcmp... yes
-checking for snprintf... yes
-checking for memset... yes
-checking for strdup... yes
-checking for getopt_long... yes
-checking that generated files are newer than configure... done
-configure: creating ./config.status
-config.status: creating Makefile
-config.status: creating config_types.h
-config.status: creating config.h
-config.status: executing depfiles commands
-config.status: executing libtool commands
-
-checking for a BSD-compatible install... /usr/bin/install -c
-checking whether build environment is sane... yes
-checking for a thread-safe mkdir -p... /bin/mkdir -p
-checking for gawk... gawk
-checking whether make sets $(MAKE)... yes
-checking whether make supports nested variables... yes
-checking for gcc... x86_64-solus-linux-gcc
-checking whether the C compiler works... yes
-checking for C compiler default output file name... a.out
-checking for suffix of executables... 
-checking whether we are cross compiling... no
-checking for suffix of object files... o
-checking whether we are using the GNU C compiler... yes
-checking whether x86_64-solus-linux-gcc accepts -g... yes
-checking for x86_64-solus-linux-gcc option to accept ISO C89... none needed
-checking whether x86_64-solus-linux-gcc understands -c and -o together... yes
-checking for style of include used by make... GNU
-checking dependency style of x86_64-solus-linux-gcc... gcc3
-checking build system type... x86_64-solus-linux-gnu
-checking host system type... x86_64-solus-linux-gnu
-checking how to print strings... printf
-checking for a sed that does not truncate output... /usr/bin/sed
-checking for grep that handles long lines and -e... /usr/bin/grep
-checking for egrep... /usr/bin/grep -E
-checking for fgrep... /usr/bin/grep -F
-checking for ld used by x86_64-solus-linux-gcc... /usr/bin/ld
-checking if the linker (/usr/bin/ld) is GNU ld... yes
-checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
-checking the name lister (/usr/bin/nm -B) interface... BSD nm
-checking whether ln -s works... yes
-checking the maximum length of command line arguments... 1572864
-checking how to convert x86_64-solus-linux-gnu file names to x86_64-solus-linux-gnu format... func_convert_file_noop
-checking how to convert x86_64-solus-linux-gnu file names to toolchain format... func_convert_file_noop
-checking for /usr/bin/ld option to reload object files... -r
-checking for objdump... objdump
-checking how to recognize dependent libraries... pass_all
-checking for dlltool... dlltool
-checking how to associate runtime and link libraries... printf %s\n
-checking for ar... ar
-checking for archiver @FILE support... @
-checking for strip... strip
-checking for ranlib... ranlib
-checking command to parse /usr/bin/nm -B output from x86_64-solus-linux-gcc object... ok
-checking for sysroot... no
-checking for a working dd... /bin/dd
-checking how to truncate binary pipes... /bin/dd bs=4096 count=1
-checking for mt... mt
-checking if mt is a manifest tool... no
-checking how to run the C preprocessor... x86_64-solus-linux-gcc -E
-checking for ANSI C header files... yes
-checking for sys/types.h... yes
-checking for sys/stat.h... yes
-checking for stdlib.h... yes
-checking for string.h... yes
-checking for memory.h... yes
-checking for strings.h... yes
-checking for inttypes.h... yes
-checking for stdint.h... yes
-checking for unistd.h... yes
-checking for dlfcn.h... yes
-checking for objdir... .libs
-checking if x86_64-solus-linux-gcc supports -fno-rtti -fno-exceptions... no
-checking for x86_64-solus-linux-gcc option to produce PIC... -fPIC -DPIC
-checking if x86_64-solus-linux-gcc PIC flag -fPIC -DPIC works... yes
-checking if x86_64-solus-linux-gcc static flag -static works... yes
-checking if x86_64-solus-linux-gcc supports -c -o file.o... yes
-checking if x86_64-solus-linux-gcc supports -c -o file.o... (cached) yes
-checking whether the x86_64-solus-linux-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
-checking whether -lc should be explicitly linked in... no
-checking dynamic linker characteristics... GNU/Linux ld.so
-checking how to hardcode library paths into programs... immediate
-checking whether stripping libraries is possible... yes
-checking if libtool supports shared libraries... yes
-checking whether to build shared libraries... yes
-checking whether to build static libraries... yes
-checking for library containing pow... -lm
-checking for png_create_write_struct in -lpng... yes
-checking for deflate in -lz... yes
-checking for ANSI C header files... (cached) yes
-checking libintl.h usability... yes
-checking libintl.h presence... yes
-checking for libintl.h... yes
-checking stddef.h usability... yes
-checking stddef.h presence... yes
-checking for stddef.h... yes
-checking for unistd.h... (cached) yes
-checking for strings.h... (cached) yes
-checking size of char... 1
-checking size of short... 2
-checking size of int... 4
-checking size of long... 8
-checking for stdint.h... (cached) yes
-checking for an ANSI C-conforming const... yes
-checking for size_t... yes
-checking whether byte ordering is bigendian... no
-checking for working memcmp... yes
-checking for snprintf... yes
-checking for memset... yes
-checking for strdup... yes
-checking for getopt_long... yes
-checking that generated files are newer than configure... done
-configure: creating ./config.status
-config.status: creating Makefile
-config.status: creating config_types.h
-config.status: creating config.h
-config.status: config.h is unchanged
-config.status: executing depfiles commands
-config.status: executing libtool commands
-make  all-am
-make[1]: Entering directory '/home/build/YPKG/root/jbig2dec/build/jbig2dec-0.14'
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2.lo -MD -MP -MF .deps/jbig2.Tpo -c -o jbig2.lo jbig2.c
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_arith.lo -MD -MP -MF .deps/jbig2_arith.Tpo -c -o jbig2_arith.lo jbig2_arith.c
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_arith_int.lo -MD -MP -MF .deps/jbig2_arith_int.Tpo -c -o jbig2_arith_int.lo jbig2_arith_int.c
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_arith_iaid.lo -MD -MP -MF .deps/jbig2_arith_iaid.Tpo -c -o jbig2_arith_iaid.lo jbig2_arith_iaid.c
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2.lo -MD -MP -MF .deps/jbig2.Tpo -c jbig2.c  -fPIC -DPIC -o .libs/jbig2.o
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_arith.lo -MD -MP -MF .deps/jbig2_arith.Tpo -c jbig2_arith.c  -fPIC -DPIC -o .libs/jbig2_arith.o
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_arith_int.lo -MD -MP -MF .deps/jbig2_arith_int.Tpo -c jbig2_arith_int.c  -fPIC -DPIC -o .libs/jbig2_arith_int.o
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_arith_iaid.lo -MD -MP -MF .deps/jbig2_arith_iaid.Tpo -c jbig2_arith_iaid.c  -fPIC -DPIC -o .libs/jbig2_arith_iaid.o
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_arith_int.lo -MD -MP -MF .deps/jbig2_arith_int.Tpo -c jbig2_arith_int.c -o jbig2_arith_int.o >/dev/null 2>&1
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_arith_iaid.lo -MD -MP -MF .deps/jbig2_arith_iaid.Tpo -c jbig2_arith_iaid.c -o jbig2_arith_iaid.o >/dev/null 2>&1
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2.lo -MD -MP -MF .deps/jbig2.Tpo -c jbig2.c -o jbig2.o >/dev/null 2>&1
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_arith.lo -MD -MP -MF .deps/jbig2_arith.Tpo -c jbig2_arith.c -o jbig2_arith.o >/dev/null 2>&1
-mv -f .deps/jbig2_arith_int.Tpo .deps/jbig2_arith_int.Plo
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_huffman.lo -MD -MP -MF .deps/jbig2_huffman.Tpo -c -o jbig2_huffman.lo jbig2_huffman.c
-mv -f .deps/jbig2_arith_iaid.Tpo .deps/jbig2_arith_iaid.Plo
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_segment.lo -MD -MP -MF .deps/jbig2_segment.Tpo -c -o jbig2_segment.lo jbig2_segment.c
-mv -f .deps/jbig2_arith.Tpo .deps/jbig2_arith.Plo
-mv -f .deps/jbig2.Tpo .deps/jbig2.Plo
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_page.lo -MD -MP -MF .deps/jbig2_page.Tpo -c -o jbig2_page.lo jbig2_page.c
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_symbol_dict.lo -MD -MP -MF .deps/jbig2_symbol_dict.Tpo -c -o jbig2_symbol_dict.lo jbig2_symbol_dict.c
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_huffman.lo -MD -MP -MF .deps/jbig2_huffman.Tpo -c jbig2_huffman.c  -fPIC -DPIC -o .libs/jbig2_huffman.o
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_segment.lo -MD -MP -MF .deps/jbig2_segment.Tpo -c jbig2_segment.c  -fPIC -DPIC -o .libs/jbig2_segment.o
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_huffman.lo -MD -MP -MF .deps/jbig2_huffman.Tpo -c jbig2_huffman.c -o jbig2_huffman.o >/dev/null 2>&1
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_symbol_dict.lo -MD -MP -MF .deps/jbig2_symbol_dict.Tpo -c jbig2_symbol_dict.c  -fPIC -DPIC -o .libs/jbig2_symbol_dict.o
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_segment.lo -MD -MP -MF .deps/jbig2_segment.Tpo -c jbig2_segment.c -o jbig2_segment.o >/dev/null 2>&1
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_page.lo -MD -MP -MF .deps/jbig2_page.Tpo -c jbig2_page.c  -fPIC -DPIC -o .libs/jbig2_page.o
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_symbol_dict.lo -MD -MP -MF .deps/jbig2_symbol_dict.Tpo -c jbig2_symbol_dict.c -o jbig2_symbol_dict.o >/dev/null 2>&1
-mv -f .deps/jbig2_huffman.Tpo .deps/jbig2_huffman.Plo
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_text.lo -MD -MP -MF .deps/jbig2_text.Tpo -c -o jbig2_text.lo jbig2_text.c
-mv -f .deps/jbig2_segment.Tpo .deps/jbig2_segment.Plo
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_generic.lo -MD -MP -MF .deps/jbig2_generic.Tpo -c -o jbig2_generic.lo jbig2_generic.c
-mv -f .deps/jbig2_symbol_dict.Tpo .deps/jbig2_symbol_dict.Plo
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_page.lo -MD -MP -MF .deps/jbig2_page.Tpo -c jbig2_page.c -o jbig2_page.o >/dev/null 2>&1
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_refinement.lo -MD -MP -MF .deps/jbig2_refinement.Tpo -c -o jbig2_refinement.lo jbig2_refinement.c
-mv -f .deps/jbig2_page.Tpo .deps/jbig2_page.Plo
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_mmr.lo -MD -MP -MF .deps/jbig2_mmr.Tpo -c -o jbig2_mmr.lo jbig2_mmr.c
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_text.lo -MD -MP -MF .deps/jbig2_text.Tpo -c jbig2_text.c  -fPIC -DPIC -o .libs/jbig2_text.o
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_generic.lo -MD -MP -MF .deps/jbig2_generic.Tpo -c jbig2_generic.c  -fPIC -DPIC -o .libs/jbig2_generic.o
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_text.lo -MD -MP -MF .deps/jbig2_text.Tpo -c jbig2_text.c -o jbig2_text.o >/dev/null 2>&1
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_refinement.lo -MD -MP -MF .deps/jbig2_refinement.Tpo -c jbig2_refinement.c  -fPIC -DPIC -o .libs/jbig2_refinement.o
-mv -f .deps/jbig2_text.Tpo .deps/jbig2_text.Plo
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_halftone.lo -MD -MP -MF .deps/jbig2_halftone.Tpo -c -o jbig2_halftone.lo jbig2_halftone.c
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_mmr.lo -MD -MP -MF .deps/jbig2_mmr.Tpo -c jbig2_mmr.c  -fPIC -DPIC -o .libs/jbig2_mmr.o
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_mmr.lo -MD -MP -MF .deps/jbig2_mmr.Tpo -c jbig2_mmr.c -o jbig2_mmr.o >/dev/null 2>&1
-mv -f .deps/jbig2_mmr.Tpo .deps/jbig2_mmr.Plo
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_image.lo -MD -MP -MF .deps/jbig2_image.Tpo -c -o jbig2_image.lo jbig2_image.c
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_halftone.lo -MD -MP -MF .deps/jbig2_halftone.Tpo -c jbig2_halftone.c  -fPIC -DPIC -o .libs/jbig2_halftone.o
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_refinement.lo -MD -MP -MF .deps/jbig2_refinement.Tpo -c jbig2_refinement.c -o jbig2_refinement.o >/dev/null 2>&1
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_image.lo -MD -MP -MF .deps/jbig2_image.Tpo -c jbig2_image.c  -fPIC -DPIC -o .libs/jbig2_image.o
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_generic.lo -MD -MP -MF .deps/jbig2_generic.Tpo -c jbig2_generic.c -o jbig2_generic.o >/dev/null 2>&1
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_halftone.lo -MD -MP -MF .deps/jbig2_halftone.Tpo -c jbig2_halftone.c -o jbig2_halftone.o >/dev/null 2>&1
-mv -f .deps/jbig2_refinement.Tpo .deps/jbig2_refinement.Plo
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_image_pbm.lo -MD -MP -MF .deps/jbig2_image_pbm.Tpo -c -o jbig2_image_pbm.lo jbig2_image_pbm.c
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_image_pbm.lo -MD -MP -MF .deps/jbig2_image_pbm.Tpo -c jbig2_image_pbm.c  -fPIC -DPIC -o .libs/jbig2_image_pbm.o
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_image.lo -MD -MP -MF .deps/jbig2_image.Tpo -c jbig2_image.c -o jbig2_image.o >/dev/null 2>&1
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_image_pbm.lo -MD -MP -MF .deps/jbig2_image_pbm.Tpo -c jbig2_image_pbm.c -o jbig2_image_pbm.o >/dev/null 2>&1
-mv -f .deps/jbig2_halftone.Tpo .deps/jbig2_halftone.Plo
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_metadata.lo -MD -MP -MF .deps/jbig2_metadata.Tpo -c -o jbig2_metadata.lo jbig2_metadata.c
-mv -f .deps/jbig2_generic.Tpo .deps/jbig2_generic.Plo
-/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT memento.lo -MD -MP -MF .deps/memento.Tpo -c -o memento.lo memento.c
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_metadata.lo -MD -MP -MF .deps/jbig2_metadata.Tpo -c jbig2_metadata.c  -fPIC -DPIC -o .libs/jbig2_metadata.o
-mv -f .deps/jbig2_image_pbm.Tpo .deps/jbig2_image_pbm.Plo
-x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2dec.o -MD -MP -MF .deps/jbig2dec.Tpo -c -o jbig2dec.o jbig2dec.c
-mv -f .deps/jbig2_image.Tpo .deps/jbig2_image.Plo
-x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT sha1.o -MD -MP -MF .deps/sha1.Tpo -c -o sha1.o sha1.c
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT memento.lo -MD -MP -MF .deps/memento.Tpo -c memento.c  -fPIC -DPIC -o .libs/memento.o
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT jbig2_metadata.lo -MD -MP -MF .deps/jbig2_metadata.Tpo -c jbig2_metadata.c -o jbig2_metadata.o >/dev/null 2>&1
-libtool: compile:  x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I. -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -MT memento.lo -MD -MP -MF .deps/memento.Tpo -c memento.c -o memento.o >/dev/null 2>&1
-mv -f .deps/sha1.Tpo .deps/sha1.Po
-x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.     -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT jbig2_image_png.o -MD -MP -MF .deps/jbig2_image_png.Tpo -c -o jbig2_image_png.o jbig2_image_png.c
-mv -f .deps/memento.Tpo .deps/memento.Plo
-x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.    -DTEST -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT test_sha1-sha1.o -MD -MP -MF .deps/test_sha1-sha1.Tpo -c -o test_sha1-sha1.o `test -f 'sha1.c' || echo './'`sha1.c
-mv -f .deps/jbig2_metadata.Tpo .deps/jbig2_metadata.Plo
-x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.    -DTEST -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT test_huffman-jbig2_huffman.o -MD -MP -MF .deps/test_huffman-jbig2_huffman.Tpo -c -o test_huffman-jbig2_huffman.o `test -f 'jbig2_huffman.c' || echo './'`jbig2_huffman.c
-mv -f .deps/test_sha1-sha1.Tpo .deps/test_sha1-sha1.Po
-x86_64-solus-linux-gcc -DHAVE_CONFIG_H -I.    -DTEST -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -MT test_arith-jbig2_arith.o -MD -MP -MF .deps/test_arith-jbig2_arith.Tpo -c -o test_arith-jbig2_arith.o `test -f 'jbig2_arith.c' || echo './'`jbig2_arith.c
-mv -f .deps/jbig2dec.Tpo .deps/jbig2dec.Po
-mv -f .deps/test_huffman-jbig2_huffman.Tpo .deps/test_huffman-jbig2_huffman.Po
-/bin/sh ./libtool  --tag=CC   --mode=link x86_64-solus-linux-gcc  -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall  -version-info 0:0:0 -no-undefined -Wl,--copy-dt-needed-entries -Wl,-O1 -Wl,-z,relro -Wl,-z,now -Wl,-z,max-page-size=0x1000 -Wl,-Bsymbolic-functions -o libjbig2dec.la -rpath /usr/lib64 jbig2.lo jbig2_arith.lo jbig2_arith_int.lo jbig2_arith_iaid.lo jbig2_huffman.lo jbig2_segment.lo jbig2_page.lo jbig2_symbol_dict.lo jbig2_text.lo jbig2_generic.lo jbig2_refinement.lo jbig2_mmr.lo jbig2_halftone.lo jbig2_image.lo jbig2_image_pbm.lo jbig2_metadata.lo memento.lo  -lm 
-/bin/sh ./libtool  --tag=CC   --mode=link x86_64-solus-linux-gcc -DTEST -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall   -Wl,--copy-dt-needed-entries -Wl,-O1 -Wl,-z,relro -Wl,-z,now -Wl,-z,max-page-size=0x1000 -Wl,-Bsymbolic-functions -o test_sha1 test_sha1-sha1.o  -lm 
-mv -f .deps/test_arith-jbig2_arith.Tpo .deps/test_arith-jbig2_arith.Po
-mv -f .deps/jbig2_image_png.Tpo .deps/jbig2_image_png.Po
-libtool: link: x86_64-solus-linux-gcc -DTEST -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -Wl,--copy-dt-needed-entries -Wl,-O1 -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,max-page-size=0x1000 -Wl,-Bsymbolic-functions -o test_sha1 test_sha1-sha1.o  -lm
-libtool: link: x86_64-solus-linux-gcc -shared  -fPIC -DPIC  .libs/jbig2.o .libs/jbig2_arith.o .libs/jbig2_arith_int.o .libs/jbig2_arith_iaid.o .libs/jbig2_huffman.o .libs/jbig2_segment.o .libs/jbig2_page.o .libs/jbig2_symbol_dict.o .libs/jbig2_text.o .libs/jbig2_generic.o .libs/jbig2_refinement.o .libs/jbig2_mmr.o .libs/jbig2_halftone.o .libs/jbig2_image.o .libs/jbig2_image_pbm.o .libs/jbig2_metadata.o .libs/memento.o   -lm  -mtune=generic -march=x86-64 -g2 -O2 -fstack-protector-strong -Wl,--copy-dt-needed-entries -Wl,-O1 -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,max-page-size=0x1000 -Wl,-Bsymbolic-functions   -Wl,-soname -Wl,libjbig2dec.so.0 -o .libs/libjbig2dec.so.0.0.0
-libtool: link: (cd ".libs" && rm -f "libjbig2dec.so.0" && ln -s "libjbig2dec.so.0.0.0" "libjbig2dec.so.0")
-libtool: link: (cd ".libs" && rm -f "libjbig2dec.so" && ln -s "libjbig2dec.so.0.0.0" "libjbig2dec.so")
-libtool: link: ar cru .libs/libjbig2dec.a  jbig2.o jbig2_arith.o jbig2_arith_int.o jbig2_arith_iaid.o jbig2_huffman.o jbig2_segment.o jbig2_page.o jbig2_symbol_dict.o jbig2_text.o jbig2_generic.o jbig2_refinement.o jbig2_mmr.o jbig2_halftone.o jbig2_image.o jbig2_image_pbm.o jbig2_metadata.o memento.o
-libtool: link: ranlib .libs/libjbig2dec.a
-libtool: link: ( cd ".libs" && rm -f "libjbig2dec.la" && ln -s "../libjbig2dec.la" "libjbig2dec.la" )
-/bin/sh ./libtool  --tag=CC   --mode=link x86_64-solus-linux-gcc  -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall   -Wl,--copy-dt-needed-entries -Wl,-O1 -Wl,-z,relro -Wl,-z,now -Wl,-z,max-page-size=0x1000 -Wl,-Bsymbolic-functions -o jbig2dec jbig2dec.o sha1.o libjbig2dec.la  jbig2_image_png.o -lpng -lz -lm 
-/bin/sh ./libtool  --tag=CC   --mode=link x86_64-solus-linux-gcc -DTEST -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall   -Wl,--copy-dt-needed-entries -Wl,-O1 -Wl,-z,relro -Wl,-z,now -Wl,-z,max-page-size=0x1000 -Wl,-Bsymbolic-functions -o test_arith test_arith-jbig2_arith.o libjbig2dec.la -lm 
-/bin/sh ./libtool  --tag=CC   --mode=link x86_64-solus-linux-gcc -DTEST -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall   -Wl,--copy-dt-needed-entries -Wl,-O1 -Wl,-z,relro -Wl,-z,now -Wl,-z,max-page-size=0x1000 -Wl,-Bsymbolic-functions -o test_huffman test_huffman-jbig2_huffman.o libjbig2dec.la -lm 
-libtool: link: x86_64-solus-linux-gcc -DTEST -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -Wl,--copy-dt-needed-entries -Wl,-O1 -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,max-page-size=0x1000 -Wl,-Bsymbolic-functions -o .libs/test_huffman test_huffman-jbig2_huffman.o  ./.libs/libjbig2dec.so -lm -Wl,-rpath -Wl,/usr/lib64
-libtool: link: x86_64-solus-linux-gcc -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -Wl,--copy-dt-needed-entries -Wl,-O1 -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,max-page-size=0x1000 -Wl,-Bsymbolic-functions -o .libs/jbig2dec jbig2dec.o sha1.o jbig2_image_png.o  ./.libs/libjbig2dec.so -lpng -lz -lm -Wl,-rpath -Wl,/usr/lib64
-libtool: link: x86_64-solus-linux-gcc -DTEST -mtune=generic -march=x86-64 -g2 -O2 -pipe -fPIC -Wformat -Wformat-security -D_FORTIFY_SOURCE=2 -fstack-protector-strong --param ssp-buffer-size=32 -fasynchronous-unwind-tables -ftree-vectorize -feliminate-unused-debug-types -Wall -Wno-error -Wp,-D_REENTRANT -Wall -Wl,--copy-dt-needed-entries -Wl,-O1 -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,max-page-size=0x1000 -Wl,-Bsymbolic-functions -o .libs/test_arith test_arith-jbig2_arith.o  ./.libs/libjbig2dec.so -lm -Wl,-rpath -Wl,/usr/lib64
-make[1]: Leaving directory '/home/build/YPKG/root/jbig2dec/build/jbig2dec-0.14'
-make[1]: Entering directory '/home/build/YPKG/root/jbig2dec/build/jbig2dec-0.14'
- /bin/mkdir -p '/home/build/YPKG/root/jbig2dec/install/usr/include'
- /bin/mkdir -p '/home/build/YPKG/root/jbig2dec/install/usr/share/man/man1'
- /bin/mkdir -p '/home/build/YPKG/root/jbig2dec/install/usr/lib64'
- /bin/sh ./libtool   --mode=install /usr/bin/install -c   libjbig2dec.la '/home/build/YPKG/root/jbig2dec/install/usr/lib64'
- /usr/bin/install -c -m 644 jbig2.h '/home/build/YPKG/root/jbig2dec/install/usr/include'
- /usr/bin/install -c -m 644 jbig2dec.1 '/home/build/YPKG/root/jbig2dec/install/usr/share/man/man1'
-libtool: install: /usr/bin/install -c .libs/libjbig2dec.so.0.0.0 /home/build/YPKG/root/jbig2dec/install/usr/lib64/libjbig2dec.so.0.0.0
-libtool: install: (cd /home/build/YPKG/root/jbig2dec/install/usr/lib64 && { ln -s -f libjbig2dec.so.0.0.0 libjbig2dec.so.0 || { rm -f libjbig2dec.so.0 && ln -s libjbig2dec.so.0.0.0 libjbig2dec.so.0; }; })
-libtool: install: (cd /home/build/YPKG/root/jbig2dec/install/usr/lib64 && { ln -s -f libjbig2dec.so.0.0.0 libjbig2dec.so || { rm -f libjbig2dec.so && ln -s libjbig2dec.so.0.0.0 libjbig2dec.so; }; })
-libtool: install: /usr/bin/install -c .libs/libjbig2dec.lai /home/build/YPKG/root/jbig2dec/install/usr/lib64/libjbig2dec.la
-libtool: install: /usr/bin/install -c .libs/libjbig2dec.a /home/build/YPKG/root/jbig2dec/install/usr/lib64/libjbig2dec.a
-libtool: install: chmod 644 /home/build/YPKG/root/jbig2dec/install/usr/lib64/libjbig2dec.a
-libtool: install: ranlib /home/build/YPKG/root/jbig2dec/install/usr/lib64/libjbig2dec.a
- /bin/mkdir -p '/home/build/YPKG/root/jbig2dec/install/usr/bin'
-  /bin/sh ./libtool   --mode=install /usr/bin/install -c jbig2dec '/home/build/YPKG/root/jbig2dec/install/usr/bin'
-libtool: install: /usr/bin/install -c .libs/jbig2dec /home/build/YPKG/root/jbig2dec/install/usr/bin/jbig2dec
-make[1]: Leaving directory '/home/build/YPKG/root/jbig2dec/build/jbig2dec-0.14'
-[34m[Info][0m Building jbig2dec-0.14
-[34m[Build][0m Building native package
-[34m[Source][0m Extracting source
-[34m[Build][0m Running step: setup
-[34m[Build][0m Enabling ccache
-[32m[Build][0m setup successful
-[34m[Build][0m Running step: build
-[34m[Build][0m Enabling ccache
-[32m[Build][0m build successful
-[34m[Build][0m Running step: install
-[34m[Build][0m Enabling ccache
-[32m[Build][0m install successful
-[34m[Examine][0m Examining packages
-[34m[Stripped][0m /usr/bin/jbig2dec
-[34m[Stripped][0m /usr/lib64/libjbig2dec.so.0.0.0
-[34m[Clean][0m Removed unwanted file: /usr/lib64/libjbig2dec.la
-[34m[Dependency][0m /usr/bin/jbig2dec adds dependency on libpng15.so.15 from libpng
-[34m[Dependency][0m /usr/bin/jbig2dec adds dependency on libc.so.6 from glibc
-[34m[SOLINK][0m jbig2dec-devel depends on jbig2dec through .so link
-[34m[Package][0m Creating /home/build/work/jbig2dec-devel-0.14-1-1-x86_64.eopkg ...
-[34m[Package][0m Creating /home/build/work/jbig2dec-0.14-1-1-x86_64.eopkg ...
-[32m[Package][0m Building complete
-make[1]: Leaving directory '/home/oulongwu/repository/jbig2dec'
-make abireport
-make[1]: Entering directory '/home/oulongwu/repository/jbig2dec'
-abireport -p abi_ -D `dirname package.yml` scan-packages `dirname package.yml`
-make[1]: Leaving directory '/home/oulongwu/repository/jbig2dec'
