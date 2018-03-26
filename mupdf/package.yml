@@ -1,0 +1,34 @@
+name       : mupdf
+version    : 1.12.0
+release    : 1
+source     :
+    - https://github.com/ArtifexSoftware/mupdf/archive/1.12.0.tar.gz : 9cb44cf091d85a823078cf3990862299ce53b9b54ef9747e6053653ce0bf7a64
+license    : AGPL-3.0
+component  : office.viewers
+summary    : A lightweight PDF, XPS, and E-book viewer
+description: |
+    MuPDF is a lightweight open source software framework for viewing and converting PDF, XPS, and E-book documents.
+libsplit   : no
+builddeps  :
+    - pkgconfig(freeglut)
+    - pkgconfig(freetype2)
+    - pkgconfig(glu)
+    - pkgconfig(libcurl)
+    - pkgconfig(libjpeg)
+    - pkgconfig(libopenjp2)
+    - pkgconfig(xrandr)
+    - ghostscript-devel
+    - jbig2dec-devel
+setup      : |
+    %patch -p1 < $pkgfiles/0001-mupdf-openjpeg.patch
+build      : |
+    %make
+install    : |
+    prefix=/usr %make_install
+
+    ln -sv /usr/bin/mupdf-x11 $installdir/usr/bin/mupdf
+
+    install -Dm00644 $pkgfiles/mupdf.desktop $installdir/usr/share/applications/mupdf.desktop
+    install -Dm00755 $pkgfiles/mupdf-select-file $installdir/usr/bin/mupdf-select-file
+
+    install -Dm00644 $pkgfiles/mupdf.png $installdir/usr/share/pixmaps/mupdf.png
