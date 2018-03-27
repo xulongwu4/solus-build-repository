@@ -8,7 +8,9 @@ component  : office.viewers
 summary    : A lightweight PDF, XPS, and E-book viewer
 description: |
     MuPDF is a lightweight open source software framework for viewing and converting PDF, XPS, and E-book documents.
-libsplit   : no
+patterns   :
+    - /usr/lib
+    - /usr/include
 builddeps  :
     - pkgconfig(freeglut)
     - pkgconfig(freetype2)
