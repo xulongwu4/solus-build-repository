@@ -1,0 +1,24 @@
+name       : duplicacy
+version    : 2.1.0
+release    : 1
+source     :
+    - https://github.com/gilbertchen/duplicacy/archive/v2.1.0.tar.gz : 397cac479cb3424d1d6128628adb63f52fc5d7eb9e6f71de09784b1f04afda81
+license    : Acrosync
+component  : system.utils
+summary    : A new generation cloud backup tool 
+description: |
+    Duplicacy is a new generation cross-platform cloud backup tool based on the idea of Lock-Free Deduplication. It is the only cloud backup tool that allows multiple computers to back up to the same storage simultaneously without using any locks (thus readily amenable to various cloud storage services).
+networking : yes
+builddeps  :
+    - git
+    - golang
+setup      : |
+    mkdir -p $workdir/vendor/src/github.com/gilbertchen
+    ln -s $workdir $workdir/vendor/src/github.com/gilbertchen/duplicacy
+    pushd duplicacy
+    GOPATH=$workdir/vendor go get -d -v
+    popd
+build      : |
+    GOPATH=$workdir/vendor go build duplicacy/duplicacy_main.go
+install    : |
+    install -Dm00755 $workdir/duplicacy_main $installdir/usr/bin/duplicacy
