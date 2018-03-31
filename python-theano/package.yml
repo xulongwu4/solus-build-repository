@@ -1,0 +1,23 @@
+name       : python-theano
+version    : 1.0.1
+release    : 1
+source     :
+    - https://github.com/Theano/Theano/archive/rel-1.0.1.tar.gz : 7a76658a2ea1eca4d365213c55d553501419ac147396b09260825b30a9352b54
+license    : BSD
+component  : programming.python
+summary    : Definition and optimized evaluation of mathematical expressions on Numpy arrays.
+description: |
+    Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently. It can use GPUs and perform efficient symbolic differentiation.
+builddeps  :
+    - python-setuptools
+rundeps    :
+    - numpy
+    - openblas-devel
+    - python-six
+    - scipy
+build      : |
+    %python_setup
+    %python3_setup
+install    : |
+    %python_install
+    %python3_install
