@@ -1,0 +1,24 @@
+name       : python-statsmodels
+version    : 0.8.0
+release    : 1
+source     :
+    - https://github.com/statsmodels/statsmodels/archive/v0.8.0.tar.gz : 4dc5d6a06b97e0fdd4815aa5e894f83d3d50eecd67c445445ffe6cdf37834cf9
+license    : Modified BSD-3-Clause
+component  : programming.python
+summary    : Statistical modeling and econometrics in Python
+description: |
+    Statsmodels is a Python package that provides a complement to scipy for statistical computations including descriptive statistics and estimation and inference for statistical models.
+builddeps  :
+    - cython
+    - numpy
+    - python-setuptools
+rundeps    :
+    - python-pandas
+    #- python-patsy
+    - scipy
+build      : |
+    %python_setup
+    %python3_setup
+install    : |
+    %python_install
+    %python3_install
