@@ -1,0 +1,26 @@
+name       : python-h5py
+version    : 2.7.1
+release    : 1
+source     :
+    - https://github.com/h5py/h5py/archive/2.7.1.tar.gz : 55bdefda47c49973ec24384097d18eb5f84797c057aaf0bf0b6b0f7860ad43e7
+license    : BSD
+component  : programming.python
+summary    : Pythonic interface to the HDF5 binary data format.
+description: |
+    The h5py package is a Pythonic interface to the HDF5 binary data format.
+builddeps  :
+    - cython
+    - hdf5-devel
+    - numpy
+    - python-pkgconfig
+    - python-setuptools
+    - python-six
+rundeps    :
+    - numpy
+    - python-six
+build      : |
+    %python_setup
+    %python3_setup
+install    : |
+    %python_install
+    %python3_install
