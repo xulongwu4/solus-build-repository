@@ -1,0 +1,22 @@
+name       : pymc3
+version    : 3.3
+release    : 1
+source     :
+    - https://github.com/pymc-devs/pymc3/archive/v3.3.tar.gz : 1af9ecf29b5c2a916e55f75ec96c3dede575de6052efd618af44d306c5928402
+license    : Apache-2.0
+component  : programming.python
+summary    : Python package for Bayesian statistical modeling and Probabilistic Machine Learning
+description: |
+    PyMC3 is a Python package for Bayesian statistical modeling and Probabilistic Machine Learning which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms.
+builddeps  :
+    - python-setuptools
+rundeps    :
+    - python-enum34
+    - python-pandas
+    - python-six
+build      : |
+    %python_setup
+    %python3_setup
+install    : |
+    %python_install
+    %python3_install
