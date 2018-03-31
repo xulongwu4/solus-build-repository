@@ -46,7 +46,7 @@ bi-level image compression spec. Also known as ITU T.88 and ISO IEC
     </Package>
     <History>
         <Update release="1">
-            <Date>2018-03-26</Date>
+            <Date>2018-03-27</Date>
             <Version>0.14</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>
