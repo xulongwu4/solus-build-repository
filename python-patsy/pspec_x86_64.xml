@@ -1,6 +1,6 @@
 <PISI>
     <Source>
-        <Name>patsy</Name>
+        <Name>python-patsy</Name>
         <Packager>
             <Name>Longwu Ou</Name>
             <Email>oulongwu@mit.edu</Email>
@@ -14,7 +14,7 @@ It is closely inspired by and compatible with the formula mini-language used in 
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
-        <Name>patsy</Name>
+        <Name>python-patsy</Name>
         <Summary xml:lang="en">Python package for describing statistical models and building design matrices</Summary>
         <Description xml:lang="en">patsy is a Python package for describing statistical models (especially linear models, or models that have a linear component) and building design matrices.
 It is closely inspired by and compatible with the formula mini-language used in R and S.
@@ -155,7 +155,7 @@ It is closely inspired by and compatible with the formula mini-language used in 
     </Package>
     <History>
         <Update release="1">
-            <Date>2018-03-31</Date>
+            <Date>2018-04-01</Date>
             <Version>0.5.0</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>
