@@ -1,0 +1,22 @@
+name       : bazel
+version    : 0.11.1
+release    : 1
+source     :
+    - https://github.com/bazelbuild/bazel/releases/download/0.11.1/bazel-0.11.1-dist.zip : e8d762bcc01566fa50952c8028e95cfbe7545a39b8ceb3a0d0d6df33b25b333f
+license    : Apache-2.0
+component  : system.devel
+summary    : A fast, scalable, multi-language and extensible build system
+description: |
+    Bazel is an open-source build and test tool similar to Make, Maven, and Gradle. It uses a human-readable, high-level build language.
+    Bazel supports projects in multiple languages and builds outputs for multiple platforms.
+    Bazel supports large codebases across multiple repositories, and large numbers of users.
+builddeps  :
+    - openjdk-8-devel
+build      : |
+    ./compile.sh
+    output/bazel build //scripts:bazel-complete.bash
+    output/bazel shutdown
+install    : |
+    install -Dm00755 $workdir/output/bazel $installdir/usr/bin/bazel
+    install -Dm00644 $workdir/bazel-bin/scripts/bazel-complete.bash $installdir/usr/share/bash-completion/completions/bazel
+    install -Dm00644 $workdir/scripts/zsh_completion/_bazel $installdir/usr/share/zsh/site-functions/_bazel

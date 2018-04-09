@@ -14,6 +14,11 @@ rundeps    :
     - python-enum34
     - python-pandas
     - python-six
+    #- python-theano
+    #- python-patsy
+    #- python-joblib
+    #- python-tqdm
+    #- python-h5py
 build      : |
     %python_setup
     %python3_setup

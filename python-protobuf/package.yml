@@ -2,17 +2,35 @@ name       : python-protobuf
 version    : 3.5.1
 release    : 1
 source     :
-    - https://pypi.python.org/packages/14/03/ff5279abda7b46e9538bfb1411d42831b7e65c460d73831ed2445649bc02/protobuf-3.5.1.tar.gz : 95b78959572de7d7fafa3acb718ed71f482932ddddddbd29ba8319c10639d863
+    - https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-python-3.5.1.tar.gz : 13d3c15ebfad8c28bee203dd4a0f6e600d2a7d2243bac8b5d0e517466500fcae
 license    : BSD-3-Clause
 component  : programming.python
 summary    : Protocol Buffers - Google's data interchange format
 description: |
     Protocol Buffers - Google's data interchange format
 builddeps  :
+    - pkgconfig(python3)
+    - pkgconfig(protobuf)
     - python-setuptools
+rundeps    :
+    - python-setuptools
+    - python-six
+setup      : |
+    cp -a python py2build
+    cp -a python py3build
 build      : |
-    %python_setup
-    %python3_setup
+    pushd py2build 
+    python2 setup.py build --cpp_implementation
+    popd
+
+    pushd py3build
+    python3 setup.py build --cpp_implementation
+    popd
 install    : |
-    %python_install
-    %python3_install
+    pushd py2build
+    python2 setup.py install --root="%installroot%" --cpp_implementation
+    popd
+
+    pushd py3build
+    python3 setup.py install --root="%installroot%" --cpp_implementation
+    popd

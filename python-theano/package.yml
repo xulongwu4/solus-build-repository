@@ -13,7 +13,9 @@ builddeps  :
 rundeps    :
     - numpy
     - openblas-devel
+    - python-devel # For g++ compilation
     - python-six
+    - python3-devel # For g++ compilation
     - scipy
 build      : |
     %python_setup
