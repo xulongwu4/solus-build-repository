@@ -1,0 +1,83 @@
+name       : tensorflow
+version    : 1.7.0
+release    : 1
+source     :
+    - https://github.com/tensorflow/tensorflow/archive/v1.7.0.tar.gz : c676a96fc8700722816b2b98c85578b2f99fac7a7b2484c9c7f0641484f8d50d
+license    : Apache-2.0
+component  : programming.python
+summary    : Library for computation using data flow graphs for scalable machine learning
+description: |
+    TensorFlow is an open source software library for numerical computation using data flow graphs.
+networking : yes
+builddeps  :
+    - pkgconfig(ompi)
+    - pkgconfig(python3)
+    - bazel
+    - numpy
+    - pip
+    - python-wheel
+rundeps    :
+    - python-bleach
+    - python-html5lib
+    - python-markdown
+    - python-termcolor
+    - python-werkzeug
+setup      : |
+    %patch -p1 < $pkgfiles/0001-mpi-build.patch
+
+    cp -a $workdir $PKG_BUILD_DIR/py2build
+    cp -a $workdir $PKG_BUILD_DIR/py3build
+
+    export USE_DEFAULT_PYTHON_LIB_PATH=1
+    export TF_NEED_JEMALLOC=1
+    export TF_NEED_GCP=0
+    export TF_NEED_HDFS=1
+    export TF_NEED_S3=0
+    export TF_NEED_KAFKA=0
+    export TF_ENABLE_XLA=1
+    export TF_NEED_GDR=0
+    #export TF_NEED_GDR=1 # Need librdma
+    export TF_NEED_VERBS=0
+    export TF_NEED_OPENCL_SYCL=0
+    export TF_NEED_COMPUTECPP=0
+    export TF_NEED_MPI=1
+    export TF_NEED_CUDA=0
+    export TF_SET_ANDROID_WORKSPACE=0
+    export HOST_CXX_COMPILER=/usr/bin/g++
+    export HOST_C_COMPILER=/usr/bin/gcc
+    export MPI_HOME=/usr
+    export CC_OPT_FLAGS="-march=native" # "native" should not be used if pushing to Solus repo
+
+    pushd $PKG_BUILD_DIR/py2build
+    export PYTHON_BIN_PATH=/usr/bin/python
+    mkdir -p $PKG_BUILD_DIR/bazel-cache-py2build
+    TEST_TMPDIR=$PKG_BUILD_DIR/bazel-cache-py2build ./configure
+    popd
+
+    pushd $PKG_BUILD_DIR/py3build
+    export PYTHON_BIN_PATH=/usr/bin/python3
+    mkdir -p $PKG_BUILD_DIR/bazel-cache-py3build
+    TEST_TMPDIR=$PKG_BUILD_DIR/bazel-cache-py3build ./configure
+    popd
+build      : |
+    pushd $PKG_BUILD_DIR/py2build
+    TEST_TMPDIR=$PKG_BUILD_DIR/bazel-cache-py2build bazel build --config=opt //tensorflow/tools/pip_package:build_pip_package
+    mkdir -p tmp
+    TEST_TMPDIR=$PKG_BUILD_DIR/bazel-cache-py2build bazel-bin/tensorflow/tools/pip_package/build_pip_package tmp/tensorflow_pkg
+    popd
+
+    pushd $PKG_BUILD_DIR/py3build
+    TEST_TMPDIR=$PKG_BUILD_DIR/bazel-cache-py3build bazel build --config=opt //tensorflow/tools/pip_package:build_pip_package
+    mkdir -p tmp
+    TEST_TMPDIR=$PKG_BUILD_DIR/bazel-cache-py3build bazel-bin/tensorflow/tools/pip_package/build_pip_package tmp/tensorflow_pkg
+    popd
+install    : |
+    pushd $PKG_BUILD_DIR/py2build
+    WHEEL_NAME=$(basename tmp/tensorflow_pkg/tensorflow*.whl)
+    pip install --no-deps --root $installdir tmp/tensorflow_pkg/$WHEEL_NAME
+    popd
+
+    pushd $PKG_BUILD_DIR/py3build
+    WHEEL_NAME=$(basename tmp/tensorflow_pkg/tensorflow*.whl)
+    pip3 install --no-deps --root $installdir tmp/tensorflow_pkg/$WHEEL_NAME
+    popd
