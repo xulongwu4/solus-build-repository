@@ -20,6 +20,7 @@ rundeps    :
     - python-bleach
     - python-html5lib
     - python-markdown
+    #- python-protobuf
     - python-termcolor
     - python-werkzeug
 setup      : |
