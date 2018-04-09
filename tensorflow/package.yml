@@ -17,6 +17,7 @@ builddeps  :
     - pip
     - python-wheel
 rundeps    :
+    #- python-absl-py
     - python-bleach
     - python-html5lib
     - python-markdown

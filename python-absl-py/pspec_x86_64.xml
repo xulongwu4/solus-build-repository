@@ -1,0 +1,119 @@
+<PISI>
+    <Source>
+        <Name>python-absl-py</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>oulongwu@mit.edu</Email>
+        </Packager>
+        <License>Apache-2.0</License>
+        <PartOf>programming.python</PartOf>
+        <Summary xml:lang="en">Abseil Python Common Libraries</Summary>
+        <Description xml:lang="en">Abseil Python Common Libraries
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>python-absl-py</Name>
+        <Summary xml:lang="en">Abseil Python Common Libraries</Summary>
+        <Description xml:lang="en">Abseil Python Common Libraries
+</Description>
+        <PartOf>programming.python</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/__init__.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/app.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/app.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/command_name.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/command_name.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/__init__.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/_argument_parser.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/_argument_parser.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/_defines.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/_defines.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/_exceptions.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/_exceptions.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/_flag.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/_flag.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/_flagvalues.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/_flagvalues.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/_helpers.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/_helpers.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/_validators.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/flags/_validators.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/logging/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/logging/__init__.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/logging/converter.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/logging/converter.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/testing/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/testing/__init__.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/testing/_bazelize_command.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/testing/_bazelize_command.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/testing/absltest.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/testing/absltest.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/testing/flagsaver.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/testing/flagsaver.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/testing/parameterized.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/testing/parameterized.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/testing/xml_reporter.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl/testing/xml_reporter.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl_py-0.1.13-py2.7.egg-info/PKG-INFO</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl_py-0.1.13-py2.7.egg-info/SOURCES.txt</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl_py-0.1.13-py2.7.egg-info/dependency_links.txt</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl_py-0.1.13-py2.7.egg-info/requires.txt</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/absl_py-0.1.13-py2.7.egg-info/top_level.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/__pycache__/__init__.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/__pycache__/app.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/__pycache__/command_name.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/app.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/command_name.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/__pycache__/__init__.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/__pycache__/_argument_parser.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/__pycache__/_defines.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/__pycache__/_exceptions.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/__pycache__/_flag.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/__pycache__/_flagvalues.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/__pycache__/_helpers.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/__pycache__/_validators.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/_argument_parser.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/_defines.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/_exceptions.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/_flag.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/_flagvalues.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/_helpers.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/flags/_validators.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/logging/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/logging/__pycache__/__init__.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/logging/__pycache__/converter.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/logging/converter.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/testing/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/testing/__pycache__/__init__.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/testing/__pycache__/_bazelize_command.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/testing/__pycache__/absltest.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/testing/__pycache__/flagsaver.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/testing/__pycache__/parameterized.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/testing/__pycache__/xml_reporter.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/testing/_bazelize_command.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/testing/absltest.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/testing/flagsaver.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/testing/parameterized.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl/testing/xml_reporter.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl_py-0.1.13-py3.6.egg-info/PKG-INFO</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl_py-0.1.13-py3.6.egg-info/SOURCES.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl_py-0.1.13-py3.6.egg-info/dependency_links.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl_py-0.1.13-py3.6.egg-info/requires.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/absl_py-0.1.13-py3.6.egg-info/top_level.txt</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-04-09</Date>
+            <Version>0.1.13</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>oulongwu@mit.edu</Email>
+        </Update>
+    </History>
+</PISI>
