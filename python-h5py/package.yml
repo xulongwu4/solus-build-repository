@@ -1,13 +1,13 @@
 name       : python-h5py
-version    : 2.7.1
+version    : 2.8.0_rc1
 release    : 1
 source     :
-    - https://github.com/h5py/h5py/archive/2.7.1.tar.gz : 55bdefda47c49973ec24384097d18eb5f84797c057aaf0bf0b6b0f7860ad43e7
+    - https://github.com/h5py/h5py/archive/2.8.0rc1.tar.gz : 9d0e469bc9002381c13f69a560a3476ef1b05186796c9f6c2d2e06981cf9fe17
 license    : BSD
 component  : programming.python
-summary    : Pythonic interface to the HDF5 binary data format.
+summary    : Pythonic interface to the HDF5 binary data format
 description: |
-    The h5py package is a Pythonic interface to the HDF5 binary data format.
+    The h5py package is a Pythonic interface to the HDF5 binary data format
 builddeps  :
     - cython
     - hdf5-devel

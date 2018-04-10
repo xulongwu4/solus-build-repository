@@ -19,11 +19,11 @@ builddeps  :
 rundeps    :
     #- python-absl-py
     - python-bleach
-    - python-html5lib
+    - python-enum34
     - python-markdown
+    - python-mock
     #- python-protobuf
     - python-termcolor
-    - python-werkzeug
 setup      : |
     %patch -p1 < $pkgfiles/0001-mpi-build.patch
 

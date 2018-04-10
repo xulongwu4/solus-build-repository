@@ -1,17 +1,16 @@
 --config=mkl
 
 rundeps:
-termcolor
-astor
+#astor
 tensorboard
 gast
-protobuf
+# protobuf
 grpcio
-absl-py
-markdown
-bleach
-werkzeug
-html5lib
+# absl-py
+# markdown
+# bleach
+# werkzeug
+# html5lib
 
 #bazel build -c opt --copt=-mavx --copt=-msse4.2 --copt=-msse4.1 --copt=-msse3 --copt=-mavx2 --cop=-mfma --copt=-mfpmath=both -k//tensorflow/tools/pip_package:build_pip_package
 bazel build -c opt --copt=-mavx --copt=-msse4.2 --copt=-msse4.1 --copt=-msse3 --copt=-mavx2 --cop=-mfma -k//tensorflow/tools/pip_package:build_pip_package

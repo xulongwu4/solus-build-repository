@@ -1,0 +1,20 @@
+name       : python-pydot
+version    : 1.2.4
+release    : 1
+source     :
+    - https://github.com/erocarrera/pydot/archive/v1.2.4.tar.gz : 00f6353bcce4201f38a642a589ac97ef2ede1c29cf57117e83002de021a1ef4e
+license    : MIT
+component  : programming.python
+summary    : Python interface to Graphviz's Dot language
+description: |
+    Python interface to Graphviz's Dot language
+builddeps  :
+    - python-setuptools
+rundeps    :
+    - pyparsing
+build      : |
+    %python_setup
+    %python3_setup
+install    : |
+    %python_install
+    %python3_install

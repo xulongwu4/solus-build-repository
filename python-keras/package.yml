@@ -1,0 +1,25 @@
+name       : python-keras
+version    : 2.1.5
+release    : 1
+source     :
+    - https://github.com/keras-team/keras/archive/2.1.5.tar.gz : 9195027cc2deb063bee4964bb27be1f5e2411e44defc69348ed9ede418641557
+license    : MIT
+component  : programming.python
+summary    : Python Deep Learning library
+description: |
+    Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano
+builddeps  :
+    - python-setuptools
+rundeps    :
+    - python-six
+    - pyyaml
+    - scipy
+      #- python-h5py
+      #- python-pydot
+      #- tensorflow
+build      : |
+    %python_setup
+    %python3_setup
+install    : |
+    %python_install
+    %python3_install

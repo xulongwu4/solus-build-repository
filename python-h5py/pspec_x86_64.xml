@@ -19,11 +19,11 @@
 </Description>
         <PartOf>programming.python</PartOf>
         <Files>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/h5py-2.7.1-py2.7.egg-info/PKG-INFO</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/h5py-2.7.1-py2.7.egg-info/SOURCES.txt</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/h5py-2.7.1-py2.7.egg-info/dependency_links.txt</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/h5py-2.7.1-py2.7.egg-info/requires.txt</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/h5py-2.7.1-py2.7.egg-info/top_level.txt</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/h5py-2.8.0rc1-py2.7.egg-info/PKG-INFO</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/h5py-2.8.0rc1-py2.7.egg-info/SOURCES.txt</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/h5py-2.8.0rc1-py2.7.egg-info/dependency_links.txt</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/h5py-2.8.0rc1-py2.7.egg-info/requires.txt</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/h5py-2.8.0rc1-py2.7.egg-info/top_level.txt</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/h5py/__init__.py</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/h5py/__init__.pyc</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/h5py/_conv.so</Path>
@@ -67,6 +67,8 @@
             <Path fileType="library">/usr/lib/python2.7/site-packages/h5py/h5l.so</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/h5py/h5o.so</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/h5py/h5p.so</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/h5py/h5py_warnings.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/h5py/h5py_warnings.pyc</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/h5py/h5r.so</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/h5py/h5s.so</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/h5py/h5t.so</Path>
@@ -134,13 +136,14 @@
             <Path fileType="library">/usr/lib/python2.7/site-packages/h5py/utils.so</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/h5py/version.py</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/h5py/version.pyc</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/h5py-2.7.1-py3.6.egg-info/PKG-INFO</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/h5py-2.7.1-py3.6.egg-info/SOURCES.txt</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/h5py-2.7.1-py3.6.egg-info/dependency_links.txt</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/h5py-2.7.1-py3.6.egg-info/requires.txt</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/h5py-2.7.1-py3.6.egg-info/top_level.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/h5py-2.8.0rc1-py3.6.egg-info/PKG-INFO</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/h5py-2.8.0rc1-py3.6.egg-info/SOURCES.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/h5py-2.8.0rc1-py3.6.egg-info/dependency_links.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/h5py-2.8.0rc1-py3.6.egg-info/requires.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/h5py-2.8.0rc1-py3.6.egg-info/top_level.txt</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/h5py/__init__.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/h5py/__pycache__/__init__.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/h5py/__pycache__/h5py_warnings.cpython-36.pyc</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/h5py/__pycache__/highlevel.cpython-36.pyc</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/h5py/__pycache__/ipy_completer.cpython-36.pyc</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/h5py/__pycache__/version.cpython-36.pyc</Path>
@@ -185,6 +188,7 @@
             <Path fileType="library">/usr/lib/python3.6/site-packages/h5py/h5l.cpython-36m-x86_64-linux-gnu.so</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/h5py/h5o.cpython-36m-x86_64-linux-gnu.so</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/h5py/h5p.cpython-36m-x86_64-linux-gnu.so</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/h5py/h5py_warnings.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/h5py/h5r.cpython-36m-x86_64-linux-gnu.so</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/h5py/h5s.cpython-36m-x86_64-linux-gnu.so</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/h5py/h5t.cpython-36m-x86_64-linux-gnu.so</Path>
@@ -253,8 +257,8 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2018-03-31</Date>
-            <Version>2.7.1</Version>
+            <Date>2018-04-10</Date>
+            <Version>2.8.0_rc1</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>
             <Email>oulongwu@mit.edu</Email>
