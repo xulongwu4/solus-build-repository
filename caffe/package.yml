@@ -25,11 +25,23 @@ setup      : |
 build      : |
     %make
     %make pycaffe
-    #%make distribute
+    %make distribute
 install    : |
-    #DISTRIBUTE_DIR=$installdir %make distribute
-    %make distribute DISTRIBUTE_DIR=$installdir/usr
-    #%make_install
+    #%make distribute DISTRIBUTE_DIR=$installdir/usr
+    install -dm00755 $installdir/usr/bin
+    cp -R distribute/bin/* $installdir/usr/bin
+
+    rm -rf distribute/lib/*.a
+    install -dm00755 $installdir/usr/lib64
+    cp -R distribute/lib/* $installdir/usr/lib64
+
+    install -dm00644 $installdir/usr/include
+    cp -R distribute/include/* $installdir/usr/include
+
+    install -dm00644 $installdir/usr/share/caffe
+    cp -R distribute/proto/* $installdir/usr/share/caffe
+
+    cp -R distribute/python/caffe $installdir/usr/lib/python2.7/site-packages
 check      : |
     %make test
     %make runtest
