@@ -22,7 +22,7 @@ rundeps    :
     - python-enum34
     - python-markdown
     - python-mock
-    #- python-protobuf
+    - python-protobuf
     - python-termcolor
 setup      : |
     %patch -p1 < $pkgfiles/0001-mpi-build.patch

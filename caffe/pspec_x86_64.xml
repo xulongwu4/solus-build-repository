@@ -1,0 +1,174 @@
+<PISI>
+    <Source>
+        <Name>caffe</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>oulongwu@mit.edu</Email>
+        </Packager>
+        <License>BSD-2-Clause</License>
+        <PartOf>programming.tools</PartOf>
+        <Summary xml:lang="en">A fast open framework for deep learning</Summary>
+        <Description xml:lang="en">Caffe is a deep learning framework made with expression, speed, and modularity in mind
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>caffe</Name>
+        <Summary xml:lang="en">A fast open framework for deep learning</Summary>
+        <Description xml:lang="en">Caffe is a deep learning framework made with expression, speed, and modularity in mind
+</Description>
+        <PartOf>programming.tools</PartOf>
+        <Files>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="data">/include/caffe/blob.hpp</Path>
+            <Path fileType="data">/include/caffe/caffe.hpp</Path>
+            <Path fileType="data">/include/caffe/common.hpp</Path>
+            <Path fileType="data">/include/caffe/data_transformer.hpp</Path>
+            <Path fileType="data">/include/caffe/filler.hpp</Path>
+            <Path fileType="data">/include/caffe/internal_thread.hpp</Path>
+            <Path fileType="data">/include/caffe/layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layer_factory.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/absval_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/accuracy_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/argmax_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/base_conv_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/base_data_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/batch_norm_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/batch_reindex_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/bias_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/bnll_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/concat_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/contrastive_loss_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/conv_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/crop_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/cudnn_conv_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/cudnn_lcn_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/cudnn_lrn_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/cudnn_pooling_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/cudnn_relu_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/cudnn_sigmoid_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/cudnn_softmax_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/cudnn_tanh_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/data_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/deconv_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/dropout_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/dummy_data_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/eltwise_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/elu_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/embed_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/euclidean_loss_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/exp_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/filter_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/flatten_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/hdf5_data_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/hdf5_output_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/hinge_loss_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/im2col_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/image_data_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/infogain_loss_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/inner_product_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/input_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/log_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/loss_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/lrn_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/lstm_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/memory_data_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/multinomial_logistic_loss_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/mvn_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/neuron_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/parameter_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/pooling_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/power_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/prelu_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/python_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/recurrent_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/reduction_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/relu_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/reshape_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/rnn_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/scale_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/sigmoid_cross_entropy_loss_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/sigmoid_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/silence_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/slice_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/softmax_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/softmax_loss_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/split_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/spp_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/tanh_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/threshold_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/tile_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/layers/window_data_layer.hpp</Path>
+            <Path fileType="data">/include/caffe/net.hpp</Path>
+            <Path fileType="data">/include/caffe/parallel.hpp</Path>
+            <Path fileType="data">/include/caffe/proto/caffe.pb.h</Path>
+            <Path fileType="data">/include/caffe/sgd_solvers.hpp</Path>
+            <Path fileType="data">/include/caffe/solver.hpp</Path>
+            <Path fileType="data">/include/caffe/solver_factory.hpp</Path>
+            <Path fileType="data">/include/caffe/syncedmem.hpp</Path>
+            <Path fileType="data">/include/caffe/test/test_caffe_main.hpp</Path>
+            <Path fileType="data">/include/caffe/test/test_gradient_check_util.hpp</Path>
+            <Path fileType="data">/include/caffe/util/benchmark.hpp</Path>
+            <Path fileType="data">/include/caffe/util/blocking_queue.hpp</Path>
+            <Path fileType="data">/include/caffe/util/cudnn.hpp</Path>
+            <Path fileType="data">/include/caffe/util/db.hpp</Path>
+            <Path fileType="data">/include/caffe/util/db_leveldb.hpp</Path>
+            <Path fileType="data">/include/caffe/util/db_lmdb.hpp</Path>
+            <Path fileType="data">/include/caffe/util/device_alternate.hpp</Path>
+            <Path fileType="data">/include/caffe/util/format.hpp</Path>
+            <Path fileType="data">/include/caffe/util/gpu_util.cuh</Path>
+            <Path fileType="data">/include/caffe/util/hdf5.hpp</Path>
+            <Path fileType="data">/include/caffe/util/im2col.hpp</Path>
+            <Path fileType="data">/include/caffe/util/insert_splits.hpp</Path>
+            <Path fileType="data">/include/caffe/util/io.hpp</Path>
+            <Path fileType="data">/include/caffe/util/math_functions.hpp</Path>
+            <Path fileType="data">/include/caffe/util/mkl_alternate.hpp</Path>
+            <Path fileType="data">/include/caffe/util/nccl.hpp</Path>
+            <Path fileType="data">/include/caffe/util/rng.hpp</Path>
+            <Path fileType="data">/include/caffe/util/signal_handler.h</Path>
+            <Path fileType="data">/include/caffe/util/upgrade_proto.hpp</Path>
+            <Path fileType="data">/lib/libcaffe.a</Path>
+            <Path fileType="data">/lib/libcaffe.so</Path>
+            <Path fileType="data">/lib/libcaffe.so.1.0.0</Path>
+            <Path fileType="data">/proto/caffe.proto</Path>
+            <Path fileType="data">/python/CMakeLists.txt</Path>
+            <Path fileType="data">/python/caffe/__init__.py</Path>
+            <Path fileType="data">/python/caffe/_caffe.cpp</Path>
+            <Path fileType="data">/python/caffe/_caffe.so</Path>
+            <Path fileType="data">/python/caffe/classifier.py</Path>
+            <Path fileType="data">/python/caffe/coord_map.py</Path>
+            <Path fileType="data">/python/caffe/detector.py</Path>
+            <Path fileType="data">/python/caffe/draw.py</Path>
+            <Path fileType="data">/python/caffe/imagenet/ilsvrc_2012_mean.npy</Path>
+            <Path fileType="data">/python/caffe/io.py</Path>
+            <Path fileType="data">/python/caffe/net_spec.py</Path>
+            <Path fileType="data">/python/caffe/proto/__init__.py</Path>
+            <Path fileType="data">/python/caffe/proto/caffe_pb2.py</Path>
+            <Path fileType="data">/python/caffe/pycaffe.py</Path>
+            <Path fileType="data">/python/caffe/test/test_coord_map.py</Path>
+            <Path fileType="data">/python/caffe/test/test_draw.py</Path>
+            <Path fileType="data">/python/caffe/test/test_io.py</Path>
+            <Path fileType="data">/python/caffe/test/test_layer_type_list.py</Path>
+            <Path fileType="data">/python/caffe/test/test_nccl.py</Path>
+            <Path fileType="data">/python/caffe/test/test_net.py</Path>
+            <Path fileType="data">/python/caffe/test/test_net_spec.py</Path>
+            <Path fileType="data">/python/caffe/test/test_python_layer.py</Path>
+            <Path fileType="data">/python/caffe/test/test_python_layer_with_param_str.py</Path>
+            <Path fileType="data">/python/caffe/test/test_solver.py</Path>
+            <Path fileType="data">/python/classify.py</Path>
+            <Path fileType="data">/python/detect.py</Path>
+            <Path fileType="data">/python/draw_net.py</Path>
+            <Path fileType="data">/python/requirements.txt</Path>
+            <Path fileType="data">/python/train.py</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-04-12</Date>
+            <Version>1.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>oulongwu@mit.edu</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,35 @@
+name       : caffe
+version    : 1.0
+release    : 1
+source     :
+    - https://github.com/BVLC/caffe/archive/1.0.tar.gz : 71d3c9eb8a183150f965a465824d01fe82826c22505f7aa314f700ace03fa77f
+license    : BSD-2-Clause
+component  : programming.tools
+summary    : A fast open framework for deep learning
+description: |
+    Caffe is a deep learning framework made with expression, speed, and modularity in mind
+builddeps  :
+    - pkgconfig(gflags)
+    - pkgconfig(libglog)
+    - pkgconfig(openblas)
+    - pkgconfig(opencv)
+    - pkgconfig(protobuf)
+    - hdf5-devel
+    - leveldb-devel
+    - libboost-devel
+    - lmdb-devel
+    - numpy
+setup      : |
+    %patch -p1 < $pkgfiles/0001-Makefile-config.patch
+    mv Makefile.config.example Makefile.config
+build      : |
+    %make
+    %make pycaffe
+    #%make distribute
+install    : |
+    #DISTRIBUTE_DIR=$installdir %make distribute
+    %make distribute DISTRIBUTE_DIR=$installdir/usr
+    #%make_install
+check      : |
+    %make test
+    %make runtest

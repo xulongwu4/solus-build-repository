@@ -1,0 +1,43 @@
+name       : python-pytorch
+version    : 0.3.1
+release    : 1
+source     :
+    - https://github.com/pytorch/pytorch/archive/v0.3.1.tar.gz : ee7e5633382bcf9866852e6eaa7bae9000ffb92d6f35605b0031b8d836c4cd94
+license    : BSD
+component  : programming.python
+summary    : Tensors and Dynamic neural networks in Python with strong GPU acceleration
+description: |
+    PyTorch is an optimized tensor library for deep learning using GPUs and CPUs
+networking : yes
+builddeps  :
+    - pkgconfig(ompi)
+    - pkgconfig(openblas)
+    - pkgconfig(python3)
+    - git
+    - numpy
+    - python-setuptools
+    - pyyaml
+rundeps    :
+    - numpy
+    - python-cffi
+    - pyyaml
+setup      : |
+    git init
+    #git add *
+    #git commit -m "Initial commit"
+
+    nmodules=$(git config --file .gitmodules --get-regexp path | wc -l)
+
+    for i in $(seq 1 $nmodules)
+    do
+        path=$(git config --file .gitmodules --get-regexp path | awk '{ print $2 }' | sed -n ${i}p)
+        url=$(git config --file .gitmodules --get-regexp url | awk '{ print $2 }' | sed -n ${i}p)
+        rm -rf $path
+        git submodule add $url $path
+    done
+build      : |
+    %python_setup
+    %python3_setup
+install    : |
+    %python_install
+    %python3_install
