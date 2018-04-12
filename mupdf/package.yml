@@ -28,6 +28,16 @@ build      : |
 install    : |
     prefix=/usr %make_install
 
+    # Set proper permission bits
+    chmod 644 $installdir/usr/lib/*.a
+    chmod 644 $installdir/usr/share/man/man1/*.1
+    #chmod 0644 $(find $installdir/usr/share/doc/mupdf -type f)
+    find $installdir/usr/share/doc/mupdf -type f -print0 | xargs -0 chmod 644
+    #chmod 644 $installdir/usr/include/mupdf/*.h \
+    #           $installdir/usr/include/mupdf/fitz/*.h \
+    #           $installdir/usr/include/mupdf/pdf/*.h
+    find $installdir/usr/include/mupdf -type f -print0 | xargs -0 chmod 644
+
     ln -sv /usr/bin/mupdf-x11 $installdir/usr/bin/mupdf
 
     install -Dm00644 $pkgfiles/mupdf.desktop $installdir/usr/share/applications/mupdf.desktop
