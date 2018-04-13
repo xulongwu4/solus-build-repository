@@ -1,2 +1,0 @@
-rm libcaffe.a ? 
-figure out installation destination for python (compare with libboost)

@@ -1,7 +1,34 @@
-diff --git a/Makefile.config.example b/Makefile.config.example
+diff --git a/Makefile b/Makefile
+index 4d32416..5ef6067 100644
+--- a/Makefile
++++ b/Makefile
+@@ -207,7 +207,7 @@ WARNINGS := -Wall -Wno-sign-compare
+ ##############################
+ 
+ DISTRIBUTE_DIR ?= distribute
+-DISTRIBUTE_SUBDIRS := $(DISTRIBUTE_DIR)/bin $(DISTRIBUTE_DIR)/lib
++DISTRIBUTE_SUBDIRS := $(DISTRIBUTE_DIR)/bin $(DISTRIBUTE_DIR)/lib64
+ DIST_ALIASES := dist
+ ifneq ($(strip $(DISTRIBUTE_DIR)),distribute)
+ 		DIST_ALIASES += distribute
+@@ -690,10 +690,8 @@ $(DISTRIBUTE_DIR): all py | $(DISTRIBUTE_SUBDIRS)
+ 	cp $(TOOL_BINS) $(DISTRIBUTE_DIR)/bin
+ 	cp $(EXAMPLE_BINS) $(DISTRIBUTE_DIR)/bin
+ 	# add libraries
+-	cp $(STATIC_NAME) $(DISTRIBUTE_DIR)/lib
+-	install -m 644 $(DYNAMIC_NAME) $(DISTRIBUTE_DIR)/lib
+-	cd $(DISTRIBUTE_DIR)/lib; rm -f $(DYNAMIC_NAME_SHORT);   ln -s $(DYNAMIC_VERSIONED_NAME_SHORT) $(DYNAMIC_NAME_SHORT)
+-	# add python - it's not the standard way, indeed...
+-	cp -r python $(DISTRIBUTE_DIR)/python
++	cp $(STATIC_NAME) $(DISTRIBUTE_DIR)/lib64
++	install -m 644 $(DYNAMIC_NAME) $(DISTRIBUTE_DIR)/lib64
++	cd $(DISTRIBUTE_DIR)/lib64; rm -f $(DYNAMIC_NAME_SHORT);   ln -s $(DYNAMIC_VERSIONED_NAME_SHORT) $(DYNAMIC_NAME_SHORT)
+ 
+ -include $(DEPS)
+diff --git a/Makefile.config b/Makefile.config
 index d552b38..4c53d5c 100644
---- a/Makefile.config.example
-+++ b/Makefile.config.example
+--- a/Makefile.config
++++ b/Makefile.config
 @@ -5,7 +5,7 @@
  # USE_CUDNN := 1
  
