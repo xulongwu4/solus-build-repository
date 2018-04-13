@@ -27,8 +27,8 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2018-03-31</Date>
-            <Version>0.11.3</Version>
+            <Date>2018-04-13</Date>
+            <Version>0.11.4</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>
             <Email>oulongwu@mit.edu</Email>

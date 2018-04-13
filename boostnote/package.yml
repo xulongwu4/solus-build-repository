@@ -1,8 +1,8 @@
 name       : boostnote
-version    : 0.11.3
+version    : 0.11.4
 release    : 1
 source     :
-    - https://github.com/BoostIO/Boostnote/archive/v0.11.3.tar.gz : aed079783f3f456dd6be84846128591dafc5cce7f425be97911bbc30a0bf3fde
+    - https://github.com/BoostIO/Boostnote/archive/v0.11.4.tar.gz : 99b7f5403bfd78458bdbb5c80c605c33621a87b9e20634af6fa982c746cc914a
 license    : GPL-3.0
 component  : office.notes
 summary    : The opensource note app for developer.
@@ -30,7 +30,7 @@ build      : |
 install    : |
     rm -rf $workdir/dist/Boostnote-linux-x64/resources/app/grunt-install
 
-    install -dm00644 $installdir/usr/share/boostnote
+    install -dm00755 $installdir/usr/share/boostnote
     cp -R $workdir/dist/Boostnote-linux-x64/* $installdir/usr/share/boostnote
 
     install -dm00755 $installdir/usr/bin
