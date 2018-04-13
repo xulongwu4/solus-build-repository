@@ -20,7 +20,31 @@
         <PartOf>programming.tools</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/_caffe.cpp</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/_caffe.so</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/classifier.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/coord_map.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/detector.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/draw.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/imagenet/ilsvrc_2012_mean.npy</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/io.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/net_spec.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/proto/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/proto/caffe_pb2.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/pycaffe.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_coord_map.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_draw.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_io.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_layer_type_list.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_nccl.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_net.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_net_spec.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_python_layer.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_python_layer_with_param_str.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_solver.py</Path>
             <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="data">/usr/share/caffe</Path>
         </Files>
     </Package>
     <Package>
@@ -39,7 +63,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2018-04-12</Date>
+            <Date>2018-04-13</Date>
             <Version>1.0</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>

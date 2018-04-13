@@ -14,20 +14,38 @@ builddeps  :
     - pkgconfig(openblas)
     - pkgconfig(opencv)
     - pkgconfig(protobuf)
+    - pkgconfig(python3)
     - hdf5-devel
     - leveldb-devel
     - libboost-devel
     - lmdb-devel
     - numpy
+#rundeps    :
+    #- scikit-image
 setup      : |
     %patch -p1 < $pkgfiles/0001-Makefile-config.patch
     mv Makefile.config.example Makefile.config
 build      : |
     %make
+
+    cp -r python py3build
+    mv python py2build
+
+    ln -s py2build python
     %make pycaffe
+    unlink python
+
+    %patch -p1 < $pkgfiles/0002-enable-python3.patch
+    ln -s py3build python
+    %make pycaffe
+    # The python symlink is kept since it's needed in make distribute
+    
     %make distribute
 install    : |
-    #%make distribute DISTRIBUTE_DIR=$installdir/usr
+    for file in distribute/bin/*.bin
+    do
+        mv "$file" "${file%%.bin}"
+    done
     install -dm00755 $installdir/usr/bin
     cp -R distribute/bin/* $installdir/usr/bin
 
@@ -41,7 +59,25 @@ install    : |
     install -dm00644 $installdir/usr/share/caffe
     cp -R distribute/proto/* $installdir/usr/share/caffe
 
-    cp -R distribute/python/caffe $installdir/usr/lib/python2.7/site-packages
+    mkdir -p $installdir/usr/share/caffe/examples
+    cp -R py3build/*.py $installdir/usr/share/caffe/examples
+
+    mkdir -p $installdir/usr/lib/python2.7/site-packages
+    cp -R pybuild2/caffe $installdir/usr/lib/python2.7/site-packages
+
+    mkdir -p $installdir/usr/lib/python3.6/site-packages
+    cp -R pybuild3/caffe $installdir/usr/lib/python3.6/site-packages
+
+    #%make distribute DISTRIBUTE_DIR=$installdir/usr
+    #chmod 755 $installdir/usr/bin/* # Do I need to do this?
+    #for file in $installdir/usr/bin/*.bin
+    #do
+    #    mv "$file" "${file%%.bin}"
+    #done
+
+    #find $installdir/usr/include/caffe -type f -print0 | xargs -0 chmod 644
+    #chmod 755 $installdir/usr/lib/libcaffe.so.1.0.0
+    #rm -rf $installdir/usr/lib/libcaffe.a
 check      : |
     %make test
     %make runtest
