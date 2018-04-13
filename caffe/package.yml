@@ -8,6 +8,10 @@ component  : programming.tools
 summary    : A fast open framework for deep learning
 description: |
     Caffe is a deep learning framework made with expression, speed, and modularity in mind
+patterns   :
+    - docs :
+        - /usr/share/caffe
+        - /usr/share/doc
 builddeps  :
     - pkgconfig(gflags)
     - pkgconfig(libglog)
@@ -15,6 +19,8 @@ builddeps  :
     - pkgconfig(opencv)
     - pkgconfig(protobuf)
     - pkgconfig(python3)
+    - pkgconfig(texlua52) # For generating docs
+    - doxygen # For generating docs
     - hdf5-devel
     - leveldb-devel
     - libboost-devel
@@ -23,8 +29,8 @@ builddeps  :
 #rundeps    :
     #- scikit-image
 setup      : |
-    %patch -p1 < $pkgfiles/0001-Makefile-config.patch
     mv Makefile.config.example Makefile.config
+    %patch -p1 < $pkgfiles/0001-Makefile-config-for-solus.patch
 build      : |
     %make
 
@@ -38,35 +44,40 @@ build      : |
     %patch -p1 < $pkgfiles/0002-enable-python3.patch
     ln -s py3build python
     %make pycaffe
-    # The python symlink is kept since it's needed in make distribute
+    # The python symlink is kept since it's needed in make distribute and make docs
+
+    %make docs
     
-    %make distribute
+    #%make distribute
 install    : |
-    for file in distribute/bin/*.bin
-    do
-        mv "$file" "${file%%.bin}"
-    done
-    install -dm00755 $installdir/usr/bin
-    cp -R distribute/bin/* $installdir/usr/bin
+    #for file in distribute/bin/*.bin
+    #do
+    #    mv "$file" "${file%%.bin}"
+    #done
+    #install -dm00755 $installdir/usr/bin
+    #cp -r distribute/bin/* $installdir/usr/bin
 
-    rm -rf distribute/lib/*.a
-    install -dm00755 $installdir/usr/lib64
-    cp -R distribute/lib/* $installdir/usr/lib64
+    #rm -rf distribute/lib/*.a
+    #install -dm00755 $installdir/usr/lib64
+    #cp -r distribute/lib/* $installdir/usr/lib64
+    #chmod 755 $installdir/usr/lib64/lib*.so.*
 
-    install -dm00644 $installdir/usr/include
-    cp -R distribute/include/* $installdir/usr/include
+    #install -dm00755 $installdir/usr/include
+    #cp -r distribute/include/* $installdir/usr/include
 
-    install -dm00644 $installdir/usr/share/caffe
-    cp -R distribute/proto/* $installdir/usr/share/caffe
+    #install -dm00755 $installdir/usr/share/caffe
+    #cp -r distribute/proto/* $installdir/usr/share/caffe
 
-    mkdir -p $installdir/usr/share/caffe/examples
-    cp -R py3build/*.py $installdir/usr/share/caffe/examples
+    #install -dm00755 $installdir/usr/share/caffe/examples
+    #cp -r py3build/*.py $installdir/usr/share/caffe/examples
 
-    mkdir -p $installdir/usr/lib/python2.7/site-packages
-    cp -R pybuild2/caffe $installdir/usr/lib/python2.7/site-packages
+    #install -dm00755 $installdir/usr/lib/python2.7/site-packages
+    #cp -r py2build/caffe $installdir/usr/lib/python2.7/site-packages
 
-    mkdir -p $installdir/usr/lib/python3.6/site-packages
-    cp -R pybuild3/caffe $installdir/usr/lib/python3.6/site-packages
+    #install -dm00755 $installdir/usr/lib/python3.6/site-packages
+    #cp -r py3build/caffe $installdir/usr/lib/python3.6/site-packages
+
+    #######################################################################
 
     #%make distribute DISTRIBUTE_DIR=$installdir/usr
     #chmod 755 $installdir/usr/bin/* # Do I need to do this?
@@ -78,6 +89,42 @@ install    : |
     #find $installdir/usr/include/caffe -type f -print0 | xargs -0 chmod 644
     #chmod 755 $installdir/usr/lib/libcaffe.so.1.0.0
     #rm -rf $installdir/usr/lib/libcaffe.a
+
+    #######################################################################
+
+    %make distribute DISTRIBUTE_DIR=$installdir/usr
+
+    #unlink $installdir/usr/python
+
+    for file in $installdir/usr/bin/*.bin
+    do
+        mv "$file" "${file%%.bin}"
+    done
+
+    #mv $installdir/usr/lib $installdir/usr/lib64
+    rm -rf $installdir/usr/lib64/*.a
+    chmod 755 $installdir/usr/lib64/lib*.so.*
+
+    #install -dm00755 $installdir/usr/share
+    #mv $installdir/usr/proto $installdir/usr/share/caffe
+
+    install -Dm00644 -t $installdir/usr/share/caffe/examples py3build/*.py
+    cp -r $workdir/examples/* $installdir/usr/share/caffe/examples
+    mv $installdir/usr/proto $installdir/usr/share/caffe
+
+    cp -r $workdir/docs/* $installdir/usr/share/caffe
+    unlink $installdir/usr/share/caffe/doxygen
+
+    install -dm00755 $installdir/usr/lib64/python2.7/site-packages
+    cp -r $workdir/py2build/caffe $installdir/usr/lib64/python2.7/site-packages
+
+    install -dm00755 $installdir/usr/lib64/python3.6/site-packages
+    cp -r $workdir/py3build/caffe $installdir/usr/lib64/python3.6/site-packages
+
+    install -dm00755 $installdir/usr/share/doc/caffe
+    cp -r $workdir/doxygen/* $installdir/usr/share/doc/caffe
+
+    install -Dm00644 $pkgfiles/caffe $installdir/usr/share/bash-completion/completions/caffe
 check      : |
     %make test
     %make runtest

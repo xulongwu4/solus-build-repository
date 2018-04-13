@@ -20,31 +20,54 @@
         <PartOf>programming.tools</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/_caffe.cpp</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/_caffe.so</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/classifier.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/coord_map.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/detector.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/draw.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/imagenet/ilsvrc_2012_mean.npy</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/io.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/net_spec.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/proto/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/proto/caffe_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/pycaffe.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_coord_map.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_draw.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_io.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_layer_type_list.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_nccl.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_net.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_net_spec.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_python_layer.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_python_layer_with_param_str.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe/test/test_solver.py</Path>
             <Path fileType="library">/usr/lib64/lib*.so.*</Path>
-            <Path fileType="data">/usr/share/caffe</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/__init__.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/_caffe.cpp</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/_caffe.so</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/classifier.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/coord_map.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/detector.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/draw.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/imagenet/ilsvrc_2012_mean.npy</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/io.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/net_spec.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/proto/__init__.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/proto/caffe_pb2.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/pycaffe.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/test/test_coord_map.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/test/test_draw.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/test/test_io.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/test/test_layer_type_list.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/test/test_nccl.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/test/test_net.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/test/test_net_spec.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/test/test_python_layer.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/test/test_python_layer_with_param_str.py</Path>
+            <Path fileType="library">/usr/lib64/python2.7/site-packages/caffe/test/test_solver.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/__init__.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/_caffe.cpp</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/_caffe.so</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/classifier.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/coord_map.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/detector.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/draw.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/imagenet/ilsvrc_2012_mean.npy</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/io.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/net_spec.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/proto/__init__.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/proto/caffe_pb2.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/pycaffe.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/test/test_coord_map.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/test/test_draw.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/test/test_io.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/test/test_layer_type_list.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/test/test_nccl.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/test/test_net.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/test/test_net_spec.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/test/test_python_layer.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/test/test_python_layer_with_param_str.py</Path>
+            <Path fileType="library">/usr/lib64/python3.6/site-packages/caffe/test/test_solver.py</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/caffe</Path>
         </Files>
     </Package>
     <Package>
@@ -59,6 +82,17 @@
         <Files>
             <Path fileType="header">/usr/include/</Path>
             <Path fileType="library">/usr/lib64/lib*.so</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>caffe-docs</Name>
+        <Summary xml:lang="en">Documentation for caffe</Summary>
+        <Description xml:lang="en">Caffe is a deep learning framework made with expression, speed, and modularity in mind
+</Description>
+        <PartOf>programming.docs</PartOf>
+        <Files>
+            <Path fileType="data">/usr/share/caffe</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
     <History>
