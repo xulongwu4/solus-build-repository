@@ -9,18 +9,19 @@ summary    : Seamless operability between C++11 and Python
 description: |
     pybind11 is a lightweight header-only library that exposes C++ types in Python and vice versa,
     mainly to create Python bindings of existing C++ code.
-libsplit   : no
 patterns   :
     - /usr/include
+    - /usr/lib64
 builddeps  :
+    - pkgconfig(eigen3)
     - pkgconfig(python3)
     - python-pytest
     - python-setuptools
+    - scipy
 build      : |
     %python_setup
     %python3_setup
 
-    pwd
     mkdir -p build
     pushd build
     %cmake -DPYBIND11_CMAKECONFIG_INSTALL_DIR=lib64/cmake/pybind11 ..
@@ -30,8 +31,8 @@ install    : |
     %python_install
     %python3_install
 
-    pushd build
-    %make install
-    popd
+    %make_install -C build
+
+    rm -rf $installdir/usr/include/python2.7 $installdir/usr/include/python3.6m
 check      : |
-    %make check
+    %make check -C pybind11-$version/build

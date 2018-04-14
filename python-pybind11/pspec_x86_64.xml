@@ -21,6 +21,7 @@ mainly to create Python bindings of existing C++ code.
 </Description>
         <PartOf>programming.python</PartOf>
         <Files>
+            <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/pybind11-2.2.2-py2.7.egg-info/PKG-INFO</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/pybind11-2.2.2-py2.7.egg-info/SOURCES.txt</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/pybind11-2.2.2-py2.7.egg-info/dependency_links.txt</Path>
@@ -41,20 +42,7 @@ mainly to create Python bindings of existing C++ code.
             <Path fileType="library">/usr/lib/python3.6/site-packages/pybind11/__pycache__/__main__.cpython-36.pyc</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/pybind11/__pycache__/_version.cpython-36.pyc</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/pybind11/_version.py</Path>
-        </Files>
-    </Package>
-    <Package>
-        <Name>python-pybind11-devel</Name>
-        <Summary xml:lang="en">Development files for python-pybind11</Summary>
-        <Description xml:lang="en">pybind11 is a lightweight header-only library that exposes C++ types in Python and vice versa,
-mainly to create Python bindings of existing C++ code.
-</Description>
-        <PartOf>programming.devel</PartOf>
-        <RuntimeDependencies>
-            <Dependency release="1">python-pybind11</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib64</Path>
         </Files>
     </Package>
     <History>
