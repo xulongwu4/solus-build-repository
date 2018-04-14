@@ -1,0 +1,38 @@
+name       : caffe2
+version    : 1.0 # They don't have a release version now that caffe2 is merged into pytorch
+release    : 1
+source     :
+    - https://github.com/caffe2/caffe2/archive/v0.8.1.tar.gz : 2b7938514caf626da3fdde51e88771adc863cbe496d0fc4ae1122603a945e9a8
+license    : Apache-2.0
+component  : programming.tools
+summary    : A New Lightweight, Modular, and Scalable Deep Learning Framework
+description: |
+    Caffe2 is a lightweight, modular, and scalable deep learning framework.
+    Building on the original Caffe, Caffe2 is designed with expression,
+    speed, and modularity in mind.
+extract    : no
+networking : yes
+builddeps  :
+    - pkgconfig(eigen3)
+    - pkgconfig(gflags)
+    - pkgconfig(libglog)
+    - pkgconfig(ompi)
+    - pkgconfig(opencv)
+    - git
+    - leveldb-devel
+    - lmdb-devel
+    - numpy
+    - snappy-devel
+setup      : |
+    cd $PKG_BUILD_DIR
+    git clone --recursive https://github.com/pytorch/pytorch.git
+    cd pytorch
+    git submodule update --init
+
+    mkdir -p build
+    cd build
+    %cmake ..
+build      : |
+    %make VERBOSE=1
+install    : |
+    %make_install
