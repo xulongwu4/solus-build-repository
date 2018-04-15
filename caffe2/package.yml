@@ -12,27 +12,93 @@ description: |
     speed, and modularity in mind.
 extract    : no
 networking : yes
+libsplit   : no
 builddeps  :
     - pkgconfig(eigen3)
     - pkgconfig(gflags)
+    - pkgconfig(libavcodec)
     - pkgconfig(libglog)
+    - pkgconfig(libzmq)
     - pkgconfig(ompi)
     - pkgconfig(opencv)
+    - pkgconfig(openblas)
+    - pkgconfig(protobuf)
+    - pkgconfig(python3)
     - git
     - leveldb-devel
     - lmdb-devel
     - numpy
+    - python-pybind11
     - snappy-devel
+rundeps    :
+    - numpy
+    - python-future
+    - python-protobuf
 setup      : |
     cd $PKG_BUILD_DIR
     git clone --recursive https://github.com/pytorch/pytorch.git
     cd pytorch
     git submodule update --init
 
+    %patch -p1 < $pkgfiles/0001-cmake-config.patch
+
+    cp -r $PKG_BUILD_DIR/pytorch $PKG_BUILD_DIR/py3build
+
     mkdir -p build
-    cd build
-    %cmake ..
+    pushd build
+    %cmake -DBLAS=OpenBLAS \
+           -DBUILD_CUSTOM_PROTOBUF=OFF \
+           -DBUILD_TEST=OFF \
+           -DUSE_FFMPEG=ON \
+           -DUSE_NATIVE_ARCH=ON \
+           -DUSE_OPENMP=ON \
+           -DUSE_ZMQ=ON \
+           ..
+    popd
+
+    pushd $PKG_BUILD_DIR/py3build
+    mkdir -p build
+    pushd build
+    %cmake -DBLAS=OpenBLAS \
+           -DBUILD_CUSTOM_PROTOBUF=OFF \
+           -DBUILD_TEST=OFF \
+           -DUSE_FFMPEG=ON \
+           -DUSE_NATIVE_ARCH=ON \
+           -DUSE_OPENMP=ON \
+           -DUSE_ZMQ=ON \
+           -DPYTHON_EXECUTABLE=/usr/bin/python3 \
+           -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m \
+           -DPYTHON_LIBRARY=/usr/lib/libpython3.6m.so \
+           ..
+    popd
+    popd
 build      : |
-    %make VERBOSE=1
+    pushd $PKG_BUILD_DIR/pytorch/build
+    %make
+    popd
+
+    pushd $PKG_BUILD_DIR/py3build/build
+    %make
+    popd
 install    : |
+    pushd $PKG_BUILD_DIR/pytorch/build
     %make_install
+    popd
+
+    pushd $PKG_BUILD_DIR/py3build/build
+    %make_install
+    popd
+
+    # Remove caffe part
+    rm -rfv $installdir/usr/include/caffe
+    rm -rfv $installdir/usr/lib/python2.7/site-packages/caffe
+    rm -rfv $installdir/usr/lib/python3.6/site-packages/caffe
+
+    # Only keep the header files in the caffe2 directory
+    find $installdir/usr/include -maxdepth 1 -type f -print0 | xargs -0 rm -rfv
+
+    # Remove static libraries
+    rm -rfv $installdir/usr/lib64/*.a
+
+    # Clean empty directories
+    find $installdir/usr -type d -empty -delete
