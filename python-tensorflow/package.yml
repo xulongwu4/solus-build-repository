@@ -1,4 +1,4 @@
-name       : tensorflow
+name       : python-tensorflow
 version    : 1.7.0
 release    : 1
 source     :
@@ -14,8 +14,7 @@ builddeps  :
     - pkgconfig(python3)
     - bazel
     - numpy
-    - pip
-    - python-wheel
+    - python-setuptools
 rundeps    :
     #- python-absl-py
     - python-bleach
@@ -24,8 +23,10 @@ rundeps    :
     - python-mock
     - python-protobuf
     - python-termcolor
+    - python-wheel
 setup      : |
     %patch -p1 < $pkgfiles/0001-mpi-build.patch
+    %patch -p1 < $pkgfiles/0002-not-build-wheel.patch
 
     cp -a $workdir $PKG_BUILD_DIR/py2build
     cp -a $workdir $PKG_BUILD_DIR/py3build
@@ -65,21 +66,49 @@ build      : |
     pushd $PKG_BUILD_DIR/py2build
     TEST_TMPDIR=$PKG_BUILD_DIR/bazel-cache-py2build bazel build --config=opt //tensorflow/tools/pip_package:build_pip_package
     mkdir -p tmp
-    TEST_TMPDIR=$PKG_BUILD_DIR/bazel-cache-py2build bazel-bin/tensorflow/tools/pip_package/build_pip_package tmp/tensorflow_pkg
+    bazel-bin/tensorflow/tools/pip_package/build_pip_package tmp/tensorflow_pkg
+
+    pushd tmp/tensorflow_pkg
+    python2.7 setup.py build
+    popd
     popd
 
     pushd $PKG_BUILD_DIR/py3build
     TEST_TMPDIR=$PKG_BUILD_DIR/bazel-cache-py3build bazel build --config=opt //tensorflow/tools/pip_package:build_pip_package
     mkdir -p tmp
-    TEST_TMPDIR=$PKG_BUILD_DIR/bazel-cache-py3build bazel-bin/tensorflow/tools/pip_package/build_pip_package tmp/tensorflow_pkg
+    bazel-bin/tensorflow/tools/pip_package/build_pip_package tmp/tensorflow_pkg
+
+    pushd tmp/tensorflow_pkg
+    python3 setup.py build
+    popd
     popd
 install    : |
-    pushd $PKG_BUILD_DIR/py2build
-    WHEEL_NAME=$(basename tmp/tensorflow_pkg/tensorflow*.whl)
-    pip install --no-deps --root $installdir tmp/tensorflow_pkg/$WHEEL_NAME
+    #pushd $PKG_BUILD_DIR/py3build
+    #WHEEL_NAME=$(basename tmp/tensorflow_pkg/tensorflow*.whl)
+    #pip3 install --no-deps --root $installdir tmp/tensorflow_pkg/$WHEEL_NAME
+    #popd
+
+    pushd $PKG_BUILD_DIR/py3build/tmp/tensorflow_pkg
+    python3 setup.py install --root="%installroot%"
     popd
 
-    pushd $PKG_BUILD_DIR/py3build
-    WHEEL_NAME=$(basename tmp/tensorflow_pkg/tensorflow*.whl)
-    pip3 install --no-deps --root $installdir tmp/tensorflow_pkg/$WHEEL_NAME
+    # Remove tensorboard and external libraries
+    rm -rfv $installdir/usr/bin/tensorboard
+    rm -rfv $installdir/usr/lib/python3.6/site-packages/external
+
+    for _f in "$installdir/usr/bin/*"; do
+        mv -v "$_f" "${_f}3"
+    done
+
+    #pushd $PKG_BUILD_DIR/py2build
+    #WHEEL_NAME=$(basename tmp/tensorflow_pkg/tensorflow*.whl)
+    #pip install --no-deps --root $installdir tmp/tensorflow_pkg/$WHEEL_NAME
+    #popd
+    
+    pushd $PKG_BUILD_DIR/py2build/tmp/tensorflow_pkg
+    python2.7 setup.py install --root="%installroot%"
     popd
+
+    # Remove tensorboard and external libraries
+    rm -rfv $installdir/usr/bin/tensorboard
+    rm -rfv $installdir/usr/lib/python2.7/site-packages/external

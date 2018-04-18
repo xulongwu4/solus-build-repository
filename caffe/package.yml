@@ -98,7 +98,7 @@ install    : |
 
     for file in $installdir/usr/bin/*.bin
     do
-        mv "$file" "${file%%.bin}"
+        mv -v "$file" "${file%%.bin}"
     done
 
     #mv $installdir/usr/lib $installdir/usr/lib64

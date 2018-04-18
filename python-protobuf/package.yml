@@ -20,7 +20,7 @@ setup      : |
     cp -a python py3build
 build      : |
     pushd py2build 
-    python2 setup.py build --cpp_implementation
+    python2.7 setup.py build --cpp_implementation
     popd
 
     pushd py3build
@@ -28,7 +28,7 @@ build      : |
     popd
 install    : |
     pushd py2build
-    python2 setup.py install --root="%installroot%" --cpp_implementation
+    python2.7 setup.py install --root="%installroot%" --cpp_implementation
     popd
 
     pushd py3build

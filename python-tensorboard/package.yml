@@ -1,0 +1,54 @@
+name       : python-tensorboard
+version    : 1.7.0
+release    : 1
+source     :
+    - https://github.com/tensorflow/tensorboard/archive/1.7.0.tar.gz : b56a61433d58eea51d1d08194521126d78b1d6a92a03a243f89108d3890758fa
+license    : Apache-2.0
+component  : programming.python
+summary    : TensorFlow's Visualization Toolkit
+description: |
+    TensorBoard is a suite of web applications for inspecting
+    and understanding your TensorFlow runs and graphs.
+networking : yes
+builddeps  :
+    - bazel
+    - python-setuptools
+rundeps    :
+    - numpy
+    - python-bleach
+    - python-futures
+    - python-markdown
+    - python-protobuf
+    #- python-tensorflow
+    - python-wheel
+    - python-werkzeug
+setup      : |
+    %patch -p1 < $pkgfiles/0001-use-source-files.patch
+    bazel build //tensorboard/pip_package:build_pip_package
+build      : |
+    bazel-bin/tensorboard/pip_package/build_pip_package $workdir/py2build
+    pushd $workdir/py2build
+    python2.7 setup.py build
+    popd
+
+    bazel-bin/tensorboard/pip_package/build_pip_package $workdir/py3build
+    pushd $workdir/py3build
+    python3 setup.py build
+    popd
+install    : |
+    pushd $workdir/py3build
+    python3 setup.py install --root="%installroot%"
+    popd
+
+    echo "%installroot%"
+    echo "$installdir"
+
+    echo $(ls $installdir/usr/bin)
+
+    for _f in $installdir/usr/bin/*; do
+        mv -v "$_f" "${_f}3"
+    done
+
+    pushd $workdir/py2build
+    python2.7 setup.py install --root="%installroot%"
+    popd
