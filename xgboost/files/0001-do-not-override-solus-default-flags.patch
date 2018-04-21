@@ -1,0 +1,15 @@
+diff --git a/Makefile b/Makefile
+index 0e685d8..581e8e9 100644
+--- a/Makefile
++++ b/Makefile
+@@ -67,8 +67,8 @@ export CXX = g++
+ endif
+ endif
+ 
+-export LDFLAGS= -pthread -lm $(ADD_LDFLAGS) $(DMLC_LDFLAGS) $(PLUGIN_LDFLAGS)
+-export CFLAGS=  -std=c++11 -Wall -Wno-unknown-pragmas -Iinclude $(ADD_CFLAGS) $(PLUGIN_CFLAGS)
++LDFLAGS += -pthread -lm $(ADD_LDFLAGS) $(DMLC_LDFLAGS) $(PLUGIN_LDFLAGS)
++CFLAGS += -std=c++11 -Wall -Wno-unknown-pragmas -Iinclude $(ADD_CFLAGS) $(PLUGIN_CFLAGS)
+ CFLAGS += -I$(DMLC_CORE)/include -I$(RABIT)/include -I$(GTEST_PATH)/include
+ #java include path
+ export JAVAINCFLAGS = -I${JAVA_HOME}/include -I./java
