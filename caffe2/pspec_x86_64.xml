@@ -6,7 +6,7 @@
             <Email>oulongwu@mit.edu</Email>
         </Packager>
         <License>Apache-2.0</License>
-        <PartOf>programming.tools</PartOf>
+        <PartOf>programming</PartOf>
         <Summary xml:lang="en">A New Lightweight, Modular, and Scalable Deep Learning Framework</Summary>
         <Description xml:lang="en">Caffe2 is a lightweight, modular, and scalable deep learning framework.
 Building on the original Caffe, Caffe2 is designed with expression,
@@ -21,7 +21,7 @@ speed, and modularity in mind.
 Building on the original Caffe, Caffe2 is designed with expression,
 speed, and modularity in mind.
 </Description>
-        <PartOf>programming.tools</PartOf>
+        <PartOf>programming</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/caffe2/__init__.py</Path>
@@ -144,7 +144,6 @@ speed, and modularity in mind.
             <Path fileType="library">/usr/lib/python2.7/site-packages/caffe2/python/crf.py</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/caffe2/python/data_parallel_model.py</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/caffe2/python/data_parallel_model_test.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe2/python/data_parallel_model_utils.py</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/caffe2/python/data_workers.py</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/caffe2/python/data_workers_test.py</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/caffe2/python/dataio.py</Path>
@@ -368,6 +367,7 @@ speed, and modularity in mind.
             <Path fileType="library">/usr/lib/python2.7/site-packages/caffe2/python/operator_test/elementwise_op_broadcast_test.py</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/caffe2/python/operator_test/elementwise_ops_test.py</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/caffe2/python/operator_test/emptysample_ops_test.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/caffe2/python/operator_test/enforce_finite_op_test.py</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/caffe2/python/operator_test/extend_tensor_op_test.py</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/caffe2/python/operator_test/fc_operator_test.py</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/caffe2/python/operator_test/filler_ops_test.py</Path>
@@ -646,7 +646,6 @@ speed, and modularity in mind.
             <Path fileType="library">/usr/lib/python3.6/site-packages/caffe2/python/crf.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/caffe2/python/data_parallel_model.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/caffe2/python/data_parallel_model_test.py</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/caffe2/python/data_parallel_model_utils.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/caffe2/python/data_workers.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/caffe2/python/data_workers_test.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/caffe2/python/dataio.py</Path>
@@ -870,6 +869,7 @@ speed, and modularity in mind.
             <Path fileType="library">/usr/lib/python3.6/site-packages/caffe2/python/operator_test/elementwise_op_broadcast_test.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/caffe2/python/operator_test/elementwise_ops_test.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/caffe2/python/operator_test/emptysample_ops_test.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/caffe2/python/operator_test/enforce_finite_op_test.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/caffe2/python/operator_test/extend_tensor_op_test.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/caffe2/python/operator_test/fc_operator_test.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/caffe2/python/operator_test/filler_ops_test.py</Path>
@@ -1049,7 +1049,7 @@ speed, and modularity in mind.
     </Package>
     <History>
         <Update release="1">
-            <Date>2018-04-15</Date>
+            <Date>2018-04-22</Date>
             <Version>1.0</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>
