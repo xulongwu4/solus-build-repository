@@ -9,6 +9,9 @@ summary    : Library for computation using data flow graphs for scalable machine
 description: |
     TensorFlow is an open source software library for numerical computation using data flow graphs.
 networking : yes
+patterns   :
+    - /usr/include
+    - /usr/lib64
 builddeps  :
     - pkgconfig(ompi)
     - pkgconfig(python3)

@@ -1,9 +1,0 @@
-#astor
-backports.weakref
-gast
-grpcio
-# absl-py
-tensorboard
-# protobuf
-# pbr
-# futures
