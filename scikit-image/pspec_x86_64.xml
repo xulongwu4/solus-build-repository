@@ -5,7 +5,7 @@
             <Name>Longwu Ou</Name>
             <Email>oulongwu@mit.edu</Email>
         </Packager>
-        <License>Modified BSD</License>
+        <License>BSD-3-Clause</License>
         <PartOf>programming.python</PartOf>
         <Summary xml:lang="en">Image processing in Python</Summary>
         <Description xml:lang="en">scikit-image is a collection of algorithms for image processing.
@@ -1630,7 +1630,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2018-04-13</Date>
+            <Date>2018-04-22</Date>
             <Version>0.13.1</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>
