@@ -1,0 +1,13 @@
+diff --git a/tensorflow/c/generate-pc.sh b/tensorflow/c/generate-pc.sh
+index 02a6a58..45982ea 100755
+--- a/tensorflow/c/generate-pc.sh
++++ b/tensorflow/c/generate-pc.sh
+@@ -55,7 +55,7 @@ echo "Generating pkgconfig file for TensorFlow $TF_VERSION in $TF_PREFIX"
+ cat << EOF > tensorflow.pc
+ prefix=${TF_PREFIX}
+ exec_prefix=\${prefix}
+-libdir=\${exec_prefix}/lib
++libdir=\${exec_prefix}/lib64
+ includedir=\${prefix}/include
+ 
+ Name: TensorFlow
