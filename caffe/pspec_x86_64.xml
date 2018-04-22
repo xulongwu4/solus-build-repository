@@ -6,7 +6,7 @@
             <Email>oulongwu@mit.edu</Email>
         </Packager>
         <License>BSD-2-Clause</License>
-        <PartOf>programming.tools</PartOf>
+        <PartOf>programming</PartOf>
         <Summary xml:lang="en">A fast open framework for deep learning</Summary>
         <Description xml:lang="en">Caffe is a deep learning framework made with expression, speed, and modularity in mind
 </Description>
@@ -17,7 +17,7 @@
         <Summary xml:lang="en">A fast open framework for deep learning</Summary>
         <Description xml:lang="en">Caffe is a deep learning framework made with expression, speed, and modularity in mind
 </Description>
-        <PartOf>programming.tools</PartOf>
+        <PartOf>programming</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib64/lib*.so.*</Path>
@@ -97,7 +97,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2018-04-13</Date>
+            <Date>2018-04-22</Date>
             <Version>1.0</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>

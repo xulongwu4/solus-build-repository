@@ -4,7 +4,7 @@ release    : 1
 source     :
     - https://github.com/BVLC/caffe/archive/1.0.tar.gz : 71d3c9eb8a183150f965a465824d01fe82826c22505f7aa314f700ace03fa77f
 license    : BSD-2-Clause
-component  : programming.tools
+component  : programming
 summary    : A fast open framework for deep learning
 description: |
     Caffe is a deep learning framework made with expression, speed, and modularity in mind
