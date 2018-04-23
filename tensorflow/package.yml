@@ -22,6 +22,7 @@ builddeps  :
 rundeps    :
     - numpy
     #- python-absl-py
+    - python-mock
     - python-protobuf
 setup      : |
     %patch -p1 < $pkgfiles/0001-mpi-build.patch
