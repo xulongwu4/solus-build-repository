@@ -1,0 +1,27 @@
+name       : latexdraw
+version    : 3.3.8
+release    : 1
+source     :
+    - https://sourceforge.net/projects/latexdraw/files/latexdraw/3.3.8/LaTeXDraw-3.3.8-bin.zip : 9929c75388d3a96298a14c321ca7a17905d78b20a947133418dd5bb4739ed01e
+license    : GPL-2.0
+component  : multimedia.graphics
+summary    : A vector drawing editor for LaTeX
+description: |
+    LaTeXDraw is a graphical drawing editor for LaTeX.
+rundeps  :
+    - openjdk-8-devel
+setup      : |
+    %patch -p1 < $pkgfiles/latexdraw-icons.patch
+install    : |
+    install -dm00755 $installdir/usr/share/latexdraw
+    cp -r data/templates $installdir/usr/share/latexdraw
+    cp -r data/lib $installdir/usr/share/latexdraw
+
+    install -Dm00644 data/gnome/latexdraw.desktop $installdir/usr/share/applications/latexdraw.desktop
+    install -Dm00644 data/gnome/latexdraw.png $installdir/usr/share/pixmaps/latexdraw.png
+
+    install -Dm00644 data/LaTeXDraw.jar $installdir/usr/share/latexdraw/LaTeXDraw.jar
+    install -Dm00644 license.txt $installdir/usr/share/latexdraw/license.txt
+    install -Dm00644 release_note.txt $installdir/usr/share/latexdraw/release_note.txt
+
+    install -Dm00755 $pkgfiles/latexdraw $installdir/usr/bin/latexdraw

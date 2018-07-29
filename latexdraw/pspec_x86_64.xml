@@ -1,0 +1,50 @@
+<PISI>
+    <Source>
+        <Name>latexdraw</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <PartOf>multimedia.graphics</PartOf>
+        <Summary xml:lang="en">A vector drawing editor for LaTeX</Summary>
+        <Description xml:lang="en">LaTeXDraw is a graphical drawing editor for LaTeX.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>latexdraw</Name>
+        <Summary xml:lang="en">A vector drawing editor for LaTeX</Summary>
+        <Description xml:lang="en">LaTeXDraw is a graphical drawing editor for LaTeX.
+</Description>
+        <PartOf>multimedia.graphics</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/latexdraw</Path>
+            <Path fileType="data">/usr/share/applications/latexdraw.desktop</Path>
+            <Path fileType="data">/usr/share/latexdraw/LaTeXDraw.jar</Path>
+            <Path fileType="data">/usr/share/latexdraw/lib/jlibeps-0.1.jar</Path>
+            <Path fileType="data">/usr/share/latexdraw/lib/malai.core-2.0.jar</Path>
+            <Path fileType="data">/usr/share/latexdraw/lib/malai.swing-2.0.jar</Path>
+            <Path fileType="data">/usr/share/latexdraw/lib/pdf-renderer-1.0.5.jar</Path>
+            <Path fileType="data">/usr/share/latexdraw/lib/scala-library-2.11.8.jar</Path>
+            <Path fileType="data">/usr/share/latexdraw/lib/scala-parser-combinators_2.11-1.0.5.jar</Path>
+            <Path fileType="data">/usr/share/latexdraw/license.txt</Path>
+            <Path fileType="data">/usr/share/latexdraw/release_note.txt</Path>
+            <Path fileType="data">/usr/share/latexdraw/templates/Classic grid.svg</Path>
+            <Path fileType="data">/usr/share/latexdraw/templates/Condenser.svg</Path>
+            <Path fileType="data">/usr/share/latexdraw/templates/embrace.svg</Path>
+            <Path fileType="data">/usr/share/latexdraw/templates/man.svg</Path>
+            <Path fileType="data">/usr/share/latexdraw/templates/question.svg</Path>
+            <Path fileType="data">/usr/share/pixmaps/latexdraw.png</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-07-29</Date>
+            <Version>3.3.8</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
