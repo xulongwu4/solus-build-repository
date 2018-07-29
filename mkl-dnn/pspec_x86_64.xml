@@ -1,0 +1,47 @@
+<PISI>
+    <Source>
+        <Name>mkl-dnn</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>Apache-2.0</License>
+        <PartOf>programming</PartOf>
+        <Summary xml:lang="en">Intel(R) Math Kernel Library for Deep Neural Networks (Intel(R) MKL-DNN)</Summary>
+        <Description xml:lang="en">Intel(R) Math Kernel Library for Deep Neural Networks (Intel(R) MKL-DNN) is an open source performance library for deep learning applications.
+The library accelerates deep learning applications and framework on Intel(R) architecture.
+Intel(R) MKL-DNN contains vectorized and threaded building blocks which you can use to implement deep neural networks (DNN) with C and C++ interfaces.
+#builddeps  :
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>mkl-dnn</Name>
+        <Summary xml:lang="en">Intel(R) Math Kernel Library for Deep Neural Networks (Intel(R) MKL-DNN)</Summary>
+        <Description xml:lang="en">Intel(R) Math Kernel Library for Deep Neural Networks (Intel(R) MKL-DNN) is an open source performance library for deep learning applications.
+The library accelerates deep learning applications and framework on Intel(R) architecture.
+Intel(R) MKL-DNN contains vectorized and threaded building blocks which you can use to implement deep neural networks (DNN) with C and C++ interfaces.
+#builddeps  :
+</Description>
+        <PartOf>programming</PartOf>
+        <Files>
+            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/include/mkldnn.h</Path>
+            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/include/mkldnn.hpp</Path>
+            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/include/mkldnn_debug.h</Path>
+            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/include/mkldnn_types.h</Path>
+            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/lib/libmkldnn.so</Path>
+            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/lib/libmkldnn.so.0</Path>
+            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/lib/libmkldnn.so.0.14.0</Path>
+            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/share/doc/mkldnn/LICENSE</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-07-29</Date>
+            <Version>0.15</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

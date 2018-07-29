@@ -1,0 +1,30 @@
+name       : mkl-dnn
+version    : 0.15
+release    : 1
+source     :
+    - https://github.com/intel/mkl-dnn/archive/v0.15.tar.gz : 517a6c60b4d77170fc592ce1ccb61c7143f0f45e5d81bb1cda6ad2c2b6aea5d7
+license    : Apache-2.0
+component  : programming
+summary    : Intel(R) Math Kernel Library for Deep Neural Networks (Intel(R) MKL-DNN)
+description: |
+    Intel(R) Math Kernel Library for Deep Neural Networks (Intel(R) MKL-DNN) is an open source performance library for deep learning applications.
+    The library accelerates deep learning applications and framework on Intel(R) architecture.
+    Intel(R) MKL-DNN contains vectorized and threaded building blocks which you can use to implement deep neural networks (DNN) with C and C++ interfaces.
+    #builddeps  :
+setup      : |
+    mkdir -p build
+    pushd build
+    %cmake -DCMAKE_INSTALL_PREFIX=$installdir/usr ..
+    popd
+build      : |
+    pushd build
+    %make
+    popd
+install    : |
+    pushd build
+    %make_install
+    popd
+check      : |
+    pushd build
+    %make test
+    popd
