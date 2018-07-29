@@ -1,0 +1,32 @@
+name       : ipe
+version    : 7.2.7
+release    : 1
+source     :
+    - https://dl.bintray.com/otfried/generic/ipe/7.2/ipe-7.2.7-src.tar.gz : d66d3f2619e3e6ff617f42c2e3695c3db6e2a64adcc3d7613214e5fd14c49f22
+license    : GPL-3.0
+component  : multimedia.graphics
+summary    : A free vector graphics editor for creating figures in PDF or EPS format
+description: |
+    Ipe is a drawing editor for creating figures in PDF or (encapsulated) Postscript format.
+builddeps  :
+    - pkgconfig(freetype2)
+    - pkgconfig(libjpeg)
+    - pkgconfig(libpng)
+    - pkgconfig(lua)
+    - pkgconfig(cairo)
+    - pkgconfig(Qt5Core)
+setup      : |
+    %patch -p1 < $pkgfiles/fix-xlocale.patch
+    %patch -p1 < $pkgfiles/lua.patch
+build      : |
+    pushd src
+    %make IPEPREFIX=$installdir/usr
+    popd
+install    : |
+    pushd src
+    %make_install IPEPREFIX=$installdir/usr
+    popd
+
+    install -Dm00644 $pkgfiles/ipe.desktop $installdir/usr/share/applications/ipe.desktop
+
+    install -Dm00644 $installdir/usr/share/ipe/7.2.7/icons/ipe.png $installdir/usr/share/pixmaps/ipe.png
