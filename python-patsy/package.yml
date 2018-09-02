@@ -7,8 +7,9 @@ license    : BSD-2-Clause
 component  : programming.python
 summary    : Python package for describing statistical models and building design matrices
 description: |
-    patsy is a Python package for describing statistical models (especially linear models, or models that have a linear component) and building design matrices.
-    It is closely inspired by and compatible with the formula mini-language used in R and S.
+    patsy is a Python package for describing statistical models (especially linear models,
+    or models that have a linear component) and building design matrices. It is closely
+    inspired by and compatible with the formula mini-language used in R and S.
 builddeps  :
     - python-setuptools
 rundeps    :
