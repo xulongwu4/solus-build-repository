@@ -1,8 +1,8 @@
 name       : xgboost
-version    : 0.71
+version    : 0.80
 release    : 1
 source     :
-    - https://github.com/dmlc/xgboost/archive/v0.71.tar.gz : 18ad39bfe2a076fe0560189c03a68f088134aff4e3d7073c0b153b6c55e55b33
+    - https://github.com/dmlc/xgboost/releases/download/v0.80/xgboost-0.80.tar.bz2 : 9aecbde00296f04e0e5e4981d94bb7f739a865e55b4afb530bc77e9023b7e260
 license    : Apache-2.0
 component  : programming
 summary    : Scalable, portable and distributed gradient boosting library
@@ -58,7 +58,9 @@ install    : |
     pushd py2build
     python2.7 setup.py install --root="%installroot%"
     popd
-
+    
     pushd py3build
     python3 setup.py install --root="%installroot%"
     popd
+
+    rm -rf $installdir/usr/xgboost
