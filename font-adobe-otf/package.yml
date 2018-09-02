@@ -1,0 +1,19 @@
+name       : font-adobe-otf
+version    : 1
+release    : 1
+source     :
+    - http://ardownload.adobe.com/pub/adobe/reader/win/11.x/11.0.06/en_US/AdbeRdr11006_en_US.exe : 7eb5dd2905d5cce9912019efa89e939a187cd099583d0216e517c71bd38dc6a8
+license    : Custom - Adobe
+component  : desktop.font
+summary    : Fonts from Adobe Acrobat Reader X
+description: |
+    Fonts from Adobe Acrobat Reader X including Myriad Pro, Myriad CAD, Minion Pro, Courier Std and Adobe Pi Std.
+builddeps  :
+    - p7zip
+extract    : no
+build      : |
+    7z -y e $sources/*.exe
+    mkdir otfs
+    7z -y -o"otfs" -ir\!*.otf e Data1.cab
+install    : |
+    install -Dm00644 $workdir/otfs/*.otf -t $installdir/usr/share/fonts/opentype/font-adobe-otf

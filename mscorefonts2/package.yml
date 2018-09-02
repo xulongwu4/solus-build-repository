@@ -1,0 +1,18 @@
+name       : mscorefonts2
+version    : 1
+release    : 1
+source     :
+    - https://sourceforge.net/projects/mscorefonts2/files/cabs/PowerPointViewer.exe : c4e753548d3092ffd7dd3849105e0a26d9b5a1afe46e6e667fe7c6887893701f
+license    : Custom - Microsoft
+component  : desktop.font
+summary    : Microsoft core fonts for the web
+description: |
+    Microsoft core fonts for the web
+builddeps  :
+    - cabextract
+extract    : no
+build      : |
+    cabextract --lowercase $sources/*.exe --directory=$workdir
+    cabextract --lowercase $workdir/*.cab --directory=ttfs
+install    : |
+    install -Dm00644 $workdir/ttfs/*.{ttf,ttc} -t $installdir/usr/share/fonts/truetype/mscorefonts2

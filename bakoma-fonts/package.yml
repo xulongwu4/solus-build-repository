@@ -1,0 +1,14 @@
+name       : bakoma-fonts
+version    : 1
+release    : 1
+source     :
+    - http://mirrors.ctan.org/fonts/cm/ps-type1/bakoma.zip : 6fb67f2fdaf5846fe81734d04d69096b847d2b41ca6da7923a9a73437e588734
+license    : Bakoma
+component  : desktop.font
+summary    : Computer Modern and AMS fonts in outline form
+description: |
+    This col­lec­tion pro­vides the CM and AMS fonts in both
+    Adobe Type 1 and TrueType formats.
+install    : |
+    install -dm00755 $installdir/usr/share/texmf-dist/fonts/cm/ps-type1/bakoma
+    cp -r * $installdir/usr/share/texmf-dist/fonts/cm/ps-type1/bakoma

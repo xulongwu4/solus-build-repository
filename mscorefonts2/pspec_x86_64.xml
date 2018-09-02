@@ -1,0 +1,57 @@
+<PISI>
+    <Source>
+        <Name>mscorefonts2</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>Custom - Microsoft</License>
+        <PartOf>desktop.font</PartOf>
+        <Summary xml:lang="en">Microsoft core fonts for the web</Summary>
+        <Description xml:lang="en">Microsoft core fonts for the web
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>mscorefonts2</Name>
+        <Summary xml:lang="en">Microsoft core fonts for the web</Summary>
+        <Description xml:lang="en">Microsoft core fonts for the web
+</Description>
+        <PartOf>desktop.font</PartOf>
+        <Files>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/calibri.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/calibrib.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/calibrii.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/calibriz.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/cambria.ttc</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/cambriab.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/cambriai.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/cambriaz.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/candara.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/candarab.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/candarai.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/candaraz.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/consola.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/consolab.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/consolai.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/consolaz.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/constan.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/constanb.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/constani.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/constanz.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/corbel.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/corbelb.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/corbeli.ttf</Path>
+            <Path fileType="data">/usr/share/fonts/truetype/mscorefonts2/corbelz.ttf</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-08-18</Date>
+            <Version>1</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
