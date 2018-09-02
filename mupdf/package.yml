@@ -1,16 +1,14 @@
 name       : mupdf
-version    : 1.12.0
+version    : 1.13.0
 release    : 1
 source     :
-    - https://github.com/ArtifexSoftware/mupdf/archive/1.12.0.tar.gz : 9cb44cf091d85a823078cf3990862299ce53b9b54ef9747e6053653ce0bf7a64
+    - https://github.com/ArtifexSoftware/mupdf/archive/1.13.0.tar.gz : 10370d077d08b57460aa9901cb66a0646095870caa6e6f224902a8cd5473a458
 license    : AGPL-3.0
 component  : office.viewers
 summary    : A lightweight PDF, XPS, and E-book viewer
 description: |
     MuPDF is a lightweight open source software framework for viewing and converting PDF, XPS, and E-book documents.
-patterns   :
-    - /usr/lib
-    - /usr/include
+libsplit   : no
 builddeps  :
     - pkgconfig(freeglut)
     - pkgconfig(freetype2)
@@ -22,20 +20,16 @@ builddeps  :
     - ghostscript-devel
     - jbig2dec-devel
 setup      : |
-    %patch -p1 < $pkgfiles/0001-mupdf-openjpeg.patch
+    %patch -p1 < $pkgfiles/mupdf-1.13.0-shared_libs-1.patch
+    rm -rf thirdparty/*
 build      : |
     %make
 install    : |
     prefix=/usr %make_install
 
     # Set proper permission bits
-    chmod 644 $installdir/usr/lib/*.a
     chmod 644 $installdir/usr/share/man/man1/*.1
-    #chmod 0644 $(find $installdir/usr/share/doc/mupdf -type f)
     find $installdir/usr/share/doc/mupdf -type f -print0 | xargs -0 chmod 644
-    #chmod 644 $installdir/usr/include/mupdf/*.h \
-    #           $installdir/usr/include/mupdf/fitz/*.h \
-    #           $installdir/usr/include/mupdf/pdf/*.h
     find $installdir/usr/include/mupdf -type f -print0 | xargs -0 chmod 644
 
     ln -sv /usr/bin/mupdf-x11 $installdir/usr/bin/mupdf
