@@ -13,9 +13,11 @@ builddeps  :
     - pkgconfig(freeglut)
     - pkgconfig(freetype2)
     - pkgconfig(glu)
+    - pkgconfig(harfbuzz)
     - pkgconfig(libcurl)
     - pkgconfig(libjpeg)
     - pkgconfig(libopenjp2)
+    - pkgconfig(openssl)
     - pkgconfig(xrandr)
     - ghostscript-devel
     - jbig2dec-devel
@@ -23,7 +25,7 @@ setup      : |
     %patch -p1 < $pkgfiles/mupdf-1.13.0-shared_libs-1.patch
     rm -rf thirdparty/*
 build      : |
-    %make
+    XCFLAGS="-fPIC" %make
 install    : |
     prefix=/usr %make_install
 
