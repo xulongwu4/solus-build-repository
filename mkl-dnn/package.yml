@@ -1,8 +1,9 @@
 name       : mkl-dnn
-version    : 0.15
+version    : 0.17.1
 release    : 1
 source     :
-    - https://github.com/intel/mkl-dnn/archive/v0.15.tar.gz : 517a6c60b4d77170fc592ce1ccb61c7143f0f45e5d81bb1cda6ad2c2b6aea5d7
+    - https://github.com/intel/mkl-dnn/archive/v0.17.1.tar.gz : 75777735458c9e03434d9b1b111b92bca4230427b8de890dd694039dc34480ed
+    - https://github.com/intel/mkl-dnn/releases/download/v0.17.1/mklml_lnx_2019.0.1.20180928.tgz : f00dc3b142a5be399bdeebd7e7ea369545a35d4fb84c86f98b6b048d72685295
 license    : Apache-2.0
 component  : programming
 summary    : Intel(R) Math Kernel Library for Deep Neural Networks (Intel(R) MKL-DNN)
@@ -10,11 +11,16 @@ description: |
     Intel(R) Math Kernel Library for Deep Neural Networks (Intel(R) MKL-DNN) is an open source performance library for deep learning applications.
     The library accelerates deep learning applications and framework on Intel(R) architecture.
     Intel(R) MKL-DNN contains vectorized and threaded building blocks which you can use to implement deep neural networks (DNN) with C and C++ interfaces.
+patterns   :
+    - /usr/lib/libiomp5.so
+    - /usr/lib/libmklml_intel.so
     #builddeps  :
 setup      : |
-    mkdir -p build
+    mkdir -p build external
+    MKL_NAME=$(basename $sources/mklml_lnx_*.tgz)
+    tar -zxvf $sources/$MKL_NAME -C external
     pushd build
-    %cmake -DCMAKE_INSTALL_PREFIX=$installdir/usr ..
+    %cmake ..
     popd
 build      : |
     pushd build
@@ -24,7 +30,7 @@ install    : |
     pushd build
     %make_install
     popd
-check      : |
-    pushd build
-    %make test
-    popd
+    #check      : |
+    #    pushd build
+    #    %make test
+    #    popd

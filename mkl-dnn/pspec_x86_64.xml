@@ -11,7 +11,6 @@
         <Description xml:lang="en">Intel(R) Math Kernel Library for Deep Neural Networks (Intel(R) MKL-DNN) is an open source performance library for deep learning applications.
 The library accelerates deep learning applications and framework on Intel(R) architecture.
 Intel(R) MKL-DNN contains vectorized and threaded building blocks which you can use to implement deep neural networks (DNN) with C and C++ interfaces.
-#builddeps  :
 </Description>
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
@@ -21,24 +20,39 @@ Intel(R) MKL-DNN contains vectorized and threaded building blocks which you can 
         <Description xml:lang="en">Intel(R) Math Kernel Library for Deep Neural Networks (Intel(R) MKL-DNN) is an open source performance library for deep learning applications.
 The library accelerates deep learning applications and framework on Intel(R) architecture.
 Intel(R) MKL-DNN contains vectorized and threaded building blocks which you can use to implement deep neural networks (DNN) with C and C++ interfaces.
-#builddeps  :
 </Description>
         <PartOf>programming</PartOf>
         <Files>
-            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/include/mkldnn.h</Path>
-            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/include/mkldnn.hpp</Path>
-            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/include/mkldnn_debug.h</Path>
-            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/include/mkldnn_types.h</Path>
-            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/lib/libmkldnn.so</Path>
-            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/lib/libmkldnn.so.0</Path>
-            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/lib/libmkldnn.so.0.14.0</Path>
-            <Path fileType="data">/home/build/YPKG/root/mkl-dnn/install/usr/share/doc/mkldnn/LICENSE</Path>
+            <Path fileType="library">/usr/lib/libiomp5.so</Path>
+            <Path fileType="library">/usr/lib/libmkldnn.so.0</Path>
+            <Path fileType="library">/usr/lib/libmkldnn.so.0.17.1.0</Path>
+            <Path fileType="library">/usr/lib/libmklml_intel.so</Path>
+            <Path fileType="doc">/usr/share/doc/mkldnn/LICENSE</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>mkl-dnn-devel</Name>
+        <Summary xml:lang="en">Development files for mkl-dnn</Summary>
+        <Description xml:lang="en">Intel(R) Math Kernel Library for Deep Neural Networks (Intel(R) MKL-DNN) is an open source performance library for deep learning applications.
+The library accelerates deep learning applications and framework on Intel(R) architecture.
+Intel(R) MKL-DNN contains vectorized and threaded building blocks which you can use to implement deep neural networks (DNN) with C and C++ interfaces.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">mkl-dnn</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/mkldnn.h</Path>
+            <Path fileType="header">/usr/include/mkldnn.hpp</Path>
+            <Path fileType="header">/usr/include/mkldnn_debug.h</Path>
+            <Path fileType="header">/usr/include/mkldnn_types.h</Path>
+            <Path fileType="library">/usr/lib/libmkldnn.so</Path>
         </Files>
     </Package>
     <History>
         <Update release="1">
-            <Date>2018-07-29</Date>
-            <Version>0.15</Version>
+            <Date>2018-11-29</Date>
+            <Version>0.17.1</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>
             <Email>xulongwu4@gmail.com</Email>
