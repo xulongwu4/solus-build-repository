@@ -21,6 +21,7 @@ Adobe Type 1 and TrueType formats.
 </Description>
         <PartOf>desktop.font</PartOf>
         <Files>
+            <Path fileType="data">/usr/share/fonts/truetype/ttf-bakoma</Path>
             <Path fileType="data">/usr/share/texmf-dist/fonts/cm/ps-type1/bakoma/BaKoMa-AMS.Fonts</Path>
             <Path fileType="data">/usr/share/texmf-dist/fonts/cm/ps-type1/bakoma/BaKoMa-CM.Fonts</Path>
             <Path fileType="data">/usr/share/texmf-dist/fonts/cm/ps-type1/bakoma/LICENCE</Path>
@@ -1084,7 +1085,7 @@ Adobe Type 1 and TrueType formats.
     </Package>
     <History>
         <Update release="1">
-            <Date>2018-08-19</Date>
+            <Date>2018-09-27</Date>
             <Version>1</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>

@@ -12,3 +12,5 @@ description: |
 install    : |
     install -dm00755 $installdir/usr/share/texmf-dist/fonts/cm/ps-type1/bakoma
     cp -r * $installdir/usr/share/texmf-dist/fonts/cm/ps-type1/bakoma
+    install -dm00755 $installdir/usr/share/fonts/truetype
+    ln -s /usr/share/texmf-dist/fonts/cm/ps-type1/bakoma/ttf $installdir/usr/share/fonts/truetype/ttf-bakoma
