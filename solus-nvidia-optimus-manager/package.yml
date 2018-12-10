@@ -1,0 +1,18 @@
+name       : solus-nvidia-optimus-manager
+version    : 0.1
+release    : 1
+source     :
+    - https://github.com/xulongwu4/solus-nvidia-optimus-manager/archive/v0.1.tar.gz : b39c9ae313db9c0f26e6f0ffd6288d40460f0f9d5460d128aae323e4f3fdfb9d
+license    : GPL-2.0-or-later
+component  : system.base
+summary    : A python script to manage the status of NVIDIA graphics card on an Optimus setup for Solus linux
+description: |
+    A python script to manage the status of NVIDIA graphics card on an Optimus setup for Solus linux
+rundeps  :
+    - pciutils
+install    : |
+    install -Dm00755 nvidia-optimus-manager $installdir/usr/bin/nvidia-optimus-manager
+    install -dm00755 $installdir/usr/share/lightdm/lightdm.conf.d
+    install -Dm00644 99-nvidia.conf $installdir/usr/share/lightdm/lightdm.conf.d/99-nvidia.conf
+    install -dm00755 $installdir/%libdir%/systemd/system
+    install -Dm00644 nvidia-optimus-autoconfig.service $installdir/%libdir%/systemd/system/nvidia-optimus-autoconfig.service
