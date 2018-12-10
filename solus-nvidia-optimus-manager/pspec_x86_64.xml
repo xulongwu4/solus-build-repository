@@ -1,11 +1,11 @@
 <PISI>
     <Source>
-        <Name>solus-nvidia-optimus-manager</Name>
+        <Name>nvidia-optimus-manager</Name>
         <Packager>
             <Name>Longwu Ou</Name>
             <Email>xulongwu4@gmail.com</Email>
         </Packager>
-        <License>GPL-2.0-or-later</License>
+        <License>MIT</License>
         <PartOf>system.base</PartOf>
         <Summary xml:lang="en">A python script to manage the status of NVIDIA graphics card on an Optimus setup for Solus linux</Summary>
         <Description xml:lang="en">A python script to manage the status of NVIDIA graphics card on an Optimus setup for Solus linux
@@ -13,7 +13,7 @@
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
-        <Name>solus-nvidia-optimus-manager</Name>
+        <Name>nvidia-optimus-manager</Name>
         <Summary xml:lang="en">A python script to manage the status of NVIDIA graphics card on an Optimus setup for Solus linux</Summary>
         <Description xml:lang="en">A python script to manage the status of NVIDIA graphics card on an Optimus setup for Solus linux
 </Description>
@@ -21,13 +21,21 @@
         <Files>
             <Path fileType="executable">/usr/bin/nvidia-optimus-manager</Path>
             <Path fileType="library">/usr/lib64/systemd/system/nvidia-optimus-autoconfig.service</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>nvidia-optimus-manager-lightdm-integration</Name>
+        <Summary xml:lang="en">nvidia-optimus-manager integration for LightDM</Summary>
+        <Description xml:lang="en">A python script to manage the status of NVIDIA graphics card on an Optimus setup for Solus linux
+</Description>
+        <Files>
             <Path fileType="data">/usr/share/lightdm/lightdm.conf.d/99-nvidia.conf</Path>
         </Files>
     </Package>
     <History>
         <Update release="1">
             <Date>2018-12-10</Date>
-            <Version>0.1</Version>
+            <Version>0.1.1</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>
             <Email>xulongwu4@gmail.com</Email>
