@@ -21,3 +21,5 @@ install    : |
     install -Dm00644 99-nvidia.conf $installdir/usr/share/lightdm/lightdm.conf.d/99-nvidia.conf
     install -dm00755 $installdir/%libdir%/systemd/system
     install -Dm00644 nvidia-optimus-autoconfig.service $installdir/%libdir%/systemd/system/nvidia-optimus-autoconfig.service
+    install -dm00755 $installdir/%libdir%/systemd/system/multi-user.target.wants
+    ln -sv ../nvidia-optimus-autoconfig.service $installdir/%libdir%/systemd/system/multi-user.target.wants/.

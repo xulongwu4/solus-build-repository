@@ -20,6 +20,7 @@
         <PartOf>system.base</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin/nvidia-optimus-manager</Path>
+            <Path fileType="library">/usr/lib64/systemd/system/multi-user.target.wants/nvidia-optimus-autoconfig.service</Path>
             <Path fileType="library">/usr/lib64/systemd/system/nvidia-optimus-autoconfig.service</Path>
         </Files>
     </Package>
