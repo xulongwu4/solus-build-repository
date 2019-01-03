@@ -1,0 +1,8 @@
+libdir=/usr/lib64
+includedir=/usr/include
+
+Name: cudart
+Description: CUDA Runtime Library
+Version: 9.2
+Libs: -L${libdir} -lcudart
+Cflags: -I${includedir}/cuda

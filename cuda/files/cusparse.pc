@@ -1,0 +1,8 @@
+libdir=/usr/lib64
+includedir=/usr/include
+
+Name: cusparse
+Description: CUDA Sparse Matrix Library
+Version: 9.2
+Libs: -L${libdir} -lcusparse
+Cflags: -I${includedir}/cuda 

@@ -1,0 +1,50 @@
+<PISI>
+    <Source>
+        <Name>nccl</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>EULA</License>
+        <PartOf>programming.tools</PartOf>
+        <Summary xml:lang="en">The NVIDIA Collective Communications Library</Summary>
+        <Description xml:lang="en">The NVIDIA Collective Communications Library (NCCL) implements multi-GPU and multi-node collective communication primitives that are performance optimized for NVIDIA GPUs.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>nccl</Name>
+        <Summary xml:lang="en">The NVIDIA Collective Communications Library</Summary>
+        <Description xml:lang="en">The NVIDIA Collective Communications Library (NCCL) implements multi-GPU and multi-node collective communication primitives that are performance optimized for NVIDIA GPUs.
+</Description>
+        <PartOf>programming.tools</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib64/libnccl.so.2</Path>
+            <Path fileType="library">/usr/lib64/libnccl.so.2.3.7</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>nccl-devel</Name>
+        <Summary xml:lang="en">Development files for nccl</Summary>
+        <Description xml:lang="en">The NVIDIA Collective Communications Library (NCCL) implements multi-GPU and multi-node collective communication primitives that are performance optimized for NVIDIA GPUs.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">nccl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/nccl.h</Path>
+            <Path fileType="library">/usr/lib64/libnccl.so</Path>
+            <Path fileType="library">/usr/lib64/libnccl_static.a</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2019-01-01</Date>
+            <Version>2.3.7</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,8 @@
+libdir=/usr/lib64
+includedir=/usr/include
+
+Name: nppig
+Description: NVIDIA Performance Primitives - Image Processing - Geometry
+Version: 9.2
+Libs: -L${libdir} -lnppig
+Cflags: -I${includedir}/cuda

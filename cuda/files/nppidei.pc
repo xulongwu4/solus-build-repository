@@ -1,0 +1,8 @@
+libdir=/usr/lib64
+includedir=/usr/include
+
+Name: nppidei
+Description: NVIDIA Performance Primitives - Image Processing - DEI
+Version: 9.2
+Libs: -L${libdir} -lnppidei
+Cflags: -I${includedir}/cuda 

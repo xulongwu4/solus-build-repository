@@ -1,0 +1,8 @@
+libdir=/usr/lib64
+includedir=/usr/include
+
+Name: nppi
+Description: NVIDIA Performance Primitives - Image Processing
+Version: 9.2
+Libs: -L${libdir} -lnppi
+Cflags: -I${includedir}/cuda

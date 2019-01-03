@@ -1,0 +1,47 @@
+name       : tensorrt
+version    : 5.0.2.6
+release    : 1
+source     :
+    - https://p-def8.pcloud.com/cBZkoLoEzZq4zFkRZZZSeIKI7Z2ZZD9VZkZUwCidZPVZT7Z90Zs0Z1XZcZk0ZNXZf7Zv0ZuXZG7Z4kZ80ZJwvC7ZiwmQaAzQiFRCjYNTPOnWkmgJf7tk/TensorRT-5.0.2.6.Ubuntu-16.04.4.x86_64-gnu.cuda-9.0.cudnn7.3.tar.gz : ef5f08be5a43d8a52c53c038dc48093bc5ec9dfab407666966b3dceaa9783311
+license    : EULA
+component  : programming.tools
+summary    : A platform for high-performance deep learning inference
+description: |
+    NVIDIA TensorRT™ is a platform for high-performance deep learning inference.
+strip      : no
+builddeps  :
+    - pkgconfig(cudart)
+    - cudnn
+    - pip
+install    : |
+    install -dm00755 $installdir/usr/include
+    install -Dm00644 -t $installdir/usr/include include/*.h
+
+    install -dm00755 $installdir/usr/lib64
+    cp -r lib/lib* $installdir/usr/lib64
+    rm -rv $installdir/usr/lib64/libprotobuf*.a
+
+    pushd python
+    pip install tensorrt-*.whl --no-dependencies --root="%installroot%"
+    pip3 install tensorrt-*.whl --no-dependencies --root="%installroot%"
+    popd
+
+    pushd uff
+    pip3 install uff-*.whl --no-deps --root="%installroot%"
+    mv $installdir/usr/bin/convert-to-uff $installdir/usr/bin/convert-to-uff3
+    pip install uff-*.whl --no-deps --root="%installroot%"
+    popd
+
+    pushd graphsurgeon
+    pip install graphsurgeon-*.whl --no-deps --root="%installroot%"
+    pip3 install graphsurgeon-*.whl --no-deps --root="%installroot%"
+    popd
+
+    install -dm00755 $installdir/usr/share/doc/tensorrt
+    cp -r doc $installdir/usr/share/doc/tensorrt
+    install -Dm00644 TensorRT-Release-Notes.pdf $installdir/usr/share/doc/tensorrt
+
+    install -dm00755 $installdir/usr/share/tensorrt
+    cp -r data/ $installdir/usr/share/tensorrt
+    cp -r python/data/resnet50 $installdir/usr/share/tensorrt/data
+    cp -r samples/ $installdir/usr/share/tensorrt

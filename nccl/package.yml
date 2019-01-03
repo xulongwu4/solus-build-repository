@@ -1,0 +1,15 @@
+name       : nccl
+version    : 2.3.7
+release    : 1
+source     :
+    - https://p-def6.pcloud.com/cBZadWkOzZRPbzkRZZZH9AKI7Z2ZZD9VZkZfLEUXZoXZy7ZdVZD0Zo0ZY0Z5kZW7ZrkZH7Zk0ZYVZ3VZ75ZdEvC7Z6cyubui99yXjxzk9iyDh8X8E7gjX/nccl_2.3.7-1_x86_64.txz : 4684678c12c3aecb8be4f5912edffae4c1a090e0e8863dafffaf39c532622534
+license    : EULA
+component  : programming.tools
+summary    : The NVIDIA Collective Communications Library
+description: |
+    The NVIDIA Collective Communications Library (NCCL) implements multi-GPU and multi-node collective communication primitives that are performance optimized for NVIDIA GPUs.
+install    : |
+    install -dm00755 $installdir/usr/include
+    install -Dm00644 include/nccl.h $installdir/usr/include/nccl.h
+    install -dm00755 $installdir/usr/lib64
+    cp -r lib/lib* $installdir/usr/lib64

@@ -1,8 +1,8 @@
 name       : python-absl-py
-version    : 0.1.13
+version    : 0.6.1
 release    : 1
 source     :
-    - https://github.com/abseil/abseil-py/archive/pypi-v0.1.13.tar.gz : 50c7a80a267f772b5d0cabf1ed043daa470aa73d613fd442b40ea451646c44d0
+    - https://github.com/abseil/abseil-py/archive/pypi-v0.6.1.tar.gz : 6bc7189b0730ab6ab176d9cea406f352a489709b9c41d04fbed3dc2256a50bb6
 license    : Apache-2.0
 component  : programming.python
 summary    : Abseil Python Common Libraries

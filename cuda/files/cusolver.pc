@@ -1,0 +1,8 @@
+libdir=/usr/lib64
+includedir=/usr/include
+
+Name: cusolver
+Description: CUDA Dense and Sparse Direct Linear Solvers and Eigen Solvers
+Version: 9.2
+Libs: -L${libdir} -lcusolver
+Cflags: -I${includedir}/cuda 

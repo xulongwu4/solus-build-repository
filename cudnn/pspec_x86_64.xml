@@ -1,0 +1,50 @@
+<PISI>
+    <Source>
+        <Name>cudnn</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>EULA</License>
+        <PartOf>programming.tools</PartOf>
+        <Summary xml:lang="en">The NVIDIA CUDA® Deep Neural Network library</Summary>
+        <Description xml:lang="en">NVIDIA cuDNN is a GPU-accelerated library of primitives for deep neural networks.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>cudnn</Name>
+        <Summary xml:lang="en">The NVIDIA CUDA® Deep Neural Network library</Summary>
+        <Description xml:lang="en">NVIDIA cuDNN is a GPU-accelerated library of primitives for deep neural networks.
+</Description>
+        <PartOf>programming.tools</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib64/libcudnn.so.7</Path>
+            <Path fileType="library">/usr/lib64/libcudnn.so.7.3.1</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>cudnn-devel</Name>
+        <Summary xml:lang="en">Development files for cudnn</Summary>
+        <Description xml:lang="en">NVIDIA cuDNN is a GPU-accelerated library of primitives for deep neural networks.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">cudnn</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/cuda/cudnn.h</Path>
+            <Path fileType="library">/usr/lib64/libcudnn.so</Path>
+            <Path fileType="library">/usr/lib64/libcudnn_static.a</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2019-01-01</Date>
+            <Version>7.3.1</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
