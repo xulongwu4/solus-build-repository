@@ -1,8 +1,8 @@
 name       : nvidia-optimus-manager
-version    : 0.1.1
-release    : 1
+version    : 0.2.1
+release    : 2
 source     :
-    - https://github.com/xulongwu4/solus-nvidia-optimus-manager/archive/v0.1.1.tar.gz : a3bb79ff831842005f308ea87e1f32bfaafa21f1be1e8ab2455935569b999eac
+    - https://github.com/xulongwu4/nvidia-optimus-manager/archive/v0.2.1.tar.gz : 64638bbdaf6fe57748917e42165e878a5089e77097335fc68e824d4c43dd5e10
 license    : MIT
 component  : system.base
 summary    : 
