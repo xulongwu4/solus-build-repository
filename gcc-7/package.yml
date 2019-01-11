@@ -1,0 +1,173 @@
+name       : gcc-7
+version    : 7.4.0
+release    : 1
+source     :
+    - https://ftp.gnu.org/gnu/gcc/gcc-7.4.0/gcc-7.4.0.tar.xz : eddde28d04f334aec1604456e536416549e9b1aa137fc69204e65eb0c009fe51
+homepage   : http://gcc.gnu.org/
+license    :
+    - GPL-3.0
+component  :
+    - system.devel
+    - ^g++-7 : system.devel
+    - ^gfortran-7 : system.devel
+    - ^gfortran-7-32bit : emul32
+    - ^libgcc-7 : system.base
+    - ^libgcc-7-32bit : emul32
+    - ^libstdc++-7 : system.base
+    - ^libstdc++-7-32bit : emul32
+    - ^libgomp-7 : system.base
+    - ^libgomp-7-32bit : emul32
+    - ^libgfortran-7 : programming.library
+    - ^libgfortran-7-32bit : emul32
+autodep    : no
+ccache     : no
+summary    : GNU Compiler Collection
+description: |
+    The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Java, Ada, and Go, as well as libraries for these languages (libstdc++, libgcj,...). GCC was originally written as the compiler for the GNU operating system. The GNU system was developed to be 100% free software, free in the sense that it respects the user's freedom.
+builddeps  :
+    - glibc-32bit-devel
+    - isl-32bit-devel
+    - libgcc-32bit
+    - libstdc++-32bit
+rundeps    :
+    - mpc
+    - mpfr
+    - ^g++-7 : gcc-7
+    - ^gfortran-7 :
+        - gcc-7
+        - libgfortran-7
+    - ^libgcc-7-32bit : libgcc-7
+    - ^libstdc++-7-32bit : libstdc++-7
+    - ^libgomp-7-32bit :
+        - libgcc-7-32bit
+        - libgomp-7
+    - ^libgfortran-7-32bit : libgfortran-7
+      #replaces   :
+    #    - ^libgfortran-32bit : gfortran-32bit
+patterns   :
+    - ^libgcc-7 :
+        - /usr/local/lib64/libgcc*
+        - /usr/local/lib64/libcc1*
+        - /usr/local/lib64/libasan*
+        - /usr/local/lib64/libtsan*
+        - /usr/local/lib64/libatomic*
+        - /usr/local/lib64/libitm*
+        - /usr/local/lib64/libquadmath*
+        - /usr/local/lib64/libssp*
+        - /usr/local/lib64/libmudflap*
+        - /usr/local/lib64/libsanit*
+        - /usr/local/lib64/libvtv*
+        - /usr/local/lib64/liblsan*
+        - /usr/local/lib64/libubsan*
+        - /usr/local/lib64/libcilkrts*
+        - /usr/local/lib64/libmpx*
+        - /usr/local/lib64/crt*.o
+    - ^libgcc-7-32bit :
+        - /usr/local/lib32/libgcc*
+        - /usr/local/lib32/libasan*
+        - /usr/local/lib32/libtsan*
+        - /usr/local/lib32/libatomic*
+        - /usr/local/lib32/libitm*
+        - /usr/local/lib32/libquadmath*
+        - /usr/local/lib32/libssp*
+        - /usr/local/lib32/libmudflap*
+        - /usr/local/lib32/libsanit*
+        - /usr/local/lib32/libvtv*
+        - /usr/local/lib32/liblsan*
+        - /usr/local/lib32/libubsan*
+        - /usr/local/lib32/libcilkrts*
+        - /usr/local/lib32/libmpx*
+        - /usr/local/lib32/crt*.o
+    - ^libgfortran-7 : /usr/local/lib64/*fortran*
+    - ^libgfortran-7-32bit : /usr/local/lib32/*fortran*
+    - ^libgomp-7 : /usr/local/lib64/libgomp*
+    - ^libgomp-7-32bit : /usr/local/lib32/libgomp*
+    - ^libstdc++-7 :
+        - /usr/local/lib64/lib*++*
+        - /usr/local/share/locale/*/LC_MESSAGES/cpplib.mo
+        - /usr/local/share/locale/*/LC_MESSAGES/libstdc++.mo
+    - ^libstdc++-7-32bit : /usr/local/lib32/lib*++*
+    - main : /usr/local/lib64/*.a
+    - ^g++-7 :
+        - /usr/local/bin/c++
+        - /usr/local/bin/cpp
+        - /usr/local/bin/g++*
+        - /usr/local/bin/*-g++*
+        - /usr/local/bin/*-c++*
+        - /usr/local/include/c++
+        - /usr/local/lib64/lib*++*.a
+        - /usr/local/share/man/*/cpp*
+        - /usr/local/share/man/*/g++*
+    - ^gfortran-7 :
+        - /usr/local/bin/*fortran*
+        - /usr/local/lib64/*fortran*.a
+        - /usr/local/share/man/*/*fortran*
+setup      : |
+    %patch -p1 < $pkgfiles/0001-gcc-Ensure-SSP-is-always-present.patch
+    %patch -p1 < $pkgfiles/0002-Use-usr-lib-64-32-x32-for-linker-locations-on-Solus-.patch
+    %patch -p1 < $pkgfiles/optimize-at-least-some.patch
+    %patch -p1 < $pkgfiles/optimize.patch
+
+    # Fix invalid instructions i386
+    %patch -p1 < $pkgfiles/bz80706.patch
+
+    %patch -p1 < $pkgfiles/narrow-vpxor.patch
+
+    export triplet=x86_64-solus-linux
+    # Set sane and safe flags for a compiler build
+    export CFLAGS="-mtune=generic -march=x86-64 -g1 -O3 -fstack-protector -pipe -fPIC -Wl,-z,relro -Wl,-z,now -Wl,-z,max-page-size=0x1000"
+    export CXXFLAGS="-mtune=generic -march=x86-64 -g1 -O3 -pipe -fPIC -Wl,-z,max-page-size=0x1000"
+    export CFLAGS_FOR_TARGET=${CFLAGS}
+    export CC=${triplet}-gcc
+    export CXX=${triplet}-g++
+
+    mkdir build; pushd build
+    ../configure --prefix=/usr/local \
+               --with-pkgversion='Solus' \
+               --libdir=/usr/local/lib64 \
+               --libexecdir=/usr/local/lib64 \
+               --with-system-zlib \
+               --enable-shared \
+               --enable-threads=posix \
+               --enable-gnu-indirect-function \
+               --enable-__cxa_atexit \
+               --enable-plugin \
+               --enable-gold \
+               --enable-ld=default \
+               --enable-clocale=gnu \
+               --enable-multilib \
+               --with-multilib-list=m32,m64 \
+               --enable-lto \
+               --with-bugurl='https://dev.solus-project.com/' \
+               --with-arch_32=i686 \
+               --enable-linker-build-id  \
+               --with-linker-hash-style=gnu \
+               --with-gnu-ld \
+               --build=${triplet} \
+               --target=${triplet} \
+               --enable-languages=c,c++,fortran
+
+    # Print the summary
+    ../contrib/test_summary
+build      : |
+    %make -C build profiledbootstrap
+install    : |
+    %make_install -C build
+
+    export triplet=x86_64-solus-linux
+    # Linky linky
+    #install -dm 00755 $installdir/lib
+    #ln -s /usr/bin/cpp $installdir/lib/cpp
+    ln -s /usr/local/bin/gcc $installdir/usr/local/bin/cc
+
+    for crt in libgcc.a crtbegin.o crtend.o crtbeginS.o crtendS.o; do
+        ln -s /usr/local/lib64/gcc/$triplet/$version/$crt $installdir/usr/local/lib64/$crt
+        ln -s /usr/local/lib64/gcc/$triplet/$version/32/$crt $installdir/usr/local/lib32/$crt
+    done
+
+    # Ensure LTO will work properly.
+    install -dm 00755 $installdir/usr/local/lib64/bfd-plugins
+    ln -s /usr/local/lib64/gcc/$triplet/$version/liblto_plugin.so $installdir/usr/local/lib64/bfd-plugins/liblto_plugin.so
+
+    # eopkg built-in dbginfo is janky
+    rm $installdir/usr/local/bin/gcov-dump
