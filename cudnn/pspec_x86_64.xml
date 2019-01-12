@@ -20,7 +20,7 @@
         <PartOf>programming.tools</PartOf>
         <Files>
             <Path fileType="library">/usr/lib64/libcudnn.so.7</Path>
-            <Path fileType="library">/usr/lib64/libcudnn.so.7.3.1</Path>
+            <Path fileType="library">/usr/lib64/libcudnn.so.7.4.2</Path>
         </Files>
     </Package>
     <Package>
@@ -40,8 +40,8 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2019-01-01</Date>
-            <Version>7.3.1</Version>
+            <Date>2019-01-12</Date>
+            <Version>7.4.2</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>
             <Email>xulongwu4@gmail.com</Email>

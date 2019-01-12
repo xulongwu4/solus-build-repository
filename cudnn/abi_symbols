@@ -2,8 +2,10 @@ libcudnn.so.7:cudnnActivationBackward
 libcudnn.so.7:cudnnActivationForward
 libcudnn.so.7:cudnnAddTensor
 libcudnn.so.7:cudnnBatchNormalizationBackward
+libcudnn.so.7:cudnnBatchNormalizationBackwardEx
 libcudnn.so.7:cudnnBatchNormalizationForwardInference
 libcudnn.so.7:cudnnBatchNormalizationForwardTraining
+libcudnn.so.7:cudnnBatchNormalizationForwardTrainingEx
 libcudnn.so.7:cudnnCTCLoss
 libcudnn.so.7:cudnnConvolutionBackwardBias
 libcudnn.so.7:cudnnConvolutionBackwardData
@@ -67,6 +69,9 @@ libcudnn.so.7:cudnnGetAlgorithmDescriptor
 libcudnn.so.7:cudnnGetAlgorithmPerformance
 libcudnn.so.7:cudnnGetAlgorithmSpaceSize
 libcudnn.so.7:cudnnGetBackdoor
+libcudnn.so.7:cudnnGetBatchNormalizationBackwardExWorkspaceSize
+libcudnn.so.7:cudnnGetBatchNormalizationForwardTrainingExWorkspaceSize
+libcudnn.so.7:cudnnGetBatchNormalizationTrainingExReserveSpaceSize
 libcudnn.so.7:cudnnGetCTCLossDescriptor
 libcudnn.so.7:cudnnGetCTCLossWorkspaceSize
 libcudnn.so.7:cudnnGetCallback
