@@ -111,8 +111,6 @@ install    : |
     #install -Dm00644 tensorflow/c/c_api_experimental.h $installdir/usr/include/tensorflow/c/c_api_experimental.h
     #install -Dm00644 tensorflow/c/eager/c_api.h $installdir/usr/include/tensorflow/c/eager/c_api.h
 
-    popd
-
     # Remove tensorboard
     rm -rfv $installdir/usr/bin/tensorboard
 
@@ -128,14 +126,11 @@ install    : |
     # Remove tensorboard
     #rm -rfv $installdir/usr/bin/tensorboard
 
-    tensorflow/c/generate-pc.sh --prefix=/usr --libdir=lib64 --version=$version
-    install -dm00755 $installdir/usr/lib64/pkgconfig
-    install -Dm00644 tensorflow.pc $installdir/usr/lib64/pkgconfig/tensorflow.pc
-    install -Dm00755 bazel-bin/tensorflow/libtensorflow.so $installdir/usr/lib64/libtensorflow.so
-    install -Dm00755 bazel-bin/tensorflow/libtensorflow_framework.so $installdir/usr/lib64/libtensorflow_framework.so
-
     # tensorflow-gpu-c-api
-    install -dm00755 $installdir/usr/include/tensorflow/c/eager
+    tensorflow/c/generate-pc.sh --prefix=/usr --libdir=lib64 --version=$version
+    install -Dm00644 tensorflow.pc $installdir/usr/lib64/pkgconfig/tensorflow.pc
+    install -Dm00755 -t $installdir/usr/lib64 bazel-bin/tensorflow/lib*.so
     install -Dm00644 tensorflow/c/c_api.h $installdir/usr/include/tensorflow/c/c_api.h
     install -Dm00644 tensorflow/c/c_api_experimental.h $installdir/usr/include/tensorflow/c/c_api_experimental.h
     install -Dm00644 tensorflow/c/eager/c_api.h $installdir/usr/include/tensorflow/c/eager/c_api.h
+    popd
