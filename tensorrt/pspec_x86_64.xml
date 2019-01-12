@@ -61,7 +61,7 @@
             <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/legacy/parsers/__init__.pyc</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/legacy/utils/__init__.py</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/legacy/utils/__init__.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/tensorrt.cpython-35m-x86_64-linux-gnu.so</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/tensorrt.cpython-36m-x86_64-linux-gnu.so</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/tensorrt.so</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/uff-0.5.5.dist-info/INSTALLER</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/uff-0.5.5.dist-info/METADATA</Path>
@@ -184,7 +184,7 @@
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorrt/legacy/parsers/__pycache__/__init__.cpython-36.pyc</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorrt/legacy/utils/__init__.py</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorrt/legacy/utils/__pycache__/__init__.cpython-36.pyc</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorrt/tensorrt.cpython-35m-x86_64-linux-gnu.so</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorrt/tensorrt.cpython-36m-x86_64-linux-gnu.so</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorrt/tensorrt.so</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/uff-0.5.5.dist-info/INSTALLER</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/uff-0.5.5.dist-info/METADATA</Path>
@@ -2276,7 +2276,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2019-01-01</Date>
+            <Date>2019-01-12</Date>
             <Version>5.0.2.6</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>
