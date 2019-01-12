@@ -1,12 +1,8 @@
 name       : cuda
-version    : 9.0.176
+version    : 10.0.130
 release    : 1
 source     :
-    - https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run : 96863423feaa50b5c1c5e1b9ec537ef7ba77576a3986652351ae43e66bcd080c
-    - https://developer.nvidia.com/compute/cuda/9.0/Prod/patches/1/cuda_9.0.176.1_linux-run : a4bf63e08f01fcbdfa9ff147f54e45a84a3a70e571b28d2d62e9277c4f7a78ed
-    - https://developer.nvidia.com/compute/cuda/9.0/Prod/patches/2/cuda_9.0.176.2_linux-run : ec345f6d17d52c0ab6ea296ec389efdabca2ca56bddde8723bcea7be646ce5eb
-    - https://developer.nvidia.com/compute/cuda/9.0/Prod/patches/3/cuda_9.0.176.3_linux-run : 429e2c30da8021ec10f047ce475bc628832a5f93110f5cf487f2327dfb1aa8ca
-    - https://developer.nvidia.com/compute/cuda/9.0/Prod/patches/4/cuda_9.0.176.4_linux-run : 9353d0c9a7fa0f8483ae0ef12f372da14efaaf1e5f5ae011b142e9eaeb78d55f
+    - https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda_10.0.130_410.48_linux : 92351f0e4346694d0fcb4ea1539856c9eb82060c25654463bfd8574ec35ee39a
 extract    : no
 license    : EULA
 component  : programming.tools
@@ -26,20 +22,12 @@ setup      : |
     CUDA_INSTALL_FILE=$(basename $sources/cuda_${version}_*_linux*)
     sh $sources/$CUDA_INSTALL_FILE --extract=$workdir
 build      : |
-    ./cuda-linux.${version}-*.run -noprompt -nosymlink -prefix=$PKG_BUILD_DIR/cuda_build
+    ./cuda-linux.${version}-*.run -noprompt -nosymlink -no-man-page -prefix=$PKG_BUILD_DIR/cuda_build
     ./cuda-samples.${version}-*.run -noprompt -prefix=$PKG_BUILD_DIR/cuda_build/samples -cudaprefix=/usr
-
-    for i in $(seq 1 4); do
-        CUDA_PATCH_FILE=$(basename $sources/cuda_${version}.${i}_linux*)
-        sh $sources/$CUDA_PATCH_FILE --silent --accept-eula --installdir=$PKG_BUILD_DIR/cuda_build
-    done
 
     pushd $PKG_BUILD_DIR/cuda_build
     %patch -p1 < $pkgfiles/gcc-8.patch
     popd
-
-    # This should already be taken care of by nvcc.profile
-    #find samples -name "Makefile" -exec sed -i -e 's|$(CUDA_PATH)/include|/usr/include/cuda|g' {} \;
 install    : |
     #install -Dm00644 $pkgfiles/cuda.sh $installdir/usr/share/defaults/etc/profile.d/cuda.sh
 
@@ -52,14 +40,11 @@ install    : |
     cp -r doc/html $installdir/usr/share/doc/cuda
     cp -r doc/pdf $installdir/usr/share/doc/cuda
 
-    install -dm00755 $installdir/usr/share/man/man{1,3,7}
+    install -dm00755 $installdir/usr/share/man/man{1,7}
     install -Dm00644 -t $installdir/usr/share/man/man1 doc/man/man1/*
-    install -Dm00644 -t $installdir/usr/share/man/man3 doc/man/man3/*
     install -Dm00644 -t $installdir/usr/share/man/man7 doc/man/man7/*
     rm -v $installdir/usr/share/man/man1/nsight.*
     rm -v $installdir/usr/share/man/man1/nvvp.*
-    # This man page conflicts with *a lot* of other packages
-    mv $installdir/usr/share/man/man3/deprecated.3 $installdir/usr/share/man/man3/cuda_deprecated.3
 
     # Deal with binaries
     install -dm00755 $installdir/usr/bin
@@ -111,9 +96,6 @@ install    : |
     cp -r extras/CUPTI/include/* $installdir/usr/include/cuda/CUPTI
     cp -r extras/CUPTI/lib64/* $installdir/usr/lib64
     cp -r extras/CUPTI/sample $installdir/usr/share/cuda/samples/CUPTI
-
-    # Remove leftovers from patch
-    rm -v $installdir/usr/lib64/lib{cublas,nvblas}.so.9.0.{176,282,333,425}
 
     # nvml
     cp -r nvml/example $installdir/usr/share/cuda/samples/nvml
