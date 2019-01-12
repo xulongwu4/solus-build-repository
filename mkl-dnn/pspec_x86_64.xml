@@ -25,7 +25,7 @@ Intel(R) MKL-DNN contains vectorized and threaded building blocks which you can 
         <Files>
             <Path fileType="library">/usr/lib/libiomp5.so</Path>
             <Path fileType="library">/usr/lib/libmkldnn.so.0</Path>
-            <Path fileType="library">/usr/lib/libmkldnn.so.0.17.1.0</Path>
+            <Path fileType="library">/usr/lib/libmkldnn.so.0.17.2.0</Path>
             <Path fileType="library">/usr/lib/libmklml_intel.so</Path>
             <Path fileType="doc">/usr/share/doc/mkldnn/LICENSE</Path>
         </Files>
@@ -51,7 +51,7 @@ Intel(R) MKL-DNN contains vectorized and threaded building blocks which you can 
     </Package>
     <History>
         <Update release="1">
-            <Date>2018-11-29</Date>
+            <Date>2019-01-12</Date>
             <Version>0.17.1</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>
