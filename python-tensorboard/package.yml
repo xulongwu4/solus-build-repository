@@ -1,8 +1,8 @@
 name       : python-tensorboard
-version    : 1.7.0
-release    : 1
+version    : 1.10.0
+release    : 2
 source     :
-    - https://github.com/tensorflow/tensorboard/archive/1.7.0.tar.gz : b56a61433d58eea51d1d08194521126d78b1d6a92a03a243f89108d3890758fa
+    - https://github.com/tensorflow/tensorboard/archive/1.10.0.tar.gz : d003ee154e8ae85b0f8a34fd7f8bb82a7f0acface8ca80db982b3595e401794f
 license    : Apache-2.0
 component  : programming.python
 summary    : TensorFlow's Visualization Toolkit
@@ -12,43 +12,40 @@ description: |
 networking : yes
 builddeps  :
     - bazel
-    - python-setuptools
+    - virtualenv
 rundeps    :
     - numpy
     - python-bleach
-    - python-futures
     - python-markdown
     - python-protobuf
     #- python-tensorflow
     - python-wheel
     - python-werkzeug
 setup      : |
-    %patch -p1 < $pkgfiles/0001-use-source-files.patch
     bazel build //tensorboard/pip_package:build_pip_package
-build      : |
-    bazel-bin/tensorboard/pip_package/build_pip_package $workdir/py2build
-    pushd $workdir/py2build
-    python2.7 setup.py build
+
+    RUNFILES=bazel-bin/tensorboard/pip_package/build_pip_package.runfiles/org_tensorflow_tensorboard
+    mkdir -p $PKG_BUILD_DIR/pkg
+    cp -LR $RUNFILES/tensorboard $PKG_BUILD_DIR/pkg
+    pushd $PKG_BUILD_DIR/pkg
+    mv -f tensorboard/pip_package/setup.py .
+    mv -f tensorboard/pip_package/setup.cfg .
+    mv -f tensorboard/pip_package/MANIFEST.in .
+    mv -f tensorboard/pip_package/LICENSE .
+    mv -f tensorboard/pip_package/README.rst .
+
+    rm -rf tensorboard/pip_package
+    rm -f tensorboard/tensorboard
+
+    chmod -x LICENSE
     popd
 
-    bazel-bin/tensorboard/pip_package/build_pip_package $workdir/py3build
-    pushd $workdir/py3build
+    bazel shutdown
+build      : |
+    pushd $PKG_BUILD_DIR/pkg
     python3 setup.py build
     popd
 install    : |
-    pushd $workdir/py3build
+    pushd $PKG_BUILD_DIR/pkg
     python3 setup.py install --root="%installroot%"
-    popd
-
-    echo "%installroot%"
-    echo "$installdir"
-
-    echo $(ls $installdir/usr/bin)
-
-    for _f in $installdir/usr/bin/*; do
-        mv -v "$_f" "${_f}3"
-    done
-
-    pushd $workdir/py2build
-    python2.7 setup.py install --root="%installroot%"
     popd
