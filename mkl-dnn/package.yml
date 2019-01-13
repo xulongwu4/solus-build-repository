@@ -30,6 +30,9 @@ install    : |
     pushd build
     %make_install
     popd
+
+    # This conflicts with llvm
+    rm -v $installdir/usr/lib/libiomp5.so
 check      : |
     pushd build
     %make test
