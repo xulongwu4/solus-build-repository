@@ -29,14 +29,12 @@ builddeps  :
     - cudnn-devel
     - nccl-devel
     - tensorrt-devel
-    - mkl-dnn-devel
 rundeps    :
     - numpy
     #- python-absl-py
     - python-mock
     - python-protobuf
 setup      : |
-    %patch -p1 < $pkgfiles/import_bazelrc.patch
     %patch -p1 < $pkgfiles/xla.patch
 
     #cp -a $workdir $PKG_BUILD_DIR/py2build
@@ -92,8 +90,7 @@ build      : |
     #popd
 
     pushd $PKG_BUILD_DIR/py3build
-    #TEST_TMPDIR=$PKG_BUILD_DIR/bazel-cache-py3build bazel build --config=opt --config=cuda --config=mkl //tensorflow:libtensorflow.so //tensorflow/tools/pip_package:build_pip_package
-    TEST_TMPDIR=$PKG_BUILD_DIR/bazel-cache-py3build bazel build --config=opt --config=cuda --config=mkl //tensorflow:libtensorflow.so //tensorflow/tools/pip_package:build_pip_package
+    TEST_TMPDIR=$PKG_BUILD_DIR/bazel-cache-py3build bazel build --config=opt --config=cuda //tensorflow:libtensorflow.so //tensorflow/tools/pip_package:build_pip_package
     mkdir -p tmp
     bazel-bin/tensorflow/tools/pip_package/build_pip_package tmp/tensorflow_pkg
     popd

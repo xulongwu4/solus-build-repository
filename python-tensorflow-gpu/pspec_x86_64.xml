@@ -24,8 +24,6 @@
             <Path fileType="executable">/usr/bin/tflite_convert</Path>
             <Path fileType="executable">/usr/bin/toco</Path>
             <Path fileType="executable">/usr/bin/toco_from_protos</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/_solib_local/_U@mkl_Ulinux_S_S_Cmkl_Ulibs_Ulinux___Uexternal_Smkl_Ulinux_Slib/libiomp5.so</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/_solib_local/_U@mkl_Ulinux_S_S_Cmkl_Ulibs_Ulinux___Uexternal_Smkl_Ulinux_Slib/libmklml_intel.so</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow-1.10.1.dist-info/INSTALLER</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow-1.10.1.dist-info/METADATA</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow-1.10.1.dist-info/RECORD</Path>
@@ -3330,31 +3328,6 @@
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/lmdb/LICENSE</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/local_config_cuda/cuda/cuda/cuda_config.h</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/local_config_sycl/sycl/LICENSE.text</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_dnn/include/mkldnn.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_dnn/include/mkldnn.hpp</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_dnn/include/mkldnn_debug.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_dnn/include/mkldnn_types.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/i_malloc.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_blas.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_cblas.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_dnn.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_dnn_types.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_lapack.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_lapacke.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_service.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_trans.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_types.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_version.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_vml.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_vml_defines.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_vml_functions.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_vml_types.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_vsl.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_vsl_defines.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_vsl_functions.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/include/mkl_vsl_types.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/mkl_linux/license.txt</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/nasm/LICENSE</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/nsync/LICENSE</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/external/nsync/internal/common.h</Path>
@@ -4092,7 +4065,6 @@
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/tensorflow/core/graph/graph_def_builder.h</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/tensorflow/core/graph/graph_def_builder_util.h</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/tensorflow/core/graph/graph_partition.h</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/tensorflow/core/graph/mkl_graph_util.h</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/tensorflow/core/graph/mkl_layout_pass.h</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/tensorflow/core/graph/mkl_tfconversion_pass.h</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/tensorflow/include/tensorflow/core/graph/node_builder.h</Path>
@@ -6310,7 +6282,7 @@
     </Package>
     <History>
         <Update release="3">
-            <Date>2019-01-12</Date>
+            <Date>2019-01-20</Date>
             <Version>1.10.1</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>
