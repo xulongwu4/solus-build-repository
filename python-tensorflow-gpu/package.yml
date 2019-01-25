@@ -9,7 +9,6 @@ summary    : Library for computation using data flow graphs for scalable machine
 description: |
     TensorFlow is an open source software library for numerical computation using data flow graphs.
 networking : yes
-strip      : no
 patterns   :
     - ^tensorflow-gpu-c-api :
         - /usr/include
