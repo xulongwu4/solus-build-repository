@@ -6,7 +6,7 @@
             <Email>xulongwu4@gmail.com</Email>
         </Packager>
         <License>EULA</License>
-        <PartOf>programming.tools</PartOf>
+        <PartOf>programming.library</PartOf>
         <Summary xml:lang="en">The NVIDIA CUDA® Deep Neural Network library</Summary>
         <Description xml:lang="en">NVIDIA cuDNN is a GPU-accelerated library of primitives for deep neural networks.
 </Description>
@@ -17,8 +17,14 @@
         <Summary xml:lang="en">The NVIDIA CUDA® Deep Neural Network library</Summary>
         <Description xml:lang="en">NVIDIA cuDNN is a GPU-accelerated library of primitives for deep neural networks.
 </Description>
-        <PartOf>programming.tools</PartOf>
+        <PartOf>programming.library</PartOf>
         <Files>
+            <Path fileType="library">/usr/lib64/cuda/include/cudnn.h</Path>
+            <Path fileType="library">/usr/lib64/cuda/lib64/libcudnn.so</Path>
+            <Path fileType="library">/usr/lib64/cuda/lib64/libcudnn.so.7</Path>
+            <Path fileType="library">/usr/lib64/cuda/lib64/libcudnn.so.7.4.2</Path>
+            <Path fileType="library">/usr/lib64/cuda/lib64/libcudnn_static.a</Path>
+            <Path fileType="library">/usr/lib64/libcudnn.so</Path>
             <Path fileType="library">/usr/lib64/libcudnn.so.7</Path>
             <Path fileType="library">/usr/lib64/libcudnn.so.7.4.2</Path>
         </Files>
@@ -34,13 +40,13 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/cuda/cudnn.h</Path>
-            <Path fileType="library">/usr/lib64/libcudnn.so</Path>
             <Path fileType="library">/usr/lib64/libcudnn_static.a</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/cudnn.pc</Path>
         </Files>
     </Package>
     <History>
         <Update release="1">
-            <Date>2019-01-12</Date>
+            <Date>2019-02-06</Date>
             <Version>7.4.2</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>

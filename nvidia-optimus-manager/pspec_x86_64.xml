@@ -6,7 +6,7 @@
             <Email>xulongwu4@gmail.com</Email>
         </Packager>
         <License>MIT</License>
-        <PartOf>system.base</PartOf>
+        <PartOf>system.utils</PartOf>
         <Summary xml:lang="en">A python script to manage the status of NVIDIA graphics card on an Optimus setup for Solus linux</Summary>
         <Description xml:lang="en">A python script to manage the status of NVIDIA graphics card on an Optimus setup for Solus linux
 </Description>
@@ -17,7 +17,7 @@
         <Summary xml:lang="en">A python script to manage the status of NVIDIA graphics card on an Optimus setup for Solus linux</Summary>
         <Description xml:lang="en">A python script to manage the status of NVIDIA graphics card on an Optimus setup for Solus linux
 </Description>
-        <PartOf>system.base</PartOf>
+        <PartOf>system.utils</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin/nvidia-optimus-manager</Path>
             <Path fileType="library">/usr/lib64/systemd/system/multi-user.target.wants/nvidia-optimus-autoconfig.service</Path>
@@ -29,13 +29,14 @@
         <Summary xml:lang="en">nvidia-optimus-manager integration for LightDM</Summary>
         <Description xml:lang="en">A python script to manage the status of NVIDIA graphics card on an Optimus setup for Solus linux
 </Description>
+        <PartOf>desktop.lightdm</PartOf>
         <Files>
             <Path fileType="data">/usr/share/lightdm/lightdm.conf.d/99-nvidia.conf</Path>
         </Files>
     </Package>
     <History>
-        <Update release="2">
-            <Date>2019-01-05</Date>
+        <Update release="3">
+            <Date>2019-02-04</Date>
             <Version>0.2.1</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>

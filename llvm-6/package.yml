@@ -1,6 +1,6 @@
 name       : llvm-6
 version    : 6.0.1
-release    : 1
+release    : 2
 source     :
     - https://releases.llvm.org/6.0.1/llvm-6.0.1.src.tar.xz : b6d6c324f9c71494c0ccaf3dac1f16236d970002b42bb24a6c9e1634f7d0f4e2
     - https://releases.llvm.org/6.0.1/cfe-6.0.1.src.tar.xz : 7c243f1485bddfdfedada3cd402ff4792ea82362ff91fbdac2dae67c6026b667
@@ -22,9 +22,11 @@ summary    :
 component  :
     - programming
     - ^llvm-clang-6 : programming
-debug      : false
-libsplit   : false
-clang      : true
+    - ^llvm-clang-6-32bit : emul32
+    - ^llvm-clang-6-32bit-devel : programming.devel
+debug      : no
+libsplit   : no
+clang      : yes
 builddeps  :
     - pkgconfig32(libffi)
     - pkgconfig32(libxml-2.0)

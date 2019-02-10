@@ -4,12 +4,20 @@ release    : 1
 source     :
     - https://p-def7.pcloud.com/cBZPOz37RZa2fPYRZZZuPUtI7Z2ZZIGzZkZLJpw1Zf0Zi0Zf5Zt5ZO5ZakZaVZmVZ1XZyVZaZlZXkZ87ZeN6x7ZNXfA55hpKaupQeKhEUr8pQHkBcz7/cudnn-10.0-linux-x64-v7.4.2.24.tgz : 2edfc86a02b50d17e88c478955a332e6a1e8174e7e53a3458b4ea51faf02daa3
 license    : EULA
-component  : programming.tools
+component  : programming.library
 summary    : The NVIDIA CUDA® Deep Neural Network library
 description: |
     NVIDIA cuDNN is a GPU-accelerated library of primitives for deep neural networks.
+libsplit   : no
+strip      : no
 install    : |
-    install -dm00755 $installdir/usr/include/cuda
-    install -Dm00644 include/cudnn.h $installdir/usr/include/cuda/cudnn.h
-    install -dm00755 $installdir/usr/lib64
-    cp -r lib64/lib* $installdir/usr/lib64
+    install -dm00755 $installdir/usr/include/cuda $installdir/%libdir%/cuda/include $installdir/%libdir%/cuda/lib64
+    install -Dm00644 include/cudnn.h $installdir/%libdir%/cuda/include/cudnn.h
+    ln -sf %libdir%/cuda/include/cudnn.h $installdir/usr/include/cuda/
+    cp -r lib64/lib* $installdir/%libdir%/cuda/lib64
+    for f in $installdir/%libdir%/cuda/lib64/lib*; do
+        ln -sf %libdir%/cuda/lib64/`basename $f` $installdir/%libdir%
+    done
+
+    install -dm00755 $installdir/%libdir%/pkgconfig
+    install -Dm00644 $pkgfiles/cudnn.pc $installdir/%libdir%/pkgconfig/cudnn.pc

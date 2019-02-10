@@ -3,6 +3,6 @@ includedir=/usr/include
 
 Name: cusparse
 Description: CUDA Sparse Matrix Library
-Version: 9.2
+Version: 10.0
 Libs: -L${libdir} -lcusparse
 Cflags: -I${includedir}/cuda 

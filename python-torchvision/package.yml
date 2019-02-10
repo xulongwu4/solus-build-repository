@@ -8,12 +8,10 @@ component  : programming.python
 summary    : Datasets, Transforms and Models specific to Computer Vision
 description: |
     The torchvision package consists of popular datasets, model architectures, and common image transformations for computer vision.
-builddeps  :
-    - python-setuptools
 rundeps    :
     - numpy
-    - python-pytorch-gpu
     - python-pillow
+    - python-pytorch
     - python-six
     - python-tqdm
 build      : |

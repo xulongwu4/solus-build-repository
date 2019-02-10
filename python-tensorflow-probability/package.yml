@@ -1,0 +1,25 @@
+name       : python-tensorflow-probability
+version    : 0.5.0
+release    : 1
+source     :
+    - https://github.com/tensorflow/probability/archive/v0.5.0.tar.gz : 6e0e21b40555cbc1725f2fde96fa7705c160d856ae67f84107ad889896314694
+license    : Apache-2.0
+component  : programming.python
+summary    : Probabilistic reasoning and statistical analysis in TensorFlow
+description: |
+    TensorFlow Probability is a library for probabilistic reasoning and statistical analysis in TensorFlow. As part of the TensorFlow ecosystem, TensorFlow Probability provides integration of probabilistic methods with deep networks, gradient-based inference via automatic differentiation, and scalability to large datasets and models via hardware acceleration (e.g., GPUs) and distributed computation.
+builddeps  :
+    - bazel
+    - python-wheel
+rundeps    :
+    - numpy
+    - python-six
+setup      : |
+    sed -i -e 's/python/python3/g' pip_pkg.sh
+    bazel build --copt=-march=haswell --copt=-mtune=haswell --copt=-g2 --copt=-O3 :pip_pkg
+    bazel shutdown
+build      : |
+    mkdir -p $PKG_BUILD_DIR/build
+    ./bazel-bin/pip_pkg $PKG_BUILD_DIR/build
+install    : |
+    pip3 install --no-deps --root=$installdir $PKG_BUILD_DIR/build/*.whl

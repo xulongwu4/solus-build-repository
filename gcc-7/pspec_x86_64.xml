@@ -7,7 +7,7 @@
             <Email>xulongwu4@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>system.devel</PartOf>
+        <PartOf>programming</PartOf>
         <Summary xml:lang="en">GNU Compiler Collection</Summary>
         <Description xml:lang="en">The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Java, Ada, and Go, as well as libraries for these languages (libstdc++, libgcj,...). GCC was originally written as the compiler for the GNU operating system. The GNU system was developed to be 100% free software, free in the sense that it respects the user&apos;s freedom.
 </Description>
@@ -18,7 +18,7 @@
         <Summary xml:lang="en">GNU Compiler Collection</Summary>
         <Description xml:lang="en">The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Java, Ada, and Go, as well as libraries for these languages (libstdc++, libgcj,...). GCC was originally written as the compiler for the GNU operating system. The GNU system was developed to be 100% free software, free in the sense that it respects the user&apos;s freedom.
 </Description>
-        <PartOf>system.devel</PartOf>
+        <PartOf>programming</PartOf>
         <Files>
             <Path fileType="data">/usr/local/bin/cc</Path>
             <Path fileType="data">/usr/local/bin/gcc</Path>
@@ -681,9 +681,9 @@
         <Summary xml:lang="en">GNU Compiler Collection</Summary>
         <Description xml:lang="en">The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Java, Ada, and Go, as well as libraries for these languages (libstdc++, libgcj,...). GCC was originally written as the compiler for the GNU operating system. The GNU system was developed to be 100% free software, free in the sense that it respects the user&apos;s freedom.
 </Description>
-        <PartOf>system.devel</PartOf>
+        <PartOf>programming</PartOf>
         <RuntimeDependencies>
-            <Dependency releaseFrom="1">gcc-7</Dependency>
+            <Dependency releaseFrom="2">gcc-7</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/local/bin/c++</Path>
@@ -1472,10 +1472,10 @@
         <Summary xml:lang="en">GNU Compiler Collection</Summary>
         <Description xml:lang="en">The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Java, Ada, and Go, as well as libraries for these languages (libstdc++, libgcj,...). GCC was originally written as the compiler for the GNU operating system. The GNU system was developed to be 100% free software, free in the sense that it respects the user&apos;s freedom.
 </Description>
-        <PartOf>system.devel</PartOf>
+        <PartOf>programming</PartOf>
         <RuntimeDependencies>
-            <Dependency releaseFrom="1">gcc-7</Dependency>
-            <Dependency releaseFrom="1">libgfortran-7</Dependency>
+            <Dependency releaseFrom="2">gcc-7</Dependency>
+            <Dependency releaseFrom="2">libgfortran-7</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/local/bin/gfortran</Path>
@@ -1489,7 +1489,7 @@
         <Summary xml:lang="en">GNU Compiler Collection</Summary>
         <Description xml:lang="en">The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Java, Ada, and Go, as well as libraries for these languages (libstdc++, libgcj,...). GCC was originally written as the compiler for the GNU operating system. The GNU system was developed to be 100% free software, free in the sense that it respects the user&apos;s freedom.
 </Description>
-        <PartOf>system.base</PartOf>
+        <PartOf>programming.library</PartOf>
         <Files>
             <Path fileType="data">/usr/local/lib64/crtbegin.o</Path>
             <Path fileType="data">/usr/local/lib64/crtbeginS.o</Path>
@@ -1548,7 +1548,7 @@
 </Description>
         <PartOf>emul32</PartOf>
         <RuntimeDependencies>
-            <Dependency releaseFrom="1">libgcc-7</Dependency>
+            <Dependency releaseFrom="2">libgcc-7</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/local/lib32/crtbegin.o</Path>
@@ -1622,7 +1622,7 @@
 </Description>
         <PartOf>emul32</PartOf>
         <RuntimeDependencies>
-            <Dependency releaseFrom="1">libgfortran-7</Dependency>
+            <Dependency releaseFrom="2">libgfortran-7</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/local/lib32/libgfortran.a</Path>
@@ -1637,7 +1637,7 @@
         <Summary xml:lang="en">GNU Compiler Collection</Summary>
         <Description xml:lang="en">The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Java, Ada, and Go, as well as libraries for these languages (libstdc++, libgcj,...). GCC was originally written as the compiler for the GNU operating system. The GNU system was developed to be 100% free software, free in the sense that it respects the user&apos;s freedom.
 </Description>
-        <PartOf>system.base</PartOf>
+        <PartOf>programming.library</PartOf>
         <Files>
             <Path fileType="data">/usr/local/lib64/libgomp.so</Path>
             <Path fileType="data">/usr/local/lib64/libgomp.so.1</Path>
@@ -1652,8 +1652,8 @@
 </Description>
         <PartOf>emul32</PartOf>
         <RuntimeDependencies>
-            <Dependency releaseFrom="1">libgcc-7-32bit</Dependency>
-            <Dependency releaseFrom="1">libgomp-7</Dependency>
+            <Dependency releaseFrom="2">libgcc-7-32bit</Dependency>
+            <Dependency releaseFrom="2">libgomp-7</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/local/lib32/libgomp.a</Path>
@@ -1668,7 +1668,7 @@
         <Summary xml:lang="en">GNU Compiler Collection</Summary>
         <Description xml:lang="en">The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Java, Ada, and Go, as well as libraries for these languages (libstdc++, libgcj,...). GCC was originally written as the compiler for the GNU operating system. The GNU system was developed to be 100% free software, free in the sense that it respects the user&apos;s freedom.
 </Description>
-        <PartOf>system.base</PartOf>
+        <PartOf>programming.library</PartOf>
         <Files>
             <Path fileType="data">/usr/local/lib64/libstdc++.so</Path>
             <Path fileType="data">/usr/local/lib64/libstdc++.so.6</Path>
@@ -1706,7 +1706,7 @@
 </Description>
         <PartOf>emul32</PartOf>
         <RuntimeDependencies>
-            <Dependency releaseFrom="1">libstdc++-7</Dependency>
+            <Dependency releaseFrom="2">libstdc++-7</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/local/lib32/libstdc++.a</Path>
@@ -1719,8 +1719,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2019-01-11</Date>
+        <Update release="2">
+            <Date>2019-02-10</Date>
             <Version>7.4.0</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>

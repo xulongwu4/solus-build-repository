@@ -1,13 +1,12 @@
-libnccl.so.2:__bss_start
-libnccl.so.2:_edata
-libnccl.so.2:_end
 libnccl.so.2:ncclAllGather
 libnccl.so.2:ncclAllReduce
 libnccl.so.2:ncclBcast
 libnccl.so.2:ncclBroadcast
+libnccl.so.2:ncclCommAbort
 libnccl.so.2:ncclCommCount
 libnccl.so.2:ncclCommCuDevice
 libnccl.so.2:ncclCommDestroy
+libnccl.so.2:ncclCommGetAsyncError
 libnccl.so.2:ncclCommInitAll
 libnccl.so.2:ncclCommInitRank
 libnccl.so.2:ncclCommUserRank

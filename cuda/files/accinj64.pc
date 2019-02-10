@@ -3,6 +3,6 @@ includedir=/usr/include
 
 Name: accinj64
 Description: OpenACC 64-bit Injection Library
-Version: 9.2
+Version: 10.0
 Libs: -L${libdir} -laccinj64
 Cflags: -I${includedir}/cuda

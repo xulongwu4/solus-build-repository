@@ -1,18 +1,16 @@
 name       : python-tqdm
-version    : 4.19.9
+version    : 4.30.0
 release    : 1
 source     :
-    - https://github.com/tqdm/tqdm/archive/v4.19.9.tar.gz : f2759bf16158ac12504c771b3dbe421767cebebcdf69a835725c386955fd2037
-license    : MPL-2.0 and MIT
+    - https://github.com/tqdm/tqdm/archive/v4.30.0.tar.gz : 5a4681e05a0b2b47d0aa0bf1ca512365f21f9381451c52bccf8d0370f7b51c20
+license    : 
+    - MIT
+    - MPL-2.0
 component  : programming.python
 summary    : A fast, extensible progress bar for Python and CLI
 description: |
     A fast, extensible progress bar for Python and CLI
-builddeps  :
-    - python-setuptools
 build      : |
-    %python_setup
     %python3_setup
 install    : |
-    %python_install
     %python3_install

@@ -1,15 +1,20 @@
 name       : nccl
-version    : 2.3.7
+version    : 2.4.2
 release    : 1
 source     :
-    - https://p-def7.pcloud.com/cBZspA37RZvDiPYRZZZPOUtI7Z2ZZIGzZkZgoWIXZz0Z35ZLVZyXZRXZf0ZdVZMkZmkZEZV5ZB7Z95Zb0Zsa6x7ZRrl0Mo1AbFmOlog5TEi12pQJUMUV/nccl_2.3.7-1-cuda10_x86_64.txz : 8b41f19cfa0054aae2550ba0e02c167c0e052ee247c79f4b97aaa3167d12efde
-license    : EULA
-component  : programming.tools
-summary    : The NVIDIA Collective Communications Library
+    - https://github.com/NVIDIA/nccl/archive/v2.4.2-1.tar.gz : e3dd04b22eb541394bd818e5f78ac23a09cc549690d5d55d6fccc1a36155385a
+license    : BSD-3-Clause
+component  : programming.library
+summary    : Optimized primitives for collective multi-GPU communication
 description: |
-    The NVIDIA Collective Communications Library (NCCL) implements multi-GPU and multi-node collective communication primitives that are performance optimized for NVIDIA GPUs.
+    NCCL (pronounced "Nickel") is a stand-alone library of standard collective communication routines for GPUs, implementing all-reduce, all-gather, reduce, broadcast, and reduce-scatter. It has been optimized to achieve high bandwidth on platforms using PCIe, NVLink, NVswitch, as well as networking using InfiniBand Verbs or TCP/IP sockets. NCCL supports an arbitrary number of GPUs installed in a single node or across multiple nodes, and can be used in either single- or multi-process (e.g., MPI) applications.
+builddeps  :
+    - pkgconfig(cuda)
+    - g++-7
+build      : |
+    %make src.build CUDA_HOME=%libdir%/cuda CC=/usr/local/bin/gcc CXX=/usr/local/bin/g++
 install    : |
-    install -dm00755 $installdir/usr/include
-    install -Dm00644 include/nccl.h $installdir/usr/include/nccl.h
-    install -dm00755 $installdir/usr/lib64
-    cp -r lib/lib* $installdir/usr/lib64
+    install -dm00755 $installdir/usr/include $installdir/%libdir% $installdir/usr/share/doc/nccl
+    install -Dm00644 -t $installdir/usr/include build/include/*
+    cp -v build/lib/* $installdir/%libdir%
+    install -Dm00644 LICENSE.txt $installdir/usr/share/doc/nccl/LICENSE

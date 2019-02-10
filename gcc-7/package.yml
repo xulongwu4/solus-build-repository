@@ -1,21 +1,21 @@
 name       : gcc-7
 version    : 7.4.0
-release    : 1
+release    : 2
 source     :
     - https://ftp.gnu.org/gnu/gcc/gcc-7.4.0/gcc-7.4.0.tar.xz : eddde28d04f334aec1604456e536416549e9b1aa137fc69204e65eb0c009fe51
 homepage   : http://gcc.gnu.org/
 license    :
     - GPL-3.0
 component  :
-    - system.devel
-    - ^g++-7 : system.devel
-    - ^gfortran-7 : system.devel
+    - programming
+    - ^g++-7 : programming
+    - ^gfortran-7 : programming
     - ^gfortran-7-32bit : emul32
-    - ^libgcc-7 : system.base
+    - ^libgcc-7 : programming.library
     - ^libgcc-7-32bit : emul32
-    - ^libstdc++-7 : system.base
+    - ^libstdc++-7 : programming.library
     - ^libstdc++-7-32bit : emul32
-    - ^libgomp-7 : system.base
+    - ^libgomp-7 : programming.library
     - ^libgomp-7-32bit : emul32
     - ^libgfortran-7 : programming.library
     - ^libgfortran-7-32bit : emul32

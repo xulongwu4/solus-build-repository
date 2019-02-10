@@ -1,0 +1,17 @@
+name       : python-simple-tensorflow-serving
+version    : 0.6.6
+release    : 1
+source     :
+    - https://files.pythonhosted.org/packages/a8/40/d294a74156fbb68b8c40b0b7258c01c8a9e1d1fefffd1d1d7a1f75b0e293/simple_tensorflow_serving-0.6.6.tar.gz : ae50080d6f71db0fadf0cc99c1e2bf52ef4096153a61d3ff3ab7b7fe384019b8
+license    : Apache-2.0
+component  : programming.python
+summary    : Generic and easy-to-use serving service for machine learning models https://stfs.readthedocs.io
+description: |
+    Simple TensorFlow Serving is the generic and easy-to-use serving service for machine learning models. Read more in https://stfs.readthedocs.io.
+rundeps    :
+    - numpy
+    - python-protobuf
+build      : |
+    %python3_setup
+install    : |
+    %python3_install

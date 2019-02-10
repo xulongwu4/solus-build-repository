@@ -1590,8 +1590,8 @@
 </Description>
         <PartOf>programming</PartOf>
         <RuntimeDependencies>
-            <Dependency release="1">llvm-6</Dependency>
-            <Dependency releaseFrom="1">llvm-6-devel</Dependency>
+            <Dependency release="2">llvm-6</Dependency>
+            <Dependency releaseFrom="2">llvm-6-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/local/bin/FileCheck</Path>
@@ -1868,8 +1868,9 @@
         <Summary xml:lang="en">32bit libraries for clang</Summary>
         <Description xml:lang="en">The LLVM package contains a collection of modular and reusable compiler and toolchain technologies. The Low Level Virtual Machine (LLVM) Core libraries provide a modern source and target-independent optimizer, along with code generation support for many popular CPUs (as well as some less common ones!). These libraries are built around a well specified code representation known as the LLVM intermediate representation (&quot;LLVM IR&quot;).
 </Description>
+        <PartOf>emul32</PartOf>
         <RuntimeDependencies>
-            <Dependency release="1">llvm-6</Dependency>
+            <Dependency release="2">llvm-6</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/local/lib32/libclang.so</Path>
@@ -1885,9 +1886,10 @@
         <Summary xml:lang="en">Low Level Virtual Machine (Reusable compiler and toolchains)</Summary>
         <Description xml:lang="en">The LLVM package contains a collection of modular and reusable compiler and toolchain technologies. The Low Level Virtual Machine (LLVM) Core libraries provide a modern source and target-independent optimizer, along with code generation support for many popular CPUs (as well as some less common ones!). These libraries are built around a well specified code representation known as the LLVM intermediate representation (&quot;LLVM IR&quot;).
 </Description>
+        <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency releaseFrom="1">llvm-clang-6-32bit</Dependency>
-            <Dependency releaseFrom="1">llvm-clang-6-devel</Dependency>
+            <Dependency releaseFrom="2">llvm-clang-6-32bit</Dependency>
+            <Dependency releaseFrom="2">llvm-clang-6-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/local/lib32/clang/6.0.1/asan_blacklist.txt</Path>
@@ -2129,7 +2131,7 @@
         <Description xml:lang="en">The LLVM package contains a collection of modular and reusable compiler and toolchain technologies. The Low Level Virtual Machine (LLVM) Core libraries provide a modern source and target-independent optimizer, along with code generation support for many popular CPUs (as well as some less common ones!). These libraries are built around a well specified code representation known as the LLVM intermediate representation (&quot;LLVM IR&quot;).
 </Description>
         <RuntimeDependencies>
-            <Dependency releaseFrom="1">llvm-clang-6</Dependency>
+            <Dependency releaseFrom="2">llvm-clang-6</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/local/include/clang-c/BuildSystem.h</Path>
@@ -2751,7 +2753,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="1">llvm-6</Dependency>
+            <Dependency release="2">llvm-6</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/local/bin/bugpoint</Path>
@@ -2807,8 +2809,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2019-01-12</Date>
+        <Update release="2">
+            <Date>2019-02-10</Date>
             <Version>6.0.1</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>

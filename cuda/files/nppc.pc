@@ -3,6 +3,6 @@ includedir=/usr/include
 
 Name: nppc
 Description: NVIDIA Performance Primitives - Core
-Version: 9.2
+Version: 10.0
 Libs: -L${libdir} -lnppc
 Cflags: -I${includedir}/cuda 

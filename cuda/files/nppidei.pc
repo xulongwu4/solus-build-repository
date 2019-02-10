@@ -3,6 +3,6 @@ includedir=/usr/include
 
 Name: nppidei
 Description: NVIDIA Performance Primitives - Image Processing - DEI
-Version: 9.2
+Version: 10.0
 Libs: -L${libdir} -lnppidei
 Cflags: -I${includedir}/cuda 

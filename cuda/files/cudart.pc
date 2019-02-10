@@ -3,6 +3,6 @@ includedir=/usr/include
 
 Name: cudart
 Description: CUDA Runtime Library
-Version: 9.2
+Version: 10.0
 Libs: -L${libdir} -lcudart
 Cflags: -I${includedir}/cuda

@@ -1,18 +1,14 @@
 name       : python-astor
-version    : 0.6.2
+version    : 0.7.1
 release    : 1
 source     :
-    - https://github.com/berkerpeksag/astor/archive/0.6.2.tar.gz : de5bb144a1d0c7061e3dbdb82a101700a2bf30f2d60f106a2d89bdc3bae8b575
+    - https://github.com/berkerpeksag/astor/archive/0.7.1.tar.gz : 444eba3e3012ae9ba9276df02a40bf694b9e68f6a95d36062b71aa26f1f3ff6c
 license    : BSD-3-Clause
 component  : programming.python
 summary    : Python AST read/write
 description: |
-    astor is designed to allow easy manipulation of Python source via the AST
-builddeps  :
-    - python-setuptools
+    Astor is designed to allow easy manipulation of Python source via the AST.
 build      : |
-    %python_setup
     %python3_setup
 install    : |
-    %python_install
     %python3_install

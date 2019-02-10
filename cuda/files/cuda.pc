@@ -3,6 +3,6 @@ includedir=/usr/include
 
 Name: cuda
 Description: CUDA Driver Library
-Version: 9.2
+Version: 10.0
 Libs: -L${libdir} -lcuda
 Cflags: -I${includedir}/cuda

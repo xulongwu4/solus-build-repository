@@ -6,7 +6,7 @@
             <Email>xulongwu4@gmail.com</Email>
         </Packager>
         <License>EULA</License>
-        <PartOf>programming.tools</PartOf>
+        <PartOf>programming.library</PartOf>
         <Summary xml:lang="en">A platform for high-performance deep learning inference</Summary>
         <Description xml:lang="en">NVIDIA TensorRT™ is a platform for high-performance deep learning inference.
 </Description>
@@ -17,133 +17,9 @@
         <Summary xml:lang="en">A platform for high-performance deep learning inference</Summary>
         <Description xml:lang="en">NVIDIA TensorRT™ is a platform for high-performance deep learning inference.
 </Description>
-        <PartOf>programming.tools</PartOf>
+        <PartOf>programming.library</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin/convert-to-uff</Path>
-            <Path fileType="executable">/usr/bin/convert-to-uff3</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon-0.3.2.dist-info/INSTALLER</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon-0.3.2.dist-info/METADATA</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon-0.3.2.dist-info/RECORD</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon-0.3.2.dist-info/WHEEL</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon-0.3.2.dist-info/top_level.txt</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon-0.3.2.dist-info/zip-safe</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon/DynamicGraph.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon/DynamicGraph.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon/StaticGraph.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon/StaticGraph.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon/__init__.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon/_utils.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon/_utils.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon/extras.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon/extras.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon/node_manipulation.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon/node_manipulation.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon/recovery.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/graphsurgeon/recovery.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt-5.0.2.6.dist-info/INSTALLER</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt-5.0.2.6.dist-info/METADATA</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt-5.0.2.6.dist-info/RECORD</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt-5.0.2.6.dist-info/WHEEL</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt-5.0.2.6.dist-info/top_level.txt</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt-5.0.2.6.dist-info/zip-safe</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/__init__.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/legacy/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/legacy/__init__.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/legacy/_deprecated_helpers.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/legacy/_deprecated_helpers.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/legacy/infer/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/legacy/infer/__init__.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/legacy/lite/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/legacy/lite/__init__.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/legacy/parsers/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/legacy/parsers/__init__.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/legacy/utils/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/legacy/utils/__init__.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/tensorrt.cpython-36m-x86_64-linux-gnu.so</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/tensorrt/tensorrt.so</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff-0.5.5.dist-info/INSTALLER</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff-0.5.5.dist-info/METADATA</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff-0.5.5.dist-info/RECORD</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff-0.5.5.dist-info/WHEEL</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff-0.5.5.dist-info/entry_points.txt</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff-0.5.5.dist-info/top_level.txt</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff-0.5.5.dist-info/zip-safe</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/__init__.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/bin/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/bin/__init__.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/bin/convert_to_uff.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/bin/convert_to_uff.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/__init__.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/converter_base.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/converter_base.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/__init__.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/conversion_helpers.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/conversion_helpers.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/converter.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/converter.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/converter_functions.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/converter_functions.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/__init__.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/__init__.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/allocation_description_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/allocation_description_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/attr_value_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/attr_value_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/function_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/function_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/graph_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/graph_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/kernel_def_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/kernel_def_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/node_def_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/node_def_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/op_def_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/op_def_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/resource_handle_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/resource_handle_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/summary_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/summary_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/tensor_description_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/tensor_description_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/tensor_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/tensor_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/tensor_shape_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/tensor_shape_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/tensor_slice_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/tensor_slice_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/types_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/types_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/variable_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/variable_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/versions_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/converters/tensorflow/proto/_tensorflow_core/versions_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/__init__.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/__init__.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/core_descriptor.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/core_descriptor.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/data.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/data.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/descriptor.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/descriptor.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/exceptions.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/exceptions.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/graph.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/graph.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/meta_graph.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/meta_graph.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/node.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/node.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/uff_pb2.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/uff_pb2.pyc</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/utils.py</Path>
-            <Path fileType="library">/usr/lib/python2.7/site-packages/uff/model/utils.pyc</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/graphsurgeon-0.3.2.dist-info/INSTALLER</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/graphsurgeon-0.3.2.dist-info/METADATA</Path>
             <Path fileType="library">/usr/lib/python3.6/site-packages/graphsurgeon-0.3.2.dist-info/RECORD</Path>
@@ -2276,7 +2152,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2019-01-12</Date>
+            <Date>2019-02-10</Date>
             <Version>5.0.2.6</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>

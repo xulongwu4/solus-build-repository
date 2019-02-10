@@ -1,0 +1,8 @@
+libdir=/usr/lib64
+includedir=/usr/include
+
+Name: cuda
+Description: CUDA Deep Neural Network Library
+Version: 7.4
+Libs: -L${libdir} -lcudnn
+Cflags: -I${includedir}/cuda

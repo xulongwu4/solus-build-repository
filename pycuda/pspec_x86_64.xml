@@ -1,0 +1,100 @@
+<PISI>
+    <Source>
+        <Name>pycuda</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <License>Apache-2.0</License>
+        <PartOf>programming.python</PartOf>
+        <Summary xml:lang="en">CUDA integration for Python, plus shiny features</Summary>
+        <Description xml:lang="en">PyCUDA lets you access Nvidia&apos;s CUDA parallel computation API from Python.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>pycuda</Name>
+        <Summary xml:lang="en">CUDA integration for Python, plus shiny features</Summary>
+        <Description xml:lang="en">PyCUDA lets you access Nvidia&apos;s CUDA parallel computation API from Python.
+</Description>
+        <PartOf>programming.python</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda-2018.1.1-py3.6.egg-info/PKG-INFO</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda-2018.1.1-py3.6.egg-info/SOURCES.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda-2018.1.1-py3.6.egg-info/dependency_links.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda-2018.1.1-py3.6.egg-info/not-zip-safe</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda-2018.1.1-py3.6.egg-info/requires.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda-2018.1.1-py3.6.egg-info/top_level.txt</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__pycache__/__init__.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__pycache__/_cluda.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__pycache__/_mymako.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__pycache__/autoinit.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__pycache__/characterize.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__pycache__/compiler.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__pycache__/cumath.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__pycache__/curandom.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__pycache__/debug.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__pycache__/driver.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__pycache__/elementwise.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__pycache__/gpuarray.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__pycache__/reduction.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__pycache__/scan.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/__pycache__/tools.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/_cluda.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/_driver.cpython-36m-x86_64-linux-gnu.so</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/_mymako.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/_pvt_struct.cpython-36m-x86_64-linux-gnu.so</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/autoinit.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/characterize.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/compiler.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/compyte/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/compyte/__pycache__/__init__.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/compyte/__pycache__/array.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/compyte/__pycache__/dtypes.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/compyte/array.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/compyte/dtypes.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/cuda/pycuda-complex-impl.hpp</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/cuda/pycuda-complex.hpp</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/cuda/pycuda-helpers.hpp</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/cumath.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/curandom.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/debug.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/driver.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/elementwise.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/gl/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/gl/__pycache__/__init__.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/gl/__pycache__/autoinit.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/gl/autoinit.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/gpuarray.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/reduction.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/scan.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/sparse/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/sparse/__pycache__/__init__.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/sparse/__pycache__/cg.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/sparse/__pycache__/coordinate.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/sparse/__pycache__/inner.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/sparse/__pycache__/operator.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/sparse/__pycache__/packeted.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/sparse/__pycache__/pkt_build.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/sparse/cg.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/sparse/coordinate.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/sparse/inner.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/sparse/operator.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/sparse/packeted.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/sparse/pkt_build.py</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/sparse/pkt_build_cython.pyx</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/pycuda/tools.py</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2019-02-10</Date>
+            <Version>2018.1.1</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

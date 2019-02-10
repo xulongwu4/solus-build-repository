@@ -8,11 +8,7 @@ component  : programming.python
 summary    : A Python interface to the pkg-config command line tool
 description: |
     A Python interface to the pkg-config command line tool
-builddeps  :
-    - python-setuptools
 build      : |
-    %python_setup
     %python3_setup
 install    : |
-    %python_install
     %python3_install

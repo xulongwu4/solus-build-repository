@@ -1,4 +1,4 @@
-NVVMIR_LIBRARY_DIR = /usr/share/cuda
+NVVMIR_LIBRARY_DIR = /usr/lib64/cuda/nvvm/libdevice
 
 INCLUDES        +=  "-I/usr/include/cuda" $(_SPACE_)
 

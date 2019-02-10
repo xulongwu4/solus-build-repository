@@ -1,0 +1,16 @@
+name       : xl2tpd
+version    : 1.3.13
+release    : 1
+source     :
+    - https://github.com/xelerance/xl2tpd/archive/v1.3.13.tar.gz : e76ac67f314d0e285364a42b3683eecbc77c6ebe48939478bc9d6faa79d7cc77
+license    : GPL-2.0-or-later
+component  : network.util
+summary    : An implementation of the Layer 2 Tunnelling Protocol
+description: |
+    xl2tpd is an implementation of the Layer 2 Tunnelling Protocol (RFC 2661).
+builddeps  :
+    - pkgconfig(libpcap)
+build      : |
+    %make
+install    : |
+    %make_install PREFIX=/usr
