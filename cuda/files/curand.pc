@@ -1,8 +1,0 @@
-libdir=/usr/lib64
-includedir=/usr/include
-
-Name: curand
-Description: CUDA Random Number Generation Library
-Version: 10.0
-Libs: -L${libdir} -lcurand
-Cflags: -I${includedir}/cuda 

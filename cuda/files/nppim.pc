@@ -1,8 +1,0 @@
-libdir=/usr/lib64
-includedir=/usr/include
-
-Name: nppim
-Description: NVIDIA Performance Primitives - Image Processing - Morphological
-Version: 10.0
-Libs: -L${libdir} -lnppim
-Cflags: -I${includedir}/cuda

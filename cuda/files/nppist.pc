@@ -1,8 +1,0 @@
-libdir=/usr/lib64
-includedir=/usr/include
-
-Name: nppist
-Description: NVIDIA Performance Primitives - Image Processing - Statistic and Linear
-Version: 10.0
-Libs: -L${libdir} -lnppist
-Cflags: -I${includedir}/cuda 

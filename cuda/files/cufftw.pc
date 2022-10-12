@@ -1,8 +1,0 @@
-libdir=/usr/lib64
-includedir=/usr/include
-
-Name: cufftw
-Description: CUDA Fast Fourier Transform Wide
-Version: 10.0
-Libs: -L${libdir} -lcufftw
-Cflags: -I${includedir}/cuda

@@ -1,8 +1,0 @@
-libdir=/usr/lib64
-includedir=/usr/include
-
-Name: cublas
-Description: CUDA Basic Linear Algebra Subprograms
-Version: 10.0
-Libs: -L${libdir} -lcublas
-Cflags: -I${includedir}/cuda

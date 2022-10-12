@@ -1,8 +1,0 @@
-libdir=/usr/lib64
-includedir=/usr/include
-
-Name: nvrtc
-Description: A runtime compilation library for CUDA C++
-Version: 10.0
-Libs: -L${libdir} -lnvrtc
-Cflags: -I${includedir}/cuda

@@ -1,8 +1,0 @@
-libdir=/usr/lib64
-includedir=/usr/include
-
-Name: npps
-Description: NVIDIA Performance Primitives - Signal Processing
-Version: 10.0
-Libs: -L${libdir} -lnpps
-Cflags: -I${includedir}/cuda
