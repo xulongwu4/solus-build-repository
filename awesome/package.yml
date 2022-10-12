@@ -3,11 +3,11 @@ version    : 4.4
 release    : 1
 source     :
     - git|https://github.com/awesomeWM/awesome: 9b1246af3da71910e84cd446e1b973b384ce0fac
-license    : GPL-2.0-or-later # CHECK ME
-component  : PLEASE FILL ME IN
-summary    : PLEASE FILL ME IN
+license    : GPL-2.0-or-later
+component  : desktop
+summary    : The Awesome Window Manager
 description: |
-    PLEASE FILL ME IN
+    Awesome is a highly configurable, next generation framework window manager for X.
 builddeps  :
     - pkgconfig(cairo)
     - pkgconfig(gdk-pixbuf-2.0)
