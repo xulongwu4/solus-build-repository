@@ -1,0 +1,35 @@
+name       : hyprland
+version    : 0.10.3
+release    : 1
+source     :
+    - git|https://github.com/hyprwm/Hyprland : v0.15.3beta
+license    : BSD-3-Clause
+component  : desktop
+summary    : A dynamic tiling Wayland compositor that doesn't sacrifice on its looks
+description: |
+    Hyprland is a dynamic tiling Wayland compositor that doesn't sacrifice on its looks. It supports multiple layouts, fancy effects, has a very flexible IPC model allowing for a lot of customization, and more.
+builddeps  :
+    - pkgconfig(cairo)
+    - pkgconfig(wayland-server)
+    - pkgconfig(gbm)
+    - pkgconfig(libdrm)
+    - pkgconfig(libseat)
+    - pkgconfig(xkbcommon)
+    - pkgconfig(pixman-1)
+    - pkgconfig(wayland-protocols)
+    - pkgconfig(xcb-icccm)
+    - pkgconfig(libinput)
+    - pkgconfig(pango)
+    - pkgconfig(xcb-errors)
+    - pkgconfig(xcb-renderutil)
+    - pkgconfig(vulkan)
+    - git
+    - xorg-xwayland
+    - vulkan-headers
+    - glslang-devel
+setup      : |
+    %meson_configure
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

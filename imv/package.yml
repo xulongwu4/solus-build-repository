@@ -1,0 +1,29 @@
+name       : imv
+version    : 4.3.1
+release    : 1
+source     :
+    - https://git.sr.ht/~exec64/imv/archive/v4.3.1.tar.gz : 88d16885017b74b594ddd6a03ef20294a6cc053f04ccc2e1edef69f3515f7999
+license    : MIT
+component  : multimedia.graphics
+summary    : X11/Wayland Image Viewer
+description: |
+    imv is a command line image viewer intended for use with tiling window managers.
+builddeps  :
+    - pkgconfig(cmocka)
+    - pkgconfig(glu)
+    - pkgconfig(inih)
+    - pkgconfig(libheif)
+    - pkgconfig(librsvg-2.0)
+    - pkgconfig(libtiff-4)
+    - pkgconfig(libturbojpeg)
+    - pkgconfig(pango)
+    - pkgconfig(wayland-client)
+    - pkgconfig(xkbcommon)
+    - asciidoc
+    - freeimage-devel
+setup      : |
+    %meson_configure
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

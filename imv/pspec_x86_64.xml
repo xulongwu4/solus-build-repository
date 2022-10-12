@@ -1,0 +1,45 @@
+<PISI>
+    <Source>
+        <Name>imv</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <PartOf>multimedia.graphics</PartOf>
+        <Summary xml:lang="en">X11/Wayland Image Viewer</Summary>
+        <Description xml:lang="en">imv is a command line image viewer intended for use with tiling window managers.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>imv</Name>
+        <Summary xml:lang="en">X11/Wayland Image Viewer</Summary>
+        <Description xml:lang="en">imv is a command line image viewer intended for use with tiling window managers.
+</Description>
+        <PartOf>multimedia.graphics</PartOf>
+        <Files>
+            <Path fileType="config">/etc/imv_config</Path>
+            <Path fileType="executable">/usr/bin/imv</Path>
+            <Path fileType="executable">/usr/bin/imv-folder</Path>
+            <Path fileType="executable">/usr/bin/imv-msg</Path>
+            <Path fileType="executable">/usr/bin/imv-wayland</Path>
+            <Path fileType="executable">/usr/bin/imv-x11</Path>
+            <Path fileType="data">/usr/share/applications/imv-folder.desktop</Path>
+            <Path fileType="data">/usr/share/applications/imv.desktop</Path>
+            <Path fileType="man">/usr/share/man/man1/imv-folder.1</Path>
+            <Path fileType="man">/usr/share/man/man1/imv-msg.1</Path>
+            <Path fileType="man">/usr/share/man/man1/imv.1</Path>
+            <Path fileType="man">/usr/share/man/man5/imv.5</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2022-09-15</Date>
+            <Version>4.3.1</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

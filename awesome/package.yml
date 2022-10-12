@@ -1,0 +1,34 @@
+name       : awesome
+version    : 4.4
+release    : 1
+source     :
+    - git|https://github.com/awesomeWM/awesome: 9b1246af3da71910e84cd446e1b973b384ce0fac
+license    : GPL-2.0-or-later # CHECK ME
+component  : PLEASE FILL ME IN
+summary    : PLEASE FILL ME IN
+description: |
+    PLEASE FILL ME IN
+builddeps  :
+    - pkgconfig(cairo)
+    - pkgconfig(gdk-pixbuf-2.0)
+    - pkgconfig(libstartup-notification-1.0)
+    - pkgconfig(libxdg-basedir)
+    - pkgconfig(lua)
+    - pkgconfig(xcb-cursor)
+    - pkgconfig(xcb-errors)
+    - pkgconfig(xcb-icccm)
+    - pkgconfig(xcb-keysyms)
+    - pkgconfig(xcb-util)
+    - pkgconfig(xcb-xrm)
+    - pkgconfig(xkbcommon)
+    - asciidoctor
+    - imagemagick
+    - lgi
+rundeps    :
+    - lgi
+setup      : |
+    %cmake_ninja -DSYSCONFDIR=/etc
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

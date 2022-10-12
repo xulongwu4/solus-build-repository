@@ -1,0 +1,9 @@
+libchttrans.so:fcitx_addon_factory_instance
+libcloudpinyin.so:fcitx_addon_factory_instance
+libfullwidth.so:fcitx_addon_factory_instance
+libpinyin.so:fcitx_addon_factory_instance
+libpinyindictmanager.so:qt_plugin_instance
+libpinyindictmanager.so:qt_plugin_query_metadata
+libpinyinhelper.so:fcitx_addon_factory_instance
+libpunctuation.so:fcitx_addon_factory_instance
+libtable.so:fcitx_addon_factory_instance

@@ -1,0 +1,22 @@
+name       : fcitx5-gtk
+version    : 5.0.18
+release    : 1
+source     :
+    - https://github.com/fcitx/fcitx5-gtk/archive/refs/tags/5.0.18.tar.gz : 69f455790d89e64c06ebc35bdcff4d540ee0dc839b40a0b493b4a97a6a18a460
+license    : LGPL-2.1-or-later
+component  : desktop.gtk
+summary    : GTK im module and glib based dbus client library
+description: |
+    GTK im module and glib based dbus client library
+builddeps  :
+    - pkgconfig(gtk+-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gtk4)
+    - extra-cmake-modules
+setup      : |
+    %cmake_ninja
+build      : |
+    # Need to fix the LD_PRELOAD bits?
+    LD_PRELOAD="" %ninja_build
+install    : |
+    %ninja_install

@@ -1,0 +1,53 @@
+<PISI>
+    <Source>
+        <Name>sioyek</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0-or-later</License>
+        <PartOf>office.viewers</PartOf>
+        <Summary xml:lang="en">A PDF viewer designed for reading research papers and technical books</Summary>
+        <Description xml:lang="en">Sioyek is a PDF viewer designed for reading research papers and technical books.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>sioyek</Name>
+        <Summary xml:lang="en">A PDF viewer designed for reading research papers and technical books</Summary>
+        <Description xml:lang="en">Sioyek is a PDF viewer designed for reading research papers and technical books.
+</Description>
+        <PartOf>office.viewers</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/sioyek</Path>
+            <Path fileType="data">/usr/share/applications/sioyek.desktop</Path>
+            <Path fileType="man">/usr/share/man/man1/sioyek.1</Path>
+            <Path fileType="data">/usr/share/pixmaps/sioyek-icon-linux.png</Path>
+            <Path fileType="data">/usr/share/sioyek/keys.config</Path>
+            <Path fileType="data">/usr/share/sioyek/prefs.config</Path>
+            <Path fileType="data">/usr/share/sioyek/shaders/custom_colors.fragment</Path>
+            <Path fileType="data">/usr/share/sioyek/shaders/dark_mode.fragment</Path>
+            <Path fileType="data">/usr/share/sioyek/shaders/debug.fragment</Path>
+            <Path fileType="data">/usr/share/sioyek/shaders/highlight.fragment</Path>
+            <Path fileType="data">/usr/share/sioyek/shaders/separator.fragment</Path>
+            <Path fileType="data">/usr/share/sioyek/shaders/simple.fragment</Path>
+            <Path fileType="data">/usr/share/sioyek/shaders/simple.vertex</Path>
+            <Path fileType="data">/usr/share/sioyek/shaders/stencil.fragment</Path>
+            <Path fileType="data">/usr/share/sioyek/shaders/stencil.vertex</Path>
+            <Path fileType="data">/usr/share/sioyek/shaders/undendered_page.fragment</Path>
+            <Path fileType="data">/usr/share/sioyek/shaders/unrendered_page.fragment</Path>
+            <Path fileType="data">/usr/share/sioyek/shaders/vertical_bar.fragment</Path>
+            <Path fileType="data">/usr/share/sioyek/shaders/vertical_bar_dark.fragment</Path>
+            <Path fileType="data">/usr/share/sioyek/tutorial.pdf</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="5">
+            <Date>2022-10-01</Date>
+            <Version>1.5.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

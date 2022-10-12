@@ -1,0 +1,19 @@
+name       : cxxopts
+version    : 3.0.0
+release    : 1
+source     :
+    - https://github.com/jarro2783/cxxopts/archive/refs/tags/v3.0.0.tar.gz : 36f41fa2a46b3c1466613b63f3fa73dc24d912bc90d667147f1e43215a8c6d00
+license    : MIT
+component  : programming
+summary    : Lightweight C++ command line option parser
+description: |
+    cxxopts is a lightweight C++ option parser library, supporting the standard GNU style syntax for options.
+patterns   :
+    - /usr/include
+    - /usr/lib64
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

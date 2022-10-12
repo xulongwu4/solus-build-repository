@@ -1,0 +1,13 @@
+libX11.so.6
+libappindicator3.so.1
+libavahi-client.so.3
+libavahi-common.so.3
+libavahi-glib.so.1
+libc.so.6
+libgdk-3.so.0
+libglib-2.0.so.0
+libgobject-2.0.so.0
+libgtk-3.so.0
+libnotify.so.4
+libpulse-mainloop-glib.so.0
+libpulse.so.0

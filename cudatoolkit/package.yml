@@ -1,0 +1,31 @@
+name       : cudatoolkit
+version    : 11.6.2
+release    : 7
+source     :
+    - https://developer.download.nvidia.com/compute/cuda/11.6.2/local_installers/cuda_11.6.2_510.47.03_linux.run : 99b7a73dcc52a52cef4c1fceb4a60c3015ac9b6404082c1677d9efdaba1d4593
+extract    : no
+license    : EULA
+component  : programming.library
+summary    : NVIDIA's GPU programming toolkit
+description: |
+    CUDA® is a parallel computing platform and programming model developed by NVIDIA for general computing on graphical processing units (GPUs).
+strip      : no
+builddeps  :
+    - pkgconfig(fontconfig)
+    - pkgconfig(glu)
+    - pkgconfig(libpulse)
+    - pkgconfig(xcomposite)
+    - pkgconfig(xcursor)
+    - pkgconfig(xi)
+    - pkgconfig(xkbcommon)
+    - pkgconfig(xrandr)
+build      : |
+    CUDA_INSTALL_FILE=$(basename $sources/cuda_${version}_*_linux*)
+    mkdir -p cuda_toolkit
+    sh $sources/$CUDA_INSTALL_FILE --silent --toolkit --toolkitpath=$installdir/usr/share/cuda
+install    : |
+    install -Dm00644 $pkgfiles/cuda.sh $installdir/usr/share/defaults/etc/profile.d/cuda.sh
+    install -Dm00644 $pkgfiles/cuda.conf $installdir/usr/share/ld.so.conf.d/cuda.conf
+    install -Dm00644 $pkgfiles/pkgconfig/*.pc -t $installdir/usr/share/pkgconfig
+
+    rm -rf $installdir/usr/share/cuda/lib64/libOpenCL.so*

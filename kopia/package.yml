@@ -1,0 +1,24 @@
+name       : kapio
+version    : 0.12.1
+release    : 1
+source     :
+    - git|https://github.com/kopia/kopia.git : v0.12.1
+license    : Apache-2.0
+component  : system.utils
+networking : yes
+summary    : A fast and secure open-source backup/restore tool
+description: |
+    Kopia is a fast and secure open-source backup/restore tool that allows you to create encrypted snapshots of your data and save the snapshots to remote or cloud storage of your choice, to network-attached storage or server, or locally on your machine. Kopia does not 'image' your whole machine. Rather, Kopia allows you to backup/restore any and all files/directories that you deem are important or critical.
+builddeps  :
+    - golang
+build      : |
+    go build -ldflags "-s -w" -o kapio
+    ./kapio --help-man > kapio.1
+    ./kapio --completion-script-bash > kapio.bash
+    ./kapio --completion-script-zsh > kapio.zsh
+install    : |
+    install -Dm00755 kapio $installdir/usr/bin/kapio
+    install -Dm00644 kapio.bash $installdir/usr/share/bash-completion/completions/kapio
+    install -Dm00644 kapio.zsh $installdir/usr/share/zsh/site-functions/_kapio
+    install -Dm00644 kapio.1 $installdir/usr/share/man/man1/kapio.1
+    

@@ -1,0 +1,40 @@
+<PISI>
+    <Source>
+        <Name>pasystray</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>LGPL-2.1-or-later</License>
+        <PartOf>multimedia.audio</PartOf>
+        <Summary xml:lang="en">PulseAudio system tray</Summary>
+        <Description xml:lang="en">A replacement for the deprecated padevchooser. pasystray allows setting the default PulseAudio source/sink and moving streams on the fly between sources/sinks without restarting the client applications.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>pasystray</Name>
+        <Summary xml:lang="en">PulseAudio system tray</Summary>
+        <Description xml:lang="en">A replacement for the deprecated padevchooser. pasystray allows setting the default PulseAudio source/sink and moving streams on the fly between sources/sinks without restarting the client applications.
+</Description>
+        <PartOf>multimedia.audio</PartOf>
+        <Files>
+            <Path fileType="config">/etc/xdg/autostart/pasystray.desktop</Path>
+            <Path fileType="executable">/usr/bin/pasystray</Path>
+            <Path fileType="data">/usr/share/applications/pasystray.desktop</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/pasystray.svg</Path>
+            <Path fileType="man">/usr/share/man/man1/pasystray.1</Path>
+            <Path fileType="data">/usr/share/pasystray/pasystray.gtk3.glade</Path>
+            <Path fileType="data">/usr/share/pixmaps/pasystray.png</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2022-09-14</Date>
+            <Version>0.8.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

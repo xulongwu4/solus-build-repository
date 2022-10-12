@@ -1,0 +1,29 @@
+name       : sioyek
+version    : 1.2.0
+release    : 1
+source     :
+    - https://github.com/ahrm/sioyek/archive/refs/tags/v1.2.0.tar.gz : 28a67c5e4151a7c71d7fef7ee13c64e8cb928f68594e796e921fdfec2d105b58
+license    : GPL-3.0-or-later
+component  : office.viewers
+summary    : A PDF viewer designed for reading research papers and technical books
+description: |
+    Sioyek is a PDF viewer designed for reading research papers and technical books.
+builddeps  :
+    - pkgconfig(Qt5Core)
+    - pkgconfig(Qt53DCore)
+    - mupdf-devel
+    - pkgconfig(harfbuzz)
+setup      : |
+    sed -i 's/-lmupdf-third -lmupdf-threads -lharfbuzz/-lmupdf-threads -lharfbuzz/' pdf_viewer_build_config.pro
+    sed -i 's/\/etc\/sioyek/\/usr\/share\/sioyek/' pdf_viewer/main.cpp
+build      : |
+    %qmake DEFINES+="LINUX_STANDARD_PATHS" pdf_viewer_build_config.pro
+    %make
+install    : |
+    %make_install prefix=%PREFIX% INSTALL_ROOT="%installroot%"
+
+    install -Dm00644 resources/sioyek.1 $installdir/usr/share/man/man1/sioyek.1
+    install -Dm00644 pdf_viewer/prefs.config $installdir/usr/share/sioyek/prefs.config
+    install -Dm00644 pdf_viewer/keys.config $installdir/usr/share/sioyek/keys.config
+    install -Dm00644 pdf_viewer/shaders/* -t $installdir/usr/share/sioyek/shaders
+    install -Dm00644 tutorial.pdf $installdir/usr/share/sioyek/tutorial.pdf

@@ -1,0 +1,34 @@
+<PISI>
+    <Source>
+        <Name>ncpamixer</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <PartOf>multimedia.audio</PartOf>
+        <Summary xml:lang="en">ncurses PulseAudio Mixer</Summary>
+        <Description xml:lang="en">An ncurses mixer for PulseAudio inspired by pavucontrol
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>ncpamixer</Name>
+        <Summary xml:lang="en">ncurses PulseAudio Mixer</Summary>
+        <Description xml:lang="en">An ncurses mixer for PulseAudio inspired by pavucontrol
+</Description>
+        <PartOf>multimedia.audio</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/ncpamixer</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2022-09-25</Date>
+            <Version>1.3.3.3</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

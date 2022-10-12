@@ -1,0 +1,35 @@
+<PISI>
+    <Source>
+        <Name>pamixer</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0-or-later</License>
+        <PartOf>multimedia.audio</PartOf>
+        <Summary xml:lang="en">Pulseaudio command line mixer</Summary>
+        <Description xml:lang="en">pamixer is like amixer but for pulseaudio. It can control the volume levels of the sinks. Also, this project can provide you a small C++ library to control pulseaudio.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>pamixer</Name>
+        <Summary xml:lang="en">Pulseaudio command line mixer</Summary>
+        <Description xml:lang="en">pamixer is like amixer but for pulseaudio. It can control the volume levels of the sinks. Also, this project can provide you a small C++ library to control pulseaudio.
+</Description>
+        <PartOf>multimedia.audio</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/pamixer</Path>
+            <Path fileType="man">/usr/share/man/man1/pamixer.1</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2022-09-15</Date>
+            <Version>1.6</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

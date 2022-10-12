@@ -1,0 +1,35 @@
+name       : fcitx5
+version    : 5.0.19
+release    : 1
+source     :
+    - https://github.com/fcitx/fcitx5/archive/refs/tags/5.0.19.tar.gz : 9f8d86a897e0d98130752bd44734776b77c192e84b8886486440c5ceb92612dc
+license    : LGPL-2.1-or-later
+component  : desktop.core
+summary    : Next generation of fcitx
+description: |
+    Fcitx 5 is a generic input method framework
+networking : yes
+builddeps  :
+    - pkgconfig(cairo-xcb)
+    - pkgconfig(enchant-2)
+    - pkgconfig(fmt)
+    - pkgconfig(gdk-pixbuf-2.0)
+    - pkgconfig(json-c)
+    - pkgconfig(pango)
+    - pkgconfig(wayland-client)
+    - pkgconfig(wayland-protocols)
+    - pkgconfig(xcb)
+    - pkgconfig(xcb-aux)
+    - pkgconfig(xcb-icccm)
+    - pkgconfig(xcb-imdkit)
+    - pkgconfig(xcb-keysyms)
+    - pkgconfig(xkbcommon)
+    - pkgconfig(xkbfile)
+    - pkgconfig(xkeyboard-config)
+    - extra-cmake-modules
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

@@ -1,0 +1,37 @@
+name       : fcitx5-configtool
+version    : 5.0.15
+release    : 1
+source     :
+    - https://github.com/fcitx/fcitx5-configtool/archive/refs/tags/5.0.15.tar.gz : 2f293e7920fdf0e453e873f41ad17790425624ee666ff051d7f2644112579e7a
+license    : GPL-2.0-or-later
+component  : desktop.core
+summary    : Config tool for Fcitx5
+description: |
+    Config tool for Fcitx5
+builddeps  :
+    - pkgconfig(Fcitx5Core)
+    - pkgconfig(Qt5Core)
+    - pkgconfig(Qt5QuickControls2)
+    - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(xkbcommon)
+    - pkgconfig(xkbfile)
+    - pkgconfig(xkeyboard-config)
+    - extra-cmake-modules
+    - fcitx5-qt-devel
+    - kconfig-devel
+    - kcoreaddons-devel
+    - kdeclarative-devel
+    - ki18n-devel
+    - kiconthemes-devel
+    - kirigami2-devel
+    - kitemviews-devel
+    - kpackage-devel
+    - kwidgetsaddons-devel
+    - plasma-framework-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

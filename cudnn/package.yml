@@ -1,0 +1,15 @@
+name       : cudnn
+version    : 8.4.0
+release    : 8
+source     :
+    - https://filedn.com/lLMyOXItlNAm8hdpVIuuAUS/cudnn/cudnn-linux-x86_64-8.4.0.27_cuda11.6-archive.tar.xz : d19bdafd9800c79d29e6f6fffa9f9e2c10d1132d6c2ff10b1593e057e74dd050
+license    : EULA
+component  : programming.library
+summary    : The NVIDIA CUDA® Deep Neural Network library
+description: |
+    NVIDIA cuDNN is a GPU-accelerated library of primitives for deep neural networks.
+strip      : no
+install    : |
+    install -Dm00644 include/* -t $installdir/usr/include
+    install -dm00755 $installdir/%libdir%
+    cp -r lib/* $installdir/%libdir%

@@ -1,0 +1,22 @@
+name       : pasystray
+version    : 0.8.0
+release    : 1
+source     :
+    - git|https://github.com/christophgysin/pasystray : de05ccffe7497f17cf97b4b2d2feab416938edcf
+license    : LGPL-2.1-or-later
+component  : multimedia.audio
+summary    : PulseAudio system tray
+description: |
+    A replacement for the deprecated padevchooser. pasystray allows setting the default PulseAudio source/sink and moving streams on the fly between sources/sinks without restarting the client applications.
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libpulse)
+    - pkgconfig(avahi-client)
+    - pkgconfig(libnotify)
+    - pkgconfig(appindicator3-0.1)
+setup      : |
+    %reconfigure
+build      : |
+    %make
+install    : |
+    %make_install

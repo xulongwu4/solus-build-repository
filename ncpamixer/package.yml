@@ -1,0 +1,24 @@
+name       : ncpamixer
+version    : 1.3.3.3
+release    : 1
+source     :
+    - https://github.com/fulhax/ncpamixer/archive/refs/tags/1.3.3.3.tar.gz : 396099897460bcde2db72134e6652fe9717375fa45300ba2251d284658d3044a
+license    : MIT
+component  : multimedia.audio
+summary    : ncurses PulseAudio Mixer
+description: |
+    An ncurses mixer for PulseAudio inspired by pavucontrol
+builddeps  :
+    - pkgconfig(libpulse)
+setup      : |
+    pushd src
+    %cmake_ninja
+    popd
+build      : |
+    pushd src
+    %ninja_build
+    popd
+install    : |
+    pushd src
+    %ninja_install
+    popd

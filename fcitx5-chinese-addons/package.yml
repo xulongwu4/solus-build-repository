@@ -1,0 +1,30 @@
+name       : fcitx5-chinese-addons
+version    : 5.0.15
+release    : 1
+source     :
+    - https://github.com/fcitx/fcitx5-chinese-addons/archive/refs/tags/5.0.15.tar.gz : 017da4ca2313eae9e38334e7d603ac9f57851bc098690c8738013e7df33417f1
+license    :
+    - GPL-2.0-or-later
+    - LGPL-2.1-or-later
+component  : desktop.core
+summary    : Addons related to Chinese, including IME previous bundled inside fcitx4
+description: |
+    fcitx-chinese-addons provides pinyin and table input method support for fcitx5
+networking : yes
+builddeps  :
+    - pkgconfig(Fcitx5Core)
+    - pkgconfig(Qt5Core)
+    - pkgconfig(Qt5WebKitWidgets)
+    - pkgconfig(fmt)
+    - pkgconfig(libcurl)
+    - pkgconfig(opencc)
+    - extra-cmake-modules
+    - fcitx5-qt-devel
+    - libboost-devel
+    - libime-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

@@ -1,0 +1,19 @@
+name       : pamixer
+version    : 1.6
+release    : 1
+source     :
+    - https://github.com/cdemoulins/pamixer/archive/refs/tags/1.6.tar.gz : 8b7199e495dc19b190f8f02ace8782f533266a4bd7c7d3cf6f4cf09b2de13e71
+license    : GPL-3.0-or-later
+component  : multimedia.audio
+summary    : Pulseaudio command line mixer
+description: |
+    pamixer is like amixer but for pulseaudio. It can control the volume levels of the sinks. Also, this project can provide you a small C++ library to control pulseaudio.
+builddeps  :
+    - pkgconfig(cxxopts)
+    - pkgconfig(libpulse)
+setup      : |
+    %meson_configure
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

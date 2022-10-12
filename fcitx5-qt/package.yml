@@ -1,0 +1,25 @@
+name       : fcitx5-qt
+version    : 5.0.15
+release    : 1
+source     :
+    - https://github.com/fcitx/fcitx5-qt/archive/refs/tags/5.0.15.tar.gz : d425a8969b087f40ebbc5fed2575e3f75f76091969923a07c4545a8383065390
+license    :
+    - BSD-3-Clause
+component  : desktop.qt
+summary    : Qt library and IM module for fcitx5
+description: |
+    Qt library and IM module for fcitx5
+builddeps  :
+    - pkgconfig(Fcitx5Utils)
+    - pkgconfig(Qt5Core)
+    - pkgconfig(Qt6Core)
+    - pkgconfig(x11)
+    - pkgconfig(xcb)
+    - pkgconfig(xkbcommon)
+    - extra-cmake-modules
+setup      : |
+    %cmake_ninja -DENABLE_QT4=0 -DENABLE_QT6=1
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

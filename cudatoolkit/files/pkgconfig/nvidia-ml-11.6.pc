@@ -1,0 +1,9 @@
+cudaroot=/usr/share/cuda
+libdir=${cudaroot}/targets/x86_64-linux/lib/stubs/
+includedir=${cudaroot}/targets/x86_64-linux/include
+
+Name: nvidia-ml
+Description: NVML
+Version: 11.6
+Libs: -L${libdir} -lnvidia-ml
+Cflags: -I${includedir}
