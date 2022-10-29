@@ -1,0 +1,23 @@
+name       : leftwm
+version    : 0.4.0
+release    : 1
+source     :
+    - https://github.com/leftwm/leftwm/archive/refs/tags/0.4.0.tar.gz : af5999852975de453e19bd199bfc021519ca95e4016a97a1508dc4d678dddd8b
+license    : MIT
+component  : desktop
+networking : yes
+summary    : A tiling window manager written in Rust
+description: |
+    LeftWM is a tiling window manager written in Rust that aims to be stable and performant. LeftWM is designed to do one thing and to do that one thing well: be a window manager.   
+builddeps  :
+    - cargo
+build      : |
+    cargo build --release
+install    : |
+    install -Dm00755 target/release/{leftwm,leftwm-worker,lefthk-worker,leftwm-state,leftwm-check,leftwm-command} -t $installdir/usr/bin
+    install -Dm00644 leftwm.desktop $installdir/usr/share/xsessions/leftwm.desktop
+    install -Dm00644 leftwm/doc/leftwm.1 $installdir/usr/share/man/man1/leftwm.1
+    install -dm00755 $installdir/usr/share/leftwm
+    cp -R themes $installdir/usr/share/leftwm
+check      : |
+    cargo test --all

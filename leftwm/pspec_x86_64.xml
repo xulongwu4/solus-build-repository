@@ -1,0 +1,93 @@
+<PISI>
+    <Source>
+        <Name>leftwm</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <PartOf>desktop</PartOf>
+        <Summary xml:lang="en">A tiling window manager written in Rust</Summary>
+        <Description xml:lang="en">LeftWM is a tiling window manager written in Rust that aims to be stable and performant. LeftWM is designed to do one thing and to do that one thing well: be a window manager.   
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>leftwm</Name>
+        <Summary xml:lang="en">A tiling window manager written in Rust</Summary>
+        <Description xml:lang="en">LeftWM is a tiling window manager written in Rust that aims to be stable and performant. LeftWM is designed to do one thing and to do that one thing well: be a window manager.   
+</Description>
+        <PartOf>desktop</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/lefthk-worker</Path>
+            <Path fileType="executable">/usr/bin/leftwm</Path>
+            <Path fileType="executable">/usr/bin/leftwm-check</Path>
+            <Path fileType="executable">/usr/bin/leftwm-command</Path>
+            <Path fileType="executable">/usr/bin/leftwm-state</Path>
+            <Path fileType="executable">/usr/bin/leftwm-worker</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/README.md</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/README.md</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/background.jpg</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/down</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/down.jpg</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/eww-bar/eww-bar.png</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/eww-bar/eww.scss</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/eww-bar/eww.yuck</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/eww-bar/scripts/getram</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/eww-bar/scripts/getvol</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/legacy_eww_xml_config/eww-bar/eww-bar.png</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/legacy_eww_xml_config/eww-bar/eww.scss</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/legacy_eww_xml_config/eww-bar/eww.xml</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/legacy_eww_xml_config/eww-bar/scripts/getram</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/legacy_eww_xml_config/eww-bar/scripts/getvol</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/legacy_eww_xml_config/template.liquid</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/sizes.liquid</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/template.liquid</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/theme.toml</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/up</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/background.jpg</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/change_to_tag</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/down</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/down.jpg</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/sizes.liquid</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/template.liquid</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/theme.toml</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/up</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/README.md</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/background.jpg</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/change_to_tag</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/down</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/down.jpg</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/polybar.config</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/sizes.liquid</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/template.liquid</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/theme.toml</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/up</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/background.jpg</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/change_to_tag</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/down</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/reset.jpg</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/sizes.liquid</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/template.liquid</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/theme.toml</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/up</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/xmobar-config.hs</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/controlling_leftwm/README.md</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/controlling_leftwm/change_to_tag</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/controlling_leftwm/move_window_to_last_workspace</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/controlling_leftwm/move_window_to_tag</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/controlling_leftwm/swap_screens</Path>
+            <Path fileType="man">/usr/share/man/man1/leftwm.1</Path>
+            <Path fileType="data">/usr/share/xsessions/leftwm.desktop</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2022-10-17</Date>
+            <Version>0.4.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
