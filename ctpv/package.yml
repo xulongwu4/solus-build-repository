@@ -1,0 +1,14 @@
+name       : ctpv
+version    : 1.0
+release    : 1
+source     :
+    - https://github.com/NikitaIvanovV/ctpv/archive/refs/tags/v1.0.tar.gz : da11bb01f7439daaafdfb2e00c58fbeba3c6e761e7569bf0228e0a3a62ebf94d
+license    : MIT
+component  : system.utils
+summary    : Terminal previewer
+description: |
+    ctpv is a previewer utility for terminals.
+build      : |
+    %make
+install    : |
+    %make_install PREFIX=%PREFIX%
