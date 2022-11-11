@@ -21,6 +21,7 @@
         <Files>
             <Path fileType="executable">/usr/bin/ctpv</Path>
             <Path fileType="executable">/usr/bin/ctpvclear</Path>
+            <Path fileType="executable">/usr/bin/ctpvquit</Path>
             <Path fileType="man">/usr/share/man/man1/ctpv.1</Path>
         </Files>
     </Package>

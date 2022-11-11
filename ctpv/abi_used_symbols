@@ -13,6 +13,7 @@ libc.so.6:access
 libc.so.6:close
 libc.so.6:creat
 libc.so.6:dup2
+libc.so.6:execlp
 libc.so.6:execvp
 libc.so.6:exit
 libc.so.6:fclose
@@ -23,6 +24,7 @@ libc.so.6:fopen
 libc.so.6:fork
 libc.so.6:fread
 libc.so.6:free
+libc.so.6:fwrite
 libc.so.6:getenv
 libc.so.6:getopt
 libc.so.6:isblank
@@ -37,6 +39,7 @@ libc.so.6:mkfifo
 libc.so.6:open
 libc.so.6:optarg
 libc.so.6:optind
+libc.so.6:perror
 libc.so.6:pipe
 libc.so.6:poll
 libc.so.6:puts
@@ -48,6 +51,8 @@ libc.so.6:realpath
 libc.so.6:remove
 libc.so.6:setenv
 libc.so.6:signal
+libc.so.6:sleep
+libc.so.6:stderr
 libc.so.6:stdout
 libc.so.6:strchr
 libc.so.6:strcmp
