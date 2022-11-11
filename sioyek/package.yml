@@ -1,6 +1,6 @@
 name       : sioyek
 version    : 1.5.0
-release    : 5
+release    : 6
 source     :
     - https://github.com/ahrm/sioyek/archive/refs/tags/v1.5.0.tar.gz : 2d01c757953c3f2d98428376e642d13b8a9edeba8fee506477e8aa178756f16b
 license    : GPL-3.0-or-later
