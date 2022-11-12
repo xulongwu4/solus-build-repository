@@ -1,0 +1,26 @@
+name       : xwallpaper
+version    : 0.7.4
+release    : 1
+source     :
+    - https://github.com/stoeckmann/xwallpaper/archive/refs/tags/v0.7.4.tar.gz : 1f7b0b2162221065b63f2498bc9a8d7a53d59ac893ab32e527bb02f031015084
+license    : ISC
+component  : system.utils
+summary    : Wallpaper setting utility for X
+description: |
+    The xwallpaper utility allows you to set image files as your X wallpaper. JPEG, PNG, and XPM file formats are supported, all of them being configurable and therefore no fixed dependencies. The wallpaper is also advertised to programs which support semi-transparent backgrounds.
+builddeps  :
+    - pkgconfig(pixman-1)
+    - pkgconfig(xcb-image)
+    - pkgconfig(libseccomp)
+    - pkgconfig(xcb-randr)
+    - pkgconfig(xcb-util)
+    - pkgconfig(libjpeg)
+    - pkgconfig(libpng)
+    - pkgconfig(xpm)
+setup      : |
+    %autogen
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install

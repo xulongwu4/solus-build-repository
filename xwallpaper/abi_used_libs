@@ -1,0 +1,10 @@
+libXpm.so.4
+libc.so.6
+libjpeg.so.8
+libpixman-1.so.0
+libpng16.so.16
+libseccomp.so.2
+libxcb-image.so.0
+libxcb-randr.so.0
+libxcb-util.so.1
+libxcb.so.1

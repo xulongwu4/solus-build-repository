@@ -1,0 +1,36 @@
+<PISI>
+    <Source>
+        <Name>xwallpaper</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>ISC</License>
+        <PartOf>system.utils</PartOf>
+        <Summary xml:lang="en">Wallpaper setting utility for X</Summary>
+        <Description xml:lang="en">The xwallpaper utility allows you to set image files as your X wallpaper. JPEG, PNG, and XPM file formats are supported, all of them being configurable and therefore no fixed dependencies. The wallpaper is also advertised to programs which support semi-transparent backgrounds.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>xwallpaper</Name>
+        <Summary xml:lang="en">Wallpaper setting utility for X</Summary>
+        <Description xml:lang="en">The xwallpaper utility allows you to set image files as your X wallpaper. JPEG, PNG, and XPM file formats are supported, all of them being configurable and therefore no fixed dependencies. The wallpaper is also advertised to programs which support semi-transparent backgrounds.
+</Description>
+        <PartOf>system.utils</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/xwallpaper</Path>
+            <Path fileType="man">/usr/share/man/man1/xwallpaper.1</Path>
+            <Path fileType="data">/usr/share/zsh/site-functions/_xwallpaper</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2022-11-12</Date>
+            <Version>0.7.4</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
