@@ -1,6 +1,6 @@
 <PISI>
     <Source>
-        <Name>kapio</Name>
+        <Name>kopia</Name>
         <Packager>
             <Name>Longwu Ou</Name>
             <Email>xulongwu4@gmail.com</Email>
@@ -13,21 +13,21 @@
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
-        <Name>kapio</Name>
+        <Name>kopia</Name>
         <Summary xml:lang="en">A fast and secure open-source backup/restore tool</Summary>
         <Description xml:lang="en">Kopia is a fast and secure open-source backup/restore tool that allows you to create encrypted snapshots of your data and save the snapshots to remote or cloud storage of your choice, to network-attached storage or server, or locally on your machine. Kopia does not &apos;image&apos; your whole machine. Rather, Kopia allows you to backup/restore any and all files/directories that you deem are important or critical.
 </Description>
         <PartOf>system.utils</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin/kapio</Path>
-            <Path fileType="data">/usr/share/bash-completion/completions/kapio</Path>
-            <Path fileType="man">/usr/share/man/man1/kapio.1</Path>
-            <Path fileType="data">/usr/share/zsh/site-functions/_kapio</Path>
+            <Path fileType="executable">/usr/bin/kopia</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/kopia</Path>
+            <Path fileType="man">/usr/share/man/man1/kopia.1</Path>
+            <Path fileType="data">/usr/share/zsh/site-functions/_kopia</Path>
         </Files>
     </Package>
     <History>
         <Update release="1">
-            <Date>2022-10-11</Date>
+            <Date>2022-11-16</Date>
             <Version>0.12.1</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>

@@ -1,4 +1,4 @@
-name       : kapio
+name       : kopia
 version    : 0.12.1
 release    : 1
 source     :
@@ -12,13 +12,12 @@ description: |
 builddeps  :
     - golang
 build      : |
-    go build -ldflags "-s -w" -o kapio
-    ./kapio --help-man > kapio.1
-    ./kapio --completion-script-bash > kapio.bash
-    ./kapio --completion-script-zsh > kapio.zsh
+    go build -ldflags "-s -w" -o kopia
+    ./kopia --help-man > kopia.1
+    ./kopia --completion-script-bash > kopia.bash
+    ./kopia --completion-script-zsh > kopia.zsh
 install    : |
-    install -Dm00755 kapio $installdir/usr/bin/kapio
-    install -Dm00644 kapio.bash $installdir/usr/share/bash-completion/completions/kapio
-    install -Dm00644 kapio.zsh $installdir/usr/share/zsh/site-functions/_kapio
-    install -Dm00644 kapio.1 $installdir/usr/share/man/man1/kapio.1
-    
+    install -Dm00755 kopia $installdir/usr/bin/kopia
+    install -Dm00644 kopia.bash $installdir/usr/share/bash-completion/completions/kopia
+    install -Dm00644 kopia.zsh $installdir/usr/share/zsh/site-functions/_kopia
+    install -Dm00644 kopia.1 $installdir/usr/share/man/man1/kopia.1
