@@ -1,0 +1,19 @@
+name       : xcb-util-errors
+version    : 1.0
+release    : 1
+source     :
+    - https://xcb.freedesktop.org/dist/xcb-util-errors-1.0.tar.gz : 7752a722e580efdbada30632cb23aed35c18757399ac3b547b59fd7257cf5e33
+license    : MIT
+component  : xorg.library
+summary    : XCB utility library that gives human readable names to error, event, & request codes.
+description: |
+    XCB utility library that gives human readable names to error, event, & request codes.
+builddeps  :
+    - pkgconfig(xcb)
+    - pkgconfig(xcb-proto)
+setup      : |
+    %configure --disable-static
+build      : |
+    %make
+install    : |
+    %make_install

@@ -1,0 +1,34 @@
+#!/usr/bin/env sh
+
+connect() {
+    HOST="$1"
+
+    # Exit if the browser has been closed manually
+    COOKIE=$(openfortivpn-webview "$HOST" 2>/dev/null) || exit 0
+    if echo "$COOKIE" | pkexec /usr/share/fortisslvpn/fortisslvpn-cli connect "$@"; then
+        exec yad --notification --image=forticlient --menu="Disconnect $HOST! sh -c \"$0 disconnect $HOST && kill $$\"" --command=menu --no-middle
+    fi
+}
+
+disconnect() {
+    pkexec /usr/share/fortisslvpn/fortisslvpn-cli disconnect "$@"
+}
+
+help() {
+    echo "Usage: $0 connect/disconnect HOST[:PORT]"
+    exit 1
+}
+
+[ "$#" -lt 2 ] && help
+
+case "$1" in
+    connect)
+        connect "$2"
+        ;;
+    disconnect)
+        disconnect "$2"
+        ;;
+    *)
+        help
+        ;;
+esac

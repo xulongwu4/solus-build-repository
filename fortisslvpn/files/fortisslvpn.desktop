@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=FortisslVPN
+GenericName=Security Software
+Comment=Endpoint Protection Suite
+Exec=fortisslvpn-saml connect HOST:PORT
+Icon=forticlient
+Type=Application
+Terminal=false
+Categories=Utility;

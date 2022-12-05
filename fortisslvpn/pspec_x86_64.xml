@@ -1,0 +1,38 @@
+<PISI>
+    <Source>
+        <Name>fortisslvpn</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <PartOf>network.util</PartOf>
+        <Summary xml:lang="en">FortiSSL VPN Client</Summary>
+        <Description xml:lang="en">FortiSSL VPN Client
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>fortisslvpn</Name>
+        <Summary xml:lang="en">FortiSSL VPN Client</Summary>
+        <Description xml:lang="en">FortiSSL VPN Client
+</Description>
+        <PartOf>network.util</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/fortisslvpn-saml</Path>
+            <Path fileType="executable">/usr/bin/openfortivpn-webview</Path>
+            <Path fileType="data">/usr/share/fortisslvpn/fortisslvpn-cli</Path>
+            <Path fileType="data">/usr/share/fortisslvpn/templates/fortisslvpn.desktop</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions/org.fortisslvpn.policy</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="3">
+            <Date>2022-09-20</Date>
+            <Version>1.0.1</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

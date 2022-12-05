@@ -1,0 +1,37 @@
+<PISI>
+    <Source>
+        <Name>procs</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <PartOf>system.utils</PartOf>
+        <Summary xml:lang="en">A modern replacement for ps written in Rust</Summary>
+        <Description xml:lang="en">procs is a replacement for ps written in Rust.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>procs</Name>
+        <Summary xml:lang="en">A modern replacement for ps written in Rust</Summary>
+        <Description xml:lang="en">procs is a replacement for ps written in Rust.
+</Description>
+        <PartOf>system.utils</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/procs</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/procs</Path>
+            <Path fileType="data">/usr/share/fish/vendor_completions.d/procs.fish</Path>
+            <Path fileType="data">/usr/share/zsh/site-functions/_procs</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2021-06-06</Date>
+            <Version>0.11.8</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

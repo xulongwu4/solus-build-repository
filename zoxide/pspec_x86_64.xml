@@ -1,0 +1,43 @@
+<PISI>
+    <Source>
+        <Name>zoxide</Name>
+        <Packager>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <PartOf>system.utils</PartOf>
+        <Summary xml:lang="en">A smarter cd command for your terminal</Summary>
+        <Description xml:lang="en">zoxide is a blazing fast replacement for your cd command, inspired by z and z.lua. It keeps track of the directories you use most frequently, and uses a ranking algorithm to navigate to the best match.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>zoxide</Name>
+        <Summary xml:lang="en">A smarter cd command for your terminal</Summary>
+        <Description xml:lang="en">zoxide is a blazing fast replacement for your cd command, inspired by z and z.lua. It keeps track of the directories you use most frequently, and uses a ranking algorithm to navigate to the best match.
+</Description>
+        <PartOf>system.utils</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/zoxide</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/zoxide</Path>
+            <Path fileType="data">/usr/share/fish/vendor_completions.d/zoxide.fish</Path>
+            <Path fileType="man">/usr/share/man/man1/zoxide-add.1</Path>
+            <Path fileType="man">/usr/share/man/man1/zoxide-import.1</Path>
+            <Path fileType="man">/usr/share/man/man1/zoxide-init.1</Path>
+            <Path fileType="man">/usr/share/man/man1/zoxide-query.1</Path>
+            <Path fileType="man">/usr/share/man/man1/zoxide-remove.1</Path>
+            <Path fileType="man">/usr/share/man/man1/zoxide.1</Path>
+            <Path fileType="data">/usr/share/zsh/site-functions/_zoxide</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="3">
+            <Date>2021-12-26</Date>
+            <Version>0.8.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Longwu Ou</Name>
+            <Email>xulongwu4@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

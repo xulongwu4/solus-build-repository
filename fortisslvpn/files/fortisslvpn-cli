@@ -1,0 +1,60 @@
+#!/usr/bin/env sh
+
+LOGDIR=/var/log/fortisslvpn/"$PKEXEC_UID"
+
+connect() {
+    HOST="$1"
+    PIDFILE="$LOGDIR/$HOST/pid"
+    [ -f "$PIDFILE" ] && exit 1
+
+    mkdir -p "$LOGDIR/$HOST"
+    LOGFILE="$LOGDIR/$HOST/fortisslvpn.log"
+    echo "$2" | openfortivpn "$HOST" --cookie-on-stdin >"$LOGFILE" &
+    echo $! >"$PIDFILE"
+
+    VPN_INTERFACE=ppp0
+    for _ in $(seq 1 20); do
+        VPN_CONNECTED=$(ip link show | grep "$VPN_INTERFACE")
+        if [ -n "$VPN_CONNECTED" ]; then
+            break
+        else
+            sleep 1
+        fi
+    done
+
+    if [ -z "$VPN_CONNECTED" ]; then
+        rm -rf "$PIDFILE"
+        exit 1
+    else
+        exit 0
+    fi
+}
+
+disconnect() {
+    HOST="$1"
+    PIDFILE="$LOGDIR/$HOST/pid"
+    [ ! -f "$PIDFILE" ] && exit 1
+    PID="$(cat $PIDFILE)"
+    rm -rf "$PIDFILE"
+    ps -p "$PID" -o cmd --no-headers | grep openfortivpn && kill "$PID"
+}
+
+help() {
+    echo "Usage: $0 connect/disconnect HOST[:PORT]"
+    exit 1
+}
+
+[ "$#" -lt 2 ] && help
+
+case "$1" in
+    connect)
+        COOKIE=$(cat)
+        connect "$2" "$COOKIE"
+        ;;
+    disconnect)
+        disconnect "$2"
+        ;;
+    *)
+        help
+        ;;
+esac

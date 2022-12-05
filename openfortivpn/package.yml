@@ -1,0 +1,20 @@
+name       : openfortivpn
+version    : 1.17.4
+release    : 13
+source     :
+    - https://codeload.github.com/adrienverge/openfortivpn/zip/8263c26822c977c2ed92f1ed6b8500067704227f : 1d4bcc370546002fcef487a78ce20fa23b0883a8dbea07d504a30eadc95c1eb9
+license    :
+    - GPL-3.0-or-later
+    - OpenSSL
+component  : network.util
+summary    : openfortivpn is a client for PPP+SSL VPN tunnel services.
+description: |
+    openfortivpn is a client for PPP+SSL VPN tunnel services. It spawns a pppd process and operates the communication between the gateway and this process. It is compatible with Fortinet VPNs.
+rundeps    :
+    - ppp
+setup      : |
+    %reconfigure
+build      : |
+    %make
+install    : |
+    %make_install

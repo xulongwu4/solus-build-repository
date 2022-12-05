@@ -1,0 +1,26 @@
+name       : procs
+version    : 0.11.8
+release    : 1
+source     :
+    - https://github.com/dalance/procs/archive/refs/tags/v0.11.8.tar.gz : 50ef6175c08a5ce7f65c81924e8f295bab9622b453b51178a8b8c37c3ef2beef
+license    : MIT
+component  : system.utils
+networking : yes
+summary    : A modern replacement for ps written in Rust
+description: |
+    procs is a replacement for ps written in Rust.
+builddeps  :
+    - cargo
+build      : |
+    cargo build --release
+
+    target/release/procs --completion bash
+    target/release/procs --completion fish
+    target/release/procs --completion zsh
+install    : |
+    install -Dm00755 target/release/procs $installdir/usr/bin/procs
+    install -Dm00644 procs.bash $installdir/usr/share/bash-completion/completions/procs
+    install -Dm00644 procs.fish $installdir/usr/share/fish/vendor_completions.d/procs.fish
+    install -Dm00644 _procs $installdir/usr/share/zsh/site-functions/_procs
+check      : |
+    cargo test --all
