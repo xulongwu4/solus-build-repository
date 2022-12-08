@@ -36,7 +36,7 @@ disconnect() {
     [ ! -f "$PIDFILE" ] && exit 1
     PID="$(cat $PIDFILE)"
     rm -rf "$PIDFILE"
-    ps -p "$PID" -o cmd --no-headers | grep openfortivpn && kill "$PID"
+    ps -p "$PID" -o cmd --no-headers | grep openfortivpn && kill "$PID" || :
 }
 
 help() {
