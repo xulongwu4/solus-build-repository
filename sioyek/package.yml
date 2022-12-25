@@ -1,8 +1,8 @@
 name       : sioyek
-version    : 1.5.0
-release    : 6
+version    : 2.0.0
+release    : 7
 source     :
-    - https://github.com/ahrm/sioyek/archive/refs/tags/v1.5.0.tar.gz : 2d01c757953c3f2d98428376e642d13b8a9edeba8fee506477e8aa178756f16b
+    - git|https://github.com/ahrm/sioyek : v2.0.0
 license    : GPL-3.0-or-later
 component  : office.viewers
 summary    : A PDF viewer designed for reading research papers and technical books
@@ -10,24 +10,27 @@ description: |
     Sioyek is a PDF viewer designed for reading research papers and technical books.
 builddeps  :
     - pkgconfig(Qt53DCore)
-    - pkgconfig(jbig2dec)
+    # - pkgconfig(jbig2dec)
     - pkgconfig(freetype2)
-    - pkgconfig(gumbo)
-    - pkgconfig(libopenjp2)
-    - pkgconfig(libjpeg)
-    - mupdf-devel
+    - pkgconfig(glut)
+    # - pkgconfig(gumbo)
+    # - pkgconfig(libopenjp2)
+    # - pkgconfig(libjpeg)
+    # - mupdf-devel
     - pkgconfig(harfbuzz)
+    - pkgconfig(glu)
+    # - pkgconfig(x11)
+    # - pkgconfig(xi)
 setup      : |
-    sed -i 's/ -lmupdf-third / /' pdf_viewer_build_config.pro
     sed -i 's/\/etc\/sioyek/\/usr\/share\/sioyek/' pdf_viewer/main.cpp
+    sed -i 's/\/etc\/sioyek/\/share\/sioyek/' pdf_viewer_build_config.pro
 build      : |
-    %qmake DEFINES+="LINUX_STANDARD_PATHS" pdf_viewer_build_config.pro
+    pushd mupdf
+    %make USE_SYSTEM_HARFBUZZ=yes USE_SYSTEM_GLUT=yes
+    popd
+
+    %qmake "CONFIG+=linux_app_image" pdf_viewer_build_config.pro
     %make
 install    : |
-    %make_install prefix=%PREFIX% INSTALL_ROOT="%installroot%"
-
+    %make_install PREFIX=%PREFIX% INSTALL_ROOT="%installroot%"
     install -Dm00644 resources/sioyek.1 $installdir/usr/share/man/man1/sioyek.1
-    install -Dm00644 pdf_viewer/prefs.config $installdir/usr/share/sioyek/prefs.config
-    install -Dm00644 pdf_viewer/keys.config $installdir/usr/share/sioyek/keys.config
-    install -Dm00644 pdf_viewer/shaders/* -t $installdir/usr/share/sioyek/shaders
-    install -Dm00644 tutorial.pdf $installdir/usr/share/sioyek/tutorial.pdf

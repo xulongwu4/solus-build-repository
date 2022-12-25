@@ -5,7 +5,7 @@ libQt5Network.so.5
 libQt5Widgets.so.5
 libc.so.6
 libgcc_s.so.1
+libharfbuzz.so.0
 libm.so.6
-libmupdf.so
 libstdc++.so.6
 libz.so.1
