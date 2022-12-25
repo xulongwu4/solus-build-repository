@@ -10,17 +10,10 @@ description: |
     Sioyek is a PDF viewer designed for reading research papers and technical books.
 builddeps  :
     - pkgconfig(Qt53DCore)
-    # - pkgconfig(jbig2dec)
     - pkgconfig(freetype2)
     - pkgconfig(glut)
-    # - pkgconfig(gumbo)
-    # - pkgconfig(libopenjp2)
-    # - pkgconfig(libjpeg)
-    # - mupdf-devel
     - pkgconfig(harfbuzz)
     - pkgconfig(glu)
-    # - pkgconfig(x11)
-    # - pkgconfig(xi)
 setup      : |
     sed -i 's/\/etc\/sioyek/\/usr\/share\/sioyek/' pdf_viewer/main.cpp
     sed -i 's/\/etc\/sioyek/\/share\/sioyek/' pdf_viewer_build_config.pro
@@ -29,7 +22,7 @@ build      : |
     %make USE_SYSTEM_HARFBUZZ=yes USE_SYSTEM_GLUT=yes
     popd
 
-    %qmake "CONFIG+=linux_app_image" pdf_viewer_build_config.pro
+    %qmake CONFIG+="linux_app_image" DEFINES+="LINUX_STANDARD_PATHS" pdf_viewer_build_config.pro
     %make
 install    : |
     %make_install PREFIX=%PREFIX% INSTALL_ROOT="%installroot%"
