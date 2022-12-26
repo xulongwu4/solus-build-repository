@@ -35,15 +35,9 @@
             <Path fileType="data">/usr/share/leftwm/themes/basic_eww/eww-bar/eww.yuck</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_eww/eww-bar/scripts/getram</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_eww/eww-bar/scripts/getvol</Path>
-            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/legacy_eww_xml_config/eww-bar/eww-bar.png</Path>
-            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/legacy_eww_xml_config/eww-bar/eww.scss</Path>
-            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/legacy_eww_xml_config/eww-bar/eww.xml</Path>
-            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/legacy_eww_xml_config/eww-bar/scripts/getram</Path>
-            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/legacy_eww_xml_config/eww-bar/scripts/getvol</Path>
-            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/legacy_eww_xml_config/template.liquid</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_eww/sizes.liquid</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_eww/template.liquid</Path>
-            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/theme.toml</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_eww/theme.ron</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_eww/up</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/background.jpg</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/change_to_tag</Path>
@@ -51,7 +45,7 @@
             <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/down.jpg</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/sizes.liquid</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/template.liquid</Path>
-            <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/theme.toml</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/theme.ron</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_lemonbar/up</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/README.md</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/background.jpg</Path>
@@ -61,7 +55,7 @@
             <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/polybar.config</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/sizes.liquid</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/template.liquid</Path>
-            <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/theme.toml</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/theme.ron</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_polybar/up</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/background.jpg</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/change_to_tag</Path>
@@ -69,7 +63,7 @@
             <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/reset.jpg</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/sizes.liquid</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/template.liquid</Path>
-            <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/theme.toml</Path>
+            <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/theme.ron</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/up</Path>
             <Path fileType="data">/usr/share/leftwm/themes/basic_xmobar/xmobar-config.hs</Path>
             <Path fileType="data">/usr/share/leftwm/themes/controlling_leftwm/README.md</Path>
@@ -82,9 +76,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2022-10-17</Date>
-            <Version>0.4.0</Version>
+        <Update release="2">
+            <Date>2022-12-26</Date>
+            <Version>0.4.1</Version>
             <Comment>Packaging update</Comment>
             <Name>Longwu Ou</Name>
             <Email>xulongwu4@gmail.com</Email>
