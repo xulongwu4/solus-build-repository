@@ -1,8 +1,8 @@
 name       : pasystray
-version    : 0.8.0
-release    : 1
+version    : 0.8.2
+release    : 2
 source     :
-    - git|https://github.com/christophgysin/pasystray : de05ccffe7497f17cf97b4b2d2feab416938edcf
+    - https://github.com/christophgysin/pasystray/archive/refs/tags/0.8.2.tar.gz : 9c6fc5859a203f0a6dd8ce2038fea85b7bac44b1baff5c4cf73643229fafa641
 license    : LGPL-2.1-or-later
 component  : multimedia.audio
 summary    : PulseAudio system tray
