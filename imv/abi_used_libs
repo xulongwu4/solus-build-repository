@@ -6,14 +6,14 @@ libcairo.so.2
 libfreeimage.so.3
 libgobject-2.0.so.0
 libheif.so.1
-libicuuc.so.71
+libicuuc.so.72
 libinih.so.0
 libm.so.6
 libpango-1.0.so.0
 libpangocairo-1.0.so.0
 libpng16.so.16
 librsvg-2.so.2
-libtiff.so.5
+libtiff.so.6
 libturbojpeg.so.0
 libwayland-client.so.0
 libwayland-egl.so.1
