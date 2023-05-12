@@ -1,6 +1,6 @@
 name       : fortisslvpn
 version    : 1.1.0
-release    : 6
+release    : 7
 source     :
     - git|https://github.com/gm-vm/openfortivpn-webview : v1.1.0-electron
 license    : MIT

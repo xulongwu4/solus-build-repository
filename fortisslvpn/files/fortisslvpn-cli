@@ -5,7 +5,7 @@ LOGDIR=/var/log/fortisslvpn/"$PKEXEC_UID"
 connect() {
     HOST="$1"
     PIDFILE="$LOGDIR/$HOST/pid"
-    [ -f "$PIDFILE" ] && exit 1
+    [ -f "$PIDFILE" ] && ps -p "$(cat "$PIDFILE")" -o cmd --no-headers | grep openfortivpn && exit 1
 
     mkdir -p "$LOGDIR/$HOST"
     LOGFILE="$LOGDIR/$HOST/fortisslvpn.log"
